@@ -1,0 +1,12 @@
+section.about{
+  .long-msg{
+    padding: 30px;
+    background: $bgSecondaryColor;
+    border-radius: 20px;
+    line-height: 1.5;
+    span{
+      color: $accentPrimaryColor;
+      font-weight: 700;
+    }
+  }
+}

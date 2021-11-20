@@ -1,0 +1,26 @@
+
+@import "./variables";
+@import "./mixin";
+body{
+  background: $bgPrimaryColor;
+  color: $textPrimaryColor;
+  font-family: $fontPrimary;
+  font-size: $fzSS;
+}
+a{
+  text-decoration: none;
+  color: $textSecondaryColor;
+  cursor: pointer;
+}
+@import "./header";
+
+main{
+  padding-left: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  @import "./home";
+  @import "./section";
+  @import "./about";
+  @import "./classes";
+  @import "./skills";
+}

@@ -1,0 +1,70 @@
+section{
+  .table-wrapper{
+    .tab-ttls{
+      display: flex;
+      .tab-ttl{
+        padding: 10px 20px;
+        border-radius: 10px 10px 0 0;
+        background: $bgTab;
+        color: $textPrimaryColor;
+        border: 1px solid $accentPrimaryColor;
+        font-weight: 700;
+        cursor: pointer;
+        @include transition();
+        &.active{
+          background: $accentPrimaryColor;
+          color: $textSecondaryColor;
+          cursor:  default;
+        }
+        &:not(.active):hover{
+          background: $bgTabHover;
+          // Check this out to make a hover action cool
+          // https://www.youtube.com/watch?v=WOSaNbpHNqU
+        }
+      }
+    }
+    .class-wrapper{
+      background: $bgSecondaryColor;
+      border-radius: 0 10px 10px 10px;
+      padding: 30px;
+      .year{
+        display: block;
+        &.active{
+          display: block;
+        }
+        div.semester-table-wrapper{
+          margin-bottom: 50px;
+          h4{
+            margin-bottom: 20px;
+            font-size: $fzMM;
+          }
+          table{
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid $accentPrimaryColor;
+            width: 100%;
+            margin-bottom: 15px;
+            tr{
+              width: 100%;
+              th, td{
+                padding: 5px 10px;
+                border-left: 1px dashed $accentSecondaryColor;
+              }
+              th{
+                background: $bgTh;
+                color: $accentSecondaryColor;
+              }
+              td{
+                border-bottom: 1px dashed $accentSecondaryColor;
+                border-right: 1px dashed $accentSecondaryColor;
+              }
+              th.other{
+                width: 25%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

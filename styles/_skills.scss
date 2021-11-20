@@ -1,0 +1,41 @@
+section{
+  .col-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: $bgSecondaryColor;
+    border-radius: 20px;
+    .left-col{
+      padding: 20px 30px;
+      width: 100%;
+      h4{
+        @include front-back-end-ttl();
+      }
+      div.skills-wrapper{
+        h5{
+          font-size: $fzS;
+        }
+        .confidence-level-wrapper{
+          img{
+            width: 50px;
+          }
+        }
+      }
+    }
+    .center-col{
+      width: 20px;
+      background: $accentPrimaryColor;
+      height: 500px;
+    }
+    .right-col{
+      width: 100%;
+      padding: 20px 30px;
+      h4{
+        @include front-back-end-ttl();
+      }
+      div.skills-wrapper{
+        
+      }
+    }
+  }
+}

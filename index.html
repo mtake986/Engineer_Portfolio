@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Reset.css -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+  <!-- FontAwesome -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.1/css/all.css' integrity='sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp' crossorigin='anonymous'>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quintessential&family=Roboto&display=swap" rel="stylesheet">
+  <!-- css & js -->
+  <link rel='stylesheet' href='./styles/style.css'>
+  <script src='script.js' defer></script>
+</head>
+<body>
+  <header class="side-header">
+    <div class="logo-wrapper">
+      <span class="m">M</span>
+      <span class="t">T</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></li></a>
+        <li><a href="#about"><i class="fas fa-user"></i><span>About</span></li></a>
+        <li><a href="#classes"><i class="fas fa-school"></i><span>Classes</span></li></a>
+        <li><a href="#skills"><i class="fas fa-laptop-code"></i><span>Skills</span></li></a>
+        <li><a href="#works"><i class="fas fa-briefcase"></i><span>Works</span></li></a>
+        <li><a href="#contact"><i class="fas fa-address-card"></i><span>Contact</span></li></a>
+      </ul>
+    </nav>
+    <div class="arrow-wrapper">
+      <span>&#8595;</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="right-col">
+        <img src="files/face.jpg" alt="Masa's face">
+      </div>
+      <div class="left-col">
+        <p class="greeting">Hi there!! I'm</p>
+        <h1>MASAHIRO TAKECHI</h1>
+        <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best full stack developers in a human history.</p>
+        <div class="resume-and-sns-icons">
+          <div class="resume">
+            <a href="files/Resume.docx">Resume</a>
+          </div>
+          <div class="sns-icons">
+            <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mtake986"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCunf6uNCzI7Njmga2CPLVcQ"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://twitter.com/masahirotakechi"><i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about" id="about">
+      <div class="section-border">
+        <div class="border"></div>
+        <span class="border-txt">SOME INFO</span>
+      </div>
+      <h2 class="sec-ttl">ABOUT ME</h2>
+      <div class="long-msg">
+        <p>
+          I'm a full stack developer with primary focus on <span>Python (Django)</span> + <span>JavaScript (React.js)</span>. 
+          Every month, I build a new app to tickle my brain, refine my coding skills, learn more web techs and so much more. Moreover, I am passionate about creating websites and web apps that incorporate interactive design and modern technologies. I specialize in <span>back-end development</span> more, but also love experimenting with new front-end technologies, with the aim to skyrocket speed, productivity, performance, and quality.
+          <!-- I love self-teaching to learn how to code, and now I have more than enough programming knowledge and creativity through self-teaching and college classes.  -->
+        </p>
+      </div>
+    </section>
+
+    <section class="classes" id="classes">
+      <div class="section-border">
+        <div class="border"></div>
+        <span class="border-txt">I'VE TAKEN THESE COLLEGE</span>
+      </div>
+      <h2 class="sec-ttl">CLASSES</h2>
+      <!-- タブ -->
+      <div class="table-wrapper">
+        <div class="tab-ttls">
+          <span class="tab-ttl active">Fr.</span>
+          <span class="tab-ttl">Sp.</span>
+          <span class="tab-ttl">Jr.</span>
+          <span class="tab-ttl">Sr.</span>
+        </div>
+        <div class="class-wrapper">
+          <div class="fr year active">
+            <div class="fall-semester semester-table-wrapper">
+              <h4>Fall</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <!-- Otherはなんかちゃう -->
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>BSA1103</td>
+                  <td>Introduction to Business</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>IND1013</td>
+                  <td>The Making of Pre-modern Europe</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>COM1003</td>
+                  <td>Public Speaking</td>
+                  <td>3</td>
+                  <td>B-</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>HIS2113</td>
+                  <td>United States History I</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ENG1033</td>
+                  <td>Academic Writing</td>
+                  <td>3</td>
+                  <td>C-</td>
+                  <td></td>
+                </tr>
+              </table>
+              <p>※Excuse: I'm not used to take classes in English, so the grades are low.</p>
+            </div>
+            <div class="spring-semester semester-table-wrapper">
+              <h4>Spring</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <!-- Otherはなんかちゃう -->
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>EDU1783</td>
+                  <td>Introduction to Education</td>
+                  <td>3</td>
+                  <td>P</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ENS1023</td>
+                  <td>Environmental Science</td>
+                  <td>3</td>
+                  <td>P</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MTH1023</td>
+                  <td>Mathematical Literacy</td>
+                  <td>3</td>
+                  <td>P</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MTH1033</td>
+                  <td>College Algebra</td>
+                  <td>3</td>
+                  <td>P</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="sp year active">
+            <div class="fall-semester semester-table-wrapper">
+              <h4>Fall</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <!-- Otherはなんかちゃう -->
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>HSC1023</td>
+                  <td>Personal Health and Safety</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MGT2003</td>
+                  <td>Survey of Management</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MKT2003</td>
+                  <td>Marketing Concepts</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SPN1105</td>
+                  <td>Intensive Elementary Spanish I</td>
+                  <td>5</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <div class="spring-semester semester-table-wrapper">
+              <h4>Spring</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <!-- Otherはなんかちゃう -->
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>PSY1003</td>
+                  <td>General Psychology</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>PSY2023</td>
+                  <td>Abnormal Psychology</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MTH1053</td>
+                  <td>Intro to Statistics</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ECN2013</td>
+                  <td>Principles of Microeconomics</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SPN 1205</td>
+                  <td>Intensive Elementary Spanish II</td>
+                  <td>5</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="jr year">
+            <div class="fall-semester semester-table-wrapper">
+              <h4>Fall</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <!-- Otherはなんかちゃう -->
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>CSE100</td>
+                  <td>Introduction to Computing</td>
+                  <td>1</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CSE170</td>
+                  <td>Technical Teamwork</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CSE212</td>
+                  <td>Programming with Data Structures</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>WDD130</td>
+                  <td>Wed Fundamentals</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CIT111</td>
+                  <td>Introduction to Databases</td>
+                  <td>3</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>CIT171</td>
+                  <td>Introduction to Cybersecurity</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ECEN106</td>
+                  <td>Computer Systems</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>REL225C</td>
+                  <td>Foundations of the Restoration</td>
+                  <td>2</td>
+                  <td>A+</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <!--
+              <div class="winter-semester semester-table-wrapper">
+                <h4>Winter</h4>
+                <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  Otherはなんかちゃう 
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>PSY1003</td>
+                  <td>General Psychology</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>PSY2023</td>
+                  <td>ABNORMAL PSYCHOLOGY</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MTH1053</td>
+                  <td>INTRO TO STATISTICS I</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ECN2013</td>
+                  <td>PRINCIPLES OF MICROECONOMICS</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SPN 1205</td>
+                  <td>INTENSIVE ELEMENTARY SPANISH II</td>
+                  <td>5</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <div class="spring-semester semester-table-wrapper">
+              <h4>Spring</h4>
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th class="wide">Name</th>
+                  <th>Credit</th>
+                  <th>Grade</th>
+                  <th class="other wide">Other</th>
+                </tr>
+                <tr>
+                  <td>PSY1003</td>
+                  <td>General Psychology</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>PSY2023</td>
+                  <td>ABNORMAL PSYCHOLOGY</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>MTH1053</td>
+                  <td>INTRO TO STATISTICS I</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ECN2013</td>
+                  <td>PRINCIPLES OF MICROECONOMICS</td>
+                  <td>3</td>
+                  <td>A</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>SPN 1205</td>
+                  <td>INTENSIVE ELEMENTARY SPANISH II</td>
+                  <td>5</td>
+                  <td>B+</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          -->
+          <div class="sr">
+
+          </div>
+        </div>
+      </div>
+      <div class="byui"></div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-border">
+        <div class="border"></div>
+        <span class="border-txt">WATCH OUT MY</span>
+      </div>
+      <h2 class="sec-ttl">SKILLS</h2>
+      <div class="col-wrapper">
+        <div class="left-col">
+          <h4>Front-end</h4>
+          <div class="skills-wrapper">
+            <div class="skill-wrapper">
+              <h5>HTML</h5>
+              <div class="confidence-level-wrapper">
+                <img src="files/html.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-col"></div>
+        <div class="right-col">
+          <h4>Back-end</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>

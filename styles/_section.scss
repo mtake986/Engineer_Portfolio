@@ -1,0 +1,23 @@
+section{
+  // height: 70vh;
+  margin-bottom: 200px;
+  div.section-border{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10px;
+    .border{
+      width: 50px;
+      border-bottom: 1px solid $textPrimaryColor;
+    }
+    .border-txt{
+      margin-left: 15px;
+      font-size: $fzExs;
+      line-height: 10%;
+    }
+  }
+  h2{
+    font-size: $fzMM;
+    margin: 10px 0 50px;
+  }
+}
