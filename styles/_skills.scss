@@ -12,20 +12,51 @@ section{
         @include front-back-end-ttl();
       }
       div.skills-wrapper{
-        h5{
-          font-size: $fzS;
+        // h5{
+        //   font-size: $fzS;
+        // }
+        p{
+          font-size: $fzSS;
         }
-        .confidence-level-wrapper{
-          img{
-            width: 50px;
+        .icons-wrapper{
+          border-left: 1px solid $textPrimaryColor;
+          margin: 20px 0px 20px 20px;
+          padding: 20px 0px 20px 20px;
+          div.five, .four, .three, .two, .one{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .skill-wrapper{
+              padding: 10px;
+              box-shadow: 0px 1px 10px rgb(197, 197, 197);
+              border-radius: 5px;
+              width: 40px;
+              height: 50px;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              h6{
+                font-size: $fzExss;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 10px;
+              }
+              img{
+                margin-bottom: 15px;
+                @include skill-icon();
+              }
+            }
           }
         }
       }
     }
     .center-col{
       width: 20px;
-      background: $accentPrimaryColor;
-      height: 500px;
+      background: $bgPrimaryColor;
+      height: 600px;
     }
     .right-col{
       width: 100%;
@@ -34,7 +65,45 @@ section{
         @include front-back-end-ttl();
       }
       div.skills-wrapper{
-        
+        // h5{
+        //   font-size: $fzS;
+        // }
+        p{
+          font-size: $fzSS;
+        }
+        .icons-wrapper{
+          border-left: 1px solid $textPrimaryColor;
+          margin: 20px 0px 20px 20px;
+          padding: 20px 0px 20px 20px;
+          div.five, .four, .three, .two, .one{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .skill-wrapper{
+              padding: 10px;
+              box-shadow: 0px 1px 10px rgb(197, 197, 197);
+              border-radius: 5px;
+              width: 40px;
+              height: 50px;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              h6{
+                font-size: $fzExss;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 10px;
+              }
+              img{
+                margin-bottom: 15px;
+                @include skill-icon();
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -146,7 +146,7 @@ header .arrow-wrapper span {
 main {
   padding-left: 100px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 150px auto 0;
 }
 
 main section.home {
@@ -383,18 +383,66 @@ main section .col-wrapper .left-col h4 {
   margin-bottom: 10px;
 }
 
-main section .col-wrapper .left-col div.skills-wrapper h5 {
-  font-size: 1rem;
+main section .col-wrapper .left-col div.skills-wrapper p {
+  font-size: 1.2rem;
 }
 
-main section .col-wrapper .left-col div.skills-wrapper .confidence-level-wrapper img {
-  width: 50px;
+main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper {
+  border-left: 1px solid #333;
+  margin: 20px 0px 20px 20px;
+  padding: 20px 0px 20px 20px;
+}
+
+main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper div.five, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .four, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .three, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .two, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .one {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper {
+  padding: 10px;
+  -webkit-box-shadow: 0px 1px 10px #c5c5c5;
+          box-shadow: 0px 1px 10px #c5c5c5;
+  border-radius: 5px;
+  width: 40px;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6 {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section .col-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img {
+  margin-bottom: 15px;
+  width: 30px;
 }
 
 main section .col-wrapper .center-col {
   width: 20px;
-  background: #8444DF;
-  height: 500px;
+  background: #f7f7f7;
+  height: 600px;
 }
 
 main section .col-wrapper .right-col {
@@ -407,5 +455,61 @@ main section .col-wrapper .right-col h4 {
   font-size: 2rem;
   font-family: "Quintessential", cursive;
   margin-bottom: 10px;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper p {
+  font-size: 1.2rem;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper {
+  border-left: 1px solid #333;
+  margin: 20px 0px 20px 20px;
+  padding: 20px 0px 20px 20px;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper div.five, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .four, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .three, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .two, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .one {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper {
+  padding: 10px;
+  -webkit-box-shadow: 0px 1px 10px #c5c5c5;
+          box-shadow: 0px 1px 10px #c5c5c5;
+  border-radius: 5px;
+  width: 40px;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6 {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section .col-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img {
+  margin-bottom: 15px;
+  width: 30px;
 }
 /*# sourceMappingURL=style.css.map */
