@@ -20,4 +20,9 @@ section{
     font-size: $fzMM;
     margin: 10px 0 50px;
   }
+  .section-body-wrapper{
+    padding: 30px;
+    background: $bgSecondaryColor;
+    border-radius: 20px;
+  }
 }

@@ -17,10 +17,19 @@ a{
 main{
   padding-left: 100px;
   max-width: 900px;
-  margin: 150px auto 0;
+  margin: 0px auto;
   @import "./home";
   @import "./section";
   @import "./about";
   @import "./classes";
   @import "./skills";
+  @import "./works";
+}
+@keyframes arrow-move {
+	0%, 100% {
+    transform: translateY(0);
+	}
+	50% {
+    transform: translateY(10px);
+	}
 }
