@@ -1,5 +1,95 @@
 section.works{
   .section-body-wrapper{
-    
+    padding: 50px;
+    .each-work{
+      display: grid;
+      grid-template:
+        "ttl ttl" 40px
+        "img features" 180px
+        "source-and-site made-of" 70px /
+        300px 1fr;
+      grid-gap: 20px;
+      padding: 30px;
+      box-shadow: 0px 0px 15px -5px rgba(161, 161, 161, 0.79);
+      margin-bottom: 50px;
+      h3{
+        grid-area: ttl;
+        font-size: $fzL;
+        font-family: $fontAccent;
+        color: $accentPrimaryColor;
+        color: $accentSecondaryColor;
+        text-align: center;
+      }
+      img{
+        grid-area: img;
+        width: 300px;
+      }
+      div.source-site-wrapper{
+        grid-area: source-and-site;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        div{
+          // font-size: $fzSS;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+          &:not(:last-child){
+            margin-bottom: 5px;
+          }
+          i{
+            color: $accentPrimaryColor;
+            font-size: $fzM;
+            margin-right: 15px;
+          }
+          a{
+            color: $textPrimaryColor;
+            color: rgb(72, 182, 255);
+            font-size: $fzSS;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      div.features-wrapper{
+        grid-area: features;
+        p{
+          font-size: $fzM;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        ul{
+          li{
+            font-size: $fzSS;
+            margin-bottom: 5px;
+            list-style: circle;
+            margin-left: 25px;
+          }
+        }
+      }
+      div.made-of-wrapper{
+        grid-area: made-of;
+        p.made-of{
+          font-size: $fzM;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        p.components{
+          color: $textPrimaryColor;
+          font-size: $fzS;
+          span{
+            color: $accentPrimaryColor;
+            font-size: $fzSS;
+          }
+          img{
+            width: 30px;
+            display: inline;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
   }
 }
