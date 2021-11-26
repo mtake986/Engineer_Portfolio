@@ -1,8 +1,9 @@
 section.about{
   .section-body-wrapper{
     .long-msg{
-      line-height: 1.5;
-      span{
+      font-size: $fzM;
+      line-height: 2;
+      span.color{
         color: $accentPrimaryColor;
         font-weight: 700;
       }

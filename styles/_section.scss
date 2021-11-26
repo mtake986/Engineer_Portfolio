@@ -1,6 +1,6 @@
 section{
   // height: 70vh;
-  margin-bottom: 200px;
+  padding: 100px 0px;
   div.section-border{
     display: flex;
     justify-content: flex-start;
@@ -21,8 +21,8 @@ section{
     margin: 10px 0 50px;
   }
   .section-body-wrapper{
-    padding: 30px;
+    padding: 50px;
     background: $bgSecondaryColor;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 }

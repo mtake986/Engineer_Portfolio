@@ -1,11 +1,29 @@
 section.classes{
+  // height: 100vh;
   .section-body-wrapper{
+    padding: 0;
     background: none;
-    .table-wrapper{
-      .tab-ttls{
-        display: flex;
-        .tab-ttl{
-          padding: 10px 20px;
+    .tab-ttls{
+      // margin-bottom: 20px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .tab-wrapper{
+        &.active > .tab-ttl{
+          background: $accentPrimaryColor;
+          color: $textSecondaryColor;
+          cursor: default;
+          pointer-events: none;
+          &:hover{
+            background: $accentPrimaryColor;
+          }
+        }
+        & > .tab-ttl{
+          line-height: 45px;
+          display: inline-block;
+          width: 70px;
+          text-align: center;
+          // padding: 10px 20px;
           border-radius: 10px 10px 0 0;
           background: $bgTab;
           color: $textPrimaryColor;
@@ -13,55 +31,76 @@ section.classes{
           font-weight: 700;
           cursor: pointer;
           @include transition();
-          &.active{
-            background: $accentPrimaryColor;
-            color: $textSecondaryColor;
-            cursor:  default;
-          }
-          &:not(.active):hover{
+          &:hover{
             background: $bgTabHover;
             // Check this out to make a hover action cool
             // https://www.youtube.com/watch?v=WOSaNbpHNqU
           }
         }
       }
+    }
+    .table-wrapper{
       .class-wrapper{
         background: $bgSecondaryColor;
-        border-radius: 0 10px 10px 10px;
-        padding: 30px;
+        height: 800px;
+        border-radius: 0 50px 50px 50px;
+        // padding: 30px;
+        position: relative;
         .year{
-          display: block;
+          // background: $bgSecondaryColor;
+          position: absolute;
+          // top: 30px;
+          // left: 30px;
+          padding: 40px;
+          width: 100%;
+          transform: scale(0);
+          opacity: 0;
+          visibility: hidden;
+          // display: none;
+          @include transition();
+          animation-delay: 1s;
           &.active{
-            display: block;
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+            // display: block;
           }
-          div.semester-table-wrapper{
-            margin-bottom: 50px;
-            h4{
-              margin-bottom: 20px;
-              font-size: $fzMM;
-            }
-            table{
-              text-align: center;
-              border-collapse: collapse;
-              border: 1px solid $accentPrimaryColor;
-              width: 100%;
-              margin-bottom: 15px;
-              tr{
+          .fr, .sp, .jr, .sr{
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            
+            // transform: scale(0);
+            // opacity: 0;
+            div.semester-table-wrapper{
+              margin-bottom: 50px;
+              h4{
+                margin-bottom: 20px;
+                font-size: $fzMM;
+              }
+              table{
+                text-align: center;
+                border-collapse: collapse;
+                border: 1px solid $accentPrimaryColor;
                 width: 100%;
-                th, td{
-                  padding: 5px 10px;
-                  border-left: 1px dashed $accentSecondaryColor;
-                }
-                th{
-                  background: $bgTh;
-                  color: $accentSecondaryColor;
-                }
-                td{
-                  border-bottom: 1px dashed $accentSecondaryColor;
-                  border-right: 1px dashed $accentSecondaryColor;
-                }
-                th.other{
-                  width: 25%;
+                margin-bottom: 15px;
+                tr{
+                  width: 100%;
+                  th, td{
+                    padding: 5px 10px;
+                    border-left: 1px dashed $accentSecondaryColor;
+                  }
+                  th{
+                    background: $bgTh;
+                    color: $accentSecondaryColor;
+                  }
+                  td{
+                    border-bottom: 1px dashed $accentSecondaryColor;
+                    border-right: 1px dashed $accentSecondaryColor;
+                  }
+                  th.other{
+                    width: 20%;
+                  }
                 }
               }
             }

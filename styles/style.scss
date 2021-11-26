@@ -1,10 +1,14 @@
 
 @import "./variables";
 @import "./mixin";
+*{
+  box-sizing: border-box;
+  line-height: 1.2;
+}
 body{
   background: $bgPrimaryColor;
   color: $textPrimaryColor;
-  font-family: $fontPrimary;
+  font-family: $fontSecondary;
   font-size: $fzSS;
 }
 a{
@@ -12,11 +16,16 @@ a{
   color: $textSecondaryColor;
   cursor: pointer;
 }
+// h1, h2, h3, h4, h5, h6{
+//   font-family: $fontAccent;
+// }
 @import "./header";
-
+// body{
+//   margin-left: 150px;
+// }
 main{
   padding-left: 100px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0px auto;
   @import "./home";
   @import "./section";
