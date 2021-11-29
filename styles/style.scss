@@ -24,9 +24,6 @@ a{
 //   font-family: $fontAccent;
 // }
 @import "./header";
-// body{
-//   margin-left: 150px;
-// }
 main{
   padding-left: 100px;
   max-width: 1000px;
@@ -39,4 +36,5 @@ main{
   @import "./works";
   @import "./contact";
 }
+@import "./footer";
 // width: clamp(200px, preferred, 500px);

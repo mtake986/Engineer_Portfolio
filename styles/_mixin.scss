@@ -165,3 +165,8 @@ works-left-right-col-link{
     color: $textPrimaryColor;
   } 
 }
+hover-underline{
+  &:hover{
+    text-decoration: underline;
+  }
+}
