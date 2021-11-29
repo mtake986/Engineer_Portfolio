@@ -1,112 +1,30 @@
 section.skills{
   .section-body-wrapper{
-    .col-wrapper{
-      display: flex;
-      justify-content: center;
-      align-items: start;
+    .front-back-end-wrapper{
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // gap: 20px;
+      display: grid;
+      grid-template: 
+        "l-c c-c r-c" 650px /
+        1fr 15px 1fr;
       background: $bgSecondaryColor;
       border-radius: 20px;
       .left-col{
-        padding: 20px 30px;
-        width: 100%;
-        h4{
-          @include front-back-end-ttl();
-        }
-        div.skills-wrapper{
-          p{
-            font-size: $fzSS;
-          }
-          .icons-wrapper{
-            border-left: 1px solid $textPrimaryColor;
-            margin: 20px 0px 20px 20px;
-            padding: 20px 0px 20px 20px;
-            div.five, .four, .three, .two, .one{
-              height: 80px;
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              .skill-wrapper{
-                padding: 10px 7px;
-                box-shadow: 0px 1px 10px rgb(197, 197, 197);
-                border-radius: 5px;
-                width: 55px;
-                height: 70px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                img{
-                  margin-bottom: 20px;
-                  @include skill-icon();
-                }
-                h6{
-                  font-size: $fzExss;
-                  margin-top: 5px;
-                  position: absolute;
-                  bottom: 7px;
-                  text-align: center;
-                }
-              }
-            }
-          }
-        }
+        grid-area: l-c;
+        @extend skills-five-rate-left-right-col;
       }
       .center-col{
-        width: 20px;
+        grid-area: c-c;
+        width: 10px;
         background: $bgPrimaryColor;
         height: 650px;
       }
       .right-col{
-        width: 100%;
-        padding: 20px 30px;
-        h4{
-          @include front-back-end-ttl();
-        }
-        div.skills-wrapper{
-          // h5{
-          //   font-size: $fzS;
-          // }
-          p{
-            font-size: $fzSS;
-          }
-          .icons-wrapper{
-            border-left: 1px solid $textPrimaryColor;
-            margin: 20px 0px 20px 20px;
-            padding: 20px 0px 20px 20px;
-            div.five, .four, .three, .two, .one{
-              height: 80px;
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              .skill-wrapper{
-                padding: 10px 7px;
-                box-shadow: 0px 1px 10px rgb(197, 197, 197);
-                border-radius: 5px;
-                // width: 40px;
-                // height: 50px;
-                width: 55px;
-                height: 70px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                h6{
-                  font-size: $fzExss;
-                  margin-top: 5px;
-                  position: absolute;
-                  bottom: 7px;
-                  text-align: center;
-                }
-                img{
-                  margin-bottom: 20px;
-                  @include skill-icon();
-                }
-              }
-            }
-          }
-        }
+        grid-area: r-c;
+        padding-left: 30px;
+        @extend skills-five-rate-left-right-col;
       }
     }
     .in-progress-wrapper{
@@ -117,7 +35,7 @@ section.skills{
         align-items: center;
         margin: 30px 0;
         div.two-arrows{
-          animation: arrow-move 1.5s infinite ease-out;
+          animation: arrow-move 1s infinite ;
         }
         h4{
           @include front-back-end-ttl();
@@ -125,78 +43,86 @@ section.skills{
         }
       }
       .col-wrapper{
+        display: grid;
+        grid-template: 
+          "l-c c-c r-c" 1fr /
+          1fr 10px 1fr;
         .left-col{
-          div.skills-wrapper{
-            // Idk haha
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            .skill-wrapper{
-              padding: 10px 7px;
-              box-shadow: 0px 1px 10px rgb(197, 197, 197);
-              border-radius: 5px;
-              // width: 40px;
-              // height: 50px;
-              width: 55px;
-              height: 70px;
-              position: relative;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              h6{
-                font-size: $fzExss;
-                margin-top: 5px;
-                position: absolute;
-                bottom: 7px;
-                text-align: center;
-              }
-              img{
-                margin-bottom: 20px;
-                @include skill-icon();
-              }
-            }
-          }
+          @extend skills-in-progress-left-right-col;
+        //   div.skills-wrapper{
+        //     // Idk haha
+        //     height: 80px;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     gap: 10px;
+        //     .skill-wrapper{
+        //       padding: 10px 7px;
+        //       box-shadow: 0px 1px 10px rgb(197, 197, 197);
+        //       border-radius: 5px;
+        //       // width: 40px;
+        //       // height: 50px;
+        //       width: 55px;
+        //       height: 70px;
+        //       position: relative;
+        //       display: flex;
+        //       flex-direction: column;
+        //       align-items: center;
+        //       justify-content: center;
+        //       h6{
+        //         font-size: $fzExss;
+        //         margin-top: 5px;
+        //         position: absolute;
+        //         bottom: 7px;
+        //         text-align: center;
+        //       }
+        //       img{
+        //         margin-bottom: 20px;
+        //         @include skill-icon();
+        //       }
+        //     }
+        //   }
         }
         .center-col{
-          height: 100px;
+          height: 80px;
+          width: 10px;
+          background: $bgPrimaryColor;
         }
         .right-col{
-          div.skills-wrapper{
-            // Idk haha
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            .skill-wrapper{
-              padding: 10px 7px;
-              box-shadow: 0px 1px 10px rgb(197, 197, 197);
-              border-radius: 5px;
-              // width: 40px;
-              // height: 50px;
-              width: 55px;
-              height: 70px;
-              position: relative;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              h6{
-                font-size: $fzExss;
-                margin-top: 5px;
-                position: absolute;
-                bottom: 7px;
-                text-align: center;
-              }
-              img{
-                margin-bottom: 20px;
-                @include skill-icon();
-              }
-            }
-          }
+          @extend skills-in-progress-left-right-col;
+          // div.skills-wrapper{
+          //   // Idk haha
+          //   height: 80px;
+          //   display: flex;
+          //   align-items: center;
+          //   justify-content: center;
+          //   gap: 10px;
+          //   .skill-wrapper{
+          //     padding: 10px 7px;
+          //     box-shadow: 0px 1px 10px rgb(197, 197, 197);
+          //     border-radius: 5px;
+          //     // width: 40px;
+          //     // height: 50px;
+          //     width: 55px;
+          //     height: 70px;
+          //     position: relative;
+          //     display: flex;
+          //     flex-direction: column;
+          //     align-items: center;
+          //     justify-content: center;
+          //     h6{
+          //       font-size: $fzExss;
+          //       margin-top: 5px;
+          //       position: absolute;
+          //       bottom: 7px;
+          //       text-align: center;
+          //     }
+          //     img{
+          //       margin-bottom: 20px;
+          //       @include skill-icon();
+          //     }
+          //   }
+          // }
         }
       }
     }

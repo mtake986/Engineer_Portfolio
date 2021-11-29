@@ -1,13 +1,17 @@
 
 @import "./variables";
 @import "./mixin";
+@import "./keyframes";
 *{
   box-sizing: border-box;
   line-height: 1.2;
 }
+html{
+  scroll-behavior: smooth;
+  color: $textPrimaryColor;
+}
 body{
   background: $bgPrimaryColor;
-  color: $textPrimaryColor;
   font-family: $fontSecondary;
   font-size: $fzSS;
 }
@@ -33,12 +37,6 @@ main{
   @import "./classes";
   @import "./skills";
   @import "./works";
+  @import "./contact";
 }
-@keyframes arrow-move {
-	0%, 100% {
-    transform: translateY(0);
-	}
-	50% {
-    transform: translateY(10px);
-	}
-}
+// width: clamp(200px, preferred, 500px);
