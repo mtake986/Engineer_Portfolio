@@ -10,16 +10,16 @@ section.works{
         300px 1fr;
       grid-gap: 20px;
       padding: 30px;
-      box-shadow: 0px 0px 15px -5px rgba(161, 161, 161, 0.79);
+      box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
       margin-bottom: 50px;
-      border: 1px solid $bgPrimaryColor;
+      border: 1px solid var(--bgPrimaryColor);
       border-radius: 30px;
       h3{
         grid-area: ttl;
         font-size: $fzL;
         font-family: $fontAccent;
-        color: $accentPrimaryColor;
-        color: $accentSecondaryColor;
+        color: var(--accentPrimaryColor);
+        color: var(--accentSecondaryColor);
         text-align: center;
       }
       img.works-img{
@@ -43,13 +43,13 @@ section.works{
             margin-bottom: 5px;
           }
           i{
-            color: $accentPrimaryColor;
+            color: var(--accentPrimaryColor);
             font-size: $fzM;
             margin-right: 15px;
           }
           a{
-            color: $textPrimaryColor;
-            color: $linkColor;
+            color: var(--textPrimaryColor);
+            color: var(--linkColor);
             font-size: $fzSS;
             &:hover{
               text-decoration: underline;
@@ -81,10 +81,10 @@ section.works{
           margin-bottom: 5px;
         }
         p.components{
-          color: $textPrimaryColor;
+          color: var(--textPrimaryColor);
           font-size: $fzS;
           span{
-            color: $accentPrimaryColor;
+            color: var(--accentPrimaryColor);
             font-size: $fzSS;
           }
           img{

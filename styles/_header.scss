@@ -8,14 +8,39 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  background: $accentPrimaryColor;
-  color: $textSecondaryColor;
-  @include transition();
+  background: var(--accentPrimaryColor);
+  color: white;
+  transition: .3s;
+  @include pc{
+    left: -200px;
+    &.active{
+      left: 0px;
+      transition: .3s;
+      // animation: side-header-resp .5s;
+    }
+  }
   &:hover{
     width: 200px;
+    nav{
+      ul{
+        li{
+          white-space: nowrap;
+          // &:hover{
+            a{
+              span{
+                animation: fade-in-icons 1s;
+                opacity: 1;
+                visibility: visible;
+                display: inline;
+              }
+            }
+          // }
+        }
+      }
+    }
   }
   .logo-wrapper{
-    background: $accentSecondaryColor;
+    background: var(--accentSecondaryColor);
     height: 120px;
     display: flex;
     justify-content: center;
@@ -31,10 +56,10 @@ header{
     }
   }
   nav{
+    padding: 0 20px;
     ul{
       display: flex;
       flex-direction: column;
-      align-items: center;
       li{
         &:not(:last-child){
           margin-bottom: 10px;
@@ -42,24 +67,36 @@ header{
         a{
           display: inline-block;
           padding: 15px 30px;
-          @include transition(.1s);
           border-radius: 10px;
+          transition: .3s;
           &:hover{
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba( 255, 255, 255, 0.2 );
+            box-shadow: 2px 2px 5px 0px white;
+            backdrop-filter: blur( 4px );
+            // -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            // border: 1px solid rgba( 255, 255, 255, 0.18 );
           }
           i{
             height: 20px;
+            width: 20px;
+            text-align: center;
+            color: white;
           }
           span{
+            color: white;
+            opacity: 0;
+            visibility: hidden;
             display: none;
             margin-left: 20px;
+            font-size: $fzS;
           }
         }
       }
     }
   }
   .arrow-wrapper{
-    // background: $accentPrimaryColor;
+    // background: var(--accentPrimaryColor);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -70,12 +107,4 @@ header{
       animation: arrow-move 1.5s infinite ease-out;
     }
   }
-}
-@keyframes arrow-move {
-	0%, 100% {
-    transform: translateY(0);
-	}
-	50% {
-    transform: translateY(10px);
-	}
 }

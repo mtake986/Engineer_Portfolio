@@ -15,13 +15,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins&family=Quintessential&family=Roboto&display=swap" rel="stylesheet">
+  <!-- 日本語フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Yuji+Syuku&display=swap" rel="stylesheet">
 
   <!-- css & js -->
-  <link rel='stylesheet' href='./styles/style.css'>
+  <link rel='stylesheet' type="text/css" href='./styles/style.css'>
+  <link rel="stylesheet" type="text/css" href="" id="theme-style">
   <script src='script.js' defer></script>
 </head>
-<body>
-  <header class="side-header">
+<body id="en">
+  <!-- <div class="black-cover"></div> -->
+  <header class="side-header" id="side-header">
     <div class="logo-wrapper">
       <span class="m">M</span>
       <span class="t">T</span>
@@ -43,23 +49,40 @@
 
   <main>
     <section class="home" id="home">
-      <div class="right-col">
-        <img src="files/face.jpg" alt="Masa's face">
+      <div class="toggle-icon-wrapper">
+        <div class="toggle-icon" id="toggle"></div>
       </div>
-      <div class="left-col">
-        <p class="greeting">Hi there!! I'm</p>
-        <h1>MASAHIRO TAKECHI</h1>
-        <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best full stack developers in a human history.</p>
-        <div class="resume-and-sns-icons">
-          <div class="resume">
-            <a href="files/Resume.docx">Resume</a>
+      <!-- <div class="theme-change-wrapper">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-exchange-alt"></i>
+        <i class="fas fa-moon"></i>
+      </div> -->
+      <div class="body-wrapper">
+        <div class="grid">
+          <img src="files/face.jpg" alt="Masa's face">
+          <div class="appearance-wrapper">
+            <h4>Appearance</h4>
+            <div class="dots-wrapper">
+              <div data-mode="light" id="white-mode" class="theme-dot"></div>
+              <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+            </div>
           </div>
-          <div class="sns-icons">
-            <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/mtake986"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/channel/UCunf6uNCzI7Njmga2CPLVcQ"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/masahirotakechi"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@masahirotakechi?lang=en"><i class="fab fa-tiktok"></i></a>
+          <div class="greeting-wrapper">
+            <p class="greeting">Hi there!! I'm</p>
+            <h1>MASAHIRO TAKECHI</h1>
+            <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best full stack developers in a human history.</p>
+          </div>
+          <div class="resume-and-sns-icons">
+            <div class="resume">
+              <a href="files/Resume.docx">Resume</a>
+            </div>
+            <div class="sns-icons">
+              <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/mtake986"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UCunf6uNCzI7Njmga2CPLVcQ"><i class="fab fa-youtube"></i></a>
+              <a href="https://twitter.com/masahirotakechi"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/@masahirotakechi?lang=en"><i class="fab fa-tiktok"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -552,7 +575,7 @@
       <div class="section-body-wrapper">
         <div class="front-back-end-wrapper">
           <div class="left-col">
-            <h4>FRONT END + α</h4>
+            <h4>FRONT END <span> etc.</span></h4>
             <div class="skills-wrapper">
               <!-- <h5>HTML</h5> -->
               <!-- <div class="skills-arrow"></div> -->
@@ -615,7 +638,7 @@
           </div>
           <div class="center-col"></div>
           <div class="right-col">
-            <h4>BACK-END + α</h4>
+            <h4>BACK-END <span> etc.</span></h4>
             <div class="skills-wrapper">
               <!-- <h5>HTML</h5> -->
               <p>Pro</p>
@@ -808,6 +831,8 @@
               <p class="email-address">tak21011@byui.edu</p>
               <p class="sm-txt">Shoot me an email!</p>
             </a>
+            <!-- <p class="email-ttl">Email</p> -->
+            <!-- <span></span> -->
           </div>
           <div class="right-col">
             <a href="https://calendly.com/masahirotakechi" id="calendly">
@@ -829,7 +854,7 @@
 
   <footer>
     <p>&copy; Masahiro Takechi All Rights Reserved. 
-      <a href="index_jp.html">日本語<i class="fas fa-external-link-alt"></i></a>
+      <!-- <a href="index_jp.html">日本語<i class="fas fa-external-link-alt"></i></a> -->
     </p>
   </footer>
 </body>

@@ -9,7 +9,7 @@ section{
     height: 10px;
     .border{
       width: 50px;
-      border-bottom: 1px solid $textPrimaryColor;
+      border-bottom: 1px solid var(--textPrimaryColor);
     }
     .border-txt{
       margin-left: 15px;
@@ -23,7 +23,7 @@ section{
   }
   .section-body-wrapper{
     padding: 50px;
-    background: $bgSecondaryColor;
+    background: var(--bgSecondaryColor);
     border-radius: 50px;
   }
 }

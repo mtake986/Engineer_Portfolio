@@ -1,7 +1,7 @@
 section.contact{
   .section-body-wrapper{
     padding: 50px;
-    color: $textPrimaryColor;
+    color: var(--textPrimaryColor);
     h3.get-in-touch{
       font-size: $fzMM;
       margin-bottom: 30px;
@@ -10,13 +10,14 @@ section.contact{
       display: flex;
       gap: 50px;
       .left-col, .right-col{
+        position: relative;
         width: 100%;
         text-align: center;
         box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
         margin-bottom: 20px;
-        border: 1px solid $bgPrimaryColor;
+        border: 1px solid var(--bgPrimaryColor);
         border-radius: 30px;
-        @include transition(.3s);
+        transition: .3s;
         &:hover{
           box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
         }
@@ -25,6 +26,47 @@ section.contact{
         }
         a#calendly{
           @extend works-left-right-col-link;
+        }
+        // p.email-ttl{
+        //   position: absolute;
+        //   top: 30px;
+        //   left: 20px;
+        //   transform: rotate(-45deg);
+        // }
+        span{
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          width: 120px;
+          height: 120px;
+          // background: red;
+          @include flex-cen-cen();
+          overflow: hidden;
+          z-index: 0;
+          &::before{
+            content: "Email";
+            position: absolute;
+            width: 150%;
+            height: 30px;
+            background: var(--accentPrimaryColor);
+            transform: rotate(-45deg) translateY(-20px);
+            @include flex-cen-cen();
+            text-transform: uppercase;
+            color: var(--textSecondaryColor);
+            font-size: $fzS;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          }
+          &::after{
+            z-index: -1;
+            content: "";
+            position: absolute;
+            bottom: 7px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background: #5318a5;
+            box-shadow: 103px -103px #5318a5;
+          }
         }
       }
     }

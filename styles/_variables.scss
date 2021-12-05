@@ -1,17 +1,6 @@
-$accentPrimaryColor: #8444DF;
-$accentSecondaryColor: #773DC8;
-$textPrimaryColor: #333;
-$textSecondaryColor: white;
-$bgPrimaryColor: #f7f7f7;
-$bgSecondaryColor: #fff;
-$linkColor: rgb(42, 170, 255);
 
-// College
-$bgTab: #fff;
-$bgTabHover: #f7f7f7;
-$bgTh: #ece0ff;
-
-
+$fzExll: 4rem;
+$fzExl: 3rem;
 $fzLL: 2.5rem;
 $fzL: 2rem;
 $fzMM: 1.8rem;
@@ -21,6 +10,41 @@ $fzS: 1rem;
 $fzExs: .9rem;
 $fzExss: .8rem;
 
-$fontAccent: 'Quintessential', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Trade+Winds&display=swap');
+
+$fontAccent: 'Carter One', cursive;
+$fontMyName: 'Carter One', cursive;
 $fontPrimary: 'Roboto', sans-serif;
 $fontSecondary: 'Poppins', sans-serif;
+
+
+$jpfontAccent: 'Yuji Syuku', serif;
+$jpfontPrimary: 'Noto Sans JP', sans-serif;
+
+
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+// $lg-pc: 1200px;
+
+// @media screen and (max-width: $md) {
+//   body{
+//     margin: 0 auto;
+//     width: 95%;
+//   }
+// }
+@mixin mobile{
+  @media screen and (max-width: $sm){
+    @content;
+  }
+}
+@mixin tablet{
+  @media screen and (max-width: $md){
+    @content;
+  }
+}
+@mixin pc{
+  @media screen and (max-width: $lg){
+    @content;
+  }
+}

@@ -1,12 +1,12 @@
 footer{
-  background: $bgSecondaryColor;
+  background: var(--bgSecondaryColor);
   width: 100%;
   p{
     padding: 10px 0;
     text-align: center;
     font-size: $fzExs;
     a{
-      color: $linkColor;
+      color: var(--linkColor);
       cursor: pointer;
       @extend hover-underline;
       margin-left: 20px;

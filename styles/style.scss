@@ -1,33 +1,74 @@
 
+:root{
+  --accentPrimaryColor: #9b54ff;
+  --accentSecondaryColor: #773DC8;
+  --textPrimaryColor: #333;
+  --textSecondaryColor: #fff;
+  --bgPrimaryColor: #f7f7f7;
+  --bgSecondaryColor: #fff;
+  --linkColor: rgb(42, 170, 255);
+  --hoverBoxShadowColor: #333;
+  --bgTab: #fff;
+  --bgTabHover: #f7f7f7;
+  --bgTh: #ece0ff;
+}
 @import "./variables";
+// @import "../jp_styles/jp_variables";
 @import "./mixin";
 @import "./keyframes";
+
+
 *{
   box-sizing: border-box;
   line-height: 1.2;
 }
 html{
   scroll-behavior: smooth;
-  color: $textPrimaryColor;
+  color: var(--textPrimaryColor);
 }
+
 body{
-  background: $bgPrimaryColor;
+  background: var(--bgPrimaryColor);
   font-family: $fontSecondary;
   font-size: $fzSS;
 }
+// &::selection{
+//   background: var(--accentPrimaryColor);
+//   color: var(--textPrimaryColor);
+// }
 a{
   text-decoration: none;
-  color: $textSecondaryColor;
+  color: var(--textSecondaryColor);
   cursor: pointer;
 }
 // h1, h2, h3, h4, h5, h6{
 //   font-family: $fontAccent;
 // }
+// div.black-cover{
+//   height: 100vh;
+//   width: 100vw;
+//   position: fixed;
+//   z-index: 10;
+//   background: #000;
+//   display: none;
+//   opacity: 0;
+//   visibility: hidden;
+//   &.active{
+//     display: block;
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
 @import "./header";
+
 main{
-  padding-left: 100px;
-  max-width: 1000px;
+  padding-left: 150px;
+  max-width: 1100px;
   margin: 0px auto;
+  @include pc{
+    padding-left: 0;
+    padding: 0 100px;
+  }
   @import "./home";
   @import "./section";
   @import "./about";
@@ -35,6 +76,36 @@ main{
   @import "./skills";
   @import "./works";
   @import "./contact";
+
 }
 @import "./footer";
 // width: clamp(200px, preferred, 500px);
+
+// @import "./theme-change";
+
+// main#jp{
+//   section{
+//     h1, h2, h3, h4, h5, h6{
+//       font-family: 'Yuji Syuku', serif;
+//     }
+//   }
+// }
+
+// @import "../jp_styles/jp_style";
+
+
+.ripple {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  position: fixed;
+  border-radius: 50%;
+  border: 1px solid var(--accentPrimaryColor);
+}
+
+@keyframes ripple-effect {
+  to {
+    transform:scale(3);
+    opacity: 0.01;
+  }
+}

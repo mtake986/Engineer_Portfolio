@@ -33,4 +33,75 @@ console.log({emailAddress, emailIcons, calendly, calendlyIcons})
 //   }
 // })
 
+// var sideHeader = document.getElementById('side-header')
+
+// sideHeader.addEventListener('mouseover', function(){
+//   sideHeader.classList.toggle('mouseover');
+// })
+
+//////////////////////
+// change theme
+//////////////////////
+let themeDots = document.getElementsByClassName("theme-dot")
+// let blackCover = document.getElementsByClassName('black-cover')
+for (let i = 0; i < themeDots.length; i++)  {
+  themeDots[i].addEventListener("click", function(){
+    let mode = this.dataset.mode
+    console.log("Option cliked", mode);
+    setTheme(mode);
+    // console.log(blackCover);
+    // blackCover.classList.add("active");
+  })
+}
+function setTheme(mode){
+  if (mode == "light"){
+    document.getElementById('theme-style').href = './styles/style.css'
+  }
+  if (mode == "dark"){
+    document.getElementById('theme-style').href = './styles/theme-dark.css'
+  }
+}
+//////////////////////
+// side-header, onclick action
+//////////////////////
+var toggle = document.getElementById('toggle');
+var header = document.getElementById('side-header')
+
+// document.onclick = function(e){
+//   if (e.target.id !== "side-sidebar" && e.target.id !== "toggle"){
+//     toggle.classList.remove('active');
+//     header.classList.remove('active');
+//   }
+// }
+toggle.onclick = function(){
+  toggle.classList.toggle('active');
+  header.classList.toggle('active');
+}
+
+//////////////////////
+// ripple effect
+//////////////////////
+document.onclick = function applyCursorRippleEffect(e) {
+  const ripple = document.createElement("div");
+
+  ripple.className = "ripple";
+  document.body.appendChild(ripple);
+
+  ripple.style.left = `${e.clientX}px`;
+  ripple.style.top = `${e.clientY}px`; 
+
+  ripple.style.animation = "ripple-effect .4s  linear";
+  ripple.onanimationend = () => document.body.removeChild(ripple);
+
+  if (e.target.id !== "side-sidebar" && e.target.id !== "toggle"){
+    toggle.classList.remove('active');
+    header.classList.remove('active');
+  }
+}
+
+
+
+
+
+
 

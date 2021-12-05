@@ -1,8 +1,5 @@
 @mixin hoverAction1(){
-  box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.79);
-}
-@mixin transition($speed:.5s){
-  transition: all $speed;
+  box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
 }
 @mixin front-back-end-ttl(){
   text-align: center;
@@ -21,13 +18,16 @@ skills-five-rate-left-right-col{
   width: 100%;
   h4{
     @include front-back-end-ttl();
+    span{
+      font-size: $fzSS;
+    }
   }
   div.skills-wrapper{
     p{
       font-size: $fzSS;
     }
     .icons-wrapper{
-      border-left: 1px solid $textPrimaryColor;
+      border-left: 1px solid var(--textPrimaryColor);
       margin: 20px 0px 20px 20px;
       padding: 20px 0px 20px 20px;
       div.five, .four, .three, .two, .one{
@@ -37,7 +37,8 @@ skills-five-rate-left-right-col{
         gap: 10px;
         .skill-wrapper{
           padding: 10px 7px;
-          box-shadow: 0px 1px 10px rgb(197, 197, 197);
+          box-shadow: 2px 2px 5px 0px var(--hoverBoxShadowColor);
+
           border-radius: 5px;
           width: 60px;
           height: 80px;
@@ -73,7 +74,7 @@ skills-in-progress-left-right-col{
     gap: 10px;
     .skill-wrapper{
       padding: 10px 7px;
-      box-shadow: 0px 1px 10px rgb(197, 197, 197);
+      box-shadow: 1px 1px 5px 0px var(--hoverBoxShadowColor);
       border-radius: 5px;
       // width: 40px;
       // height: 50px;
@@ -117,7 +118,7 @@ works-left-right-col-link{
     padding: 30px 0px 10px;
     // grid-area: i;
     // cursor: pointer;
-    color: $accentPrimaryColor;
+    color: var(--accentPrimaryColor);
     font-size: 3rem;
     opacity: 0;
     visibility: hidden;
@@ -136,7 +137,7 @@ works-left-right-col-link{
     width: 100%;
     line-height: 100px;
     border-radius: 30px;
-    color: $linkColor;
+    color: var(--linkColor);
     font-size: $fzSS;
     &:hover{
       text-decoration: underline;
@@ -155,18 +156,24 @@ works-left-right-col-link{
   p.email-address, p.calendly{
     font-size: $fzSS;
     margin-top: 10px;
-    color: $linkColor;
+    color: var(--linkColor);
   } 
   p.sm-txt{
     // grid-area: p;
     font-size: $fzExss;
     // margin-top: 10px;
     padding-bottom: 30px;
-    color: $textPrimaryColor;
+    color: var(--textPrimaryColor);
   } 
 }
 hover-underline{
   &:hover{
     text-decoration: underline;
   }
+}
+
+@mixin flex-cen-cen($jc:center, $ai:center){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
 }

@@ -4,7 +4,7 @@ section.about{
       font-size: $fzM;
       line-height: 2;
       span.color{
-        color: $accentPrimaryColor;
+        color: var(--accentPrimaryColor);
         font-weight: 700;
       }
     }

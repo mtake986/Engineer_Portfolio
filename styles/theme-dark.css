@@ -1,0 +1,13 @@
+:root{
+  --accentPrimaryColor: #9b54ff;
+  --accentSecondaryColor: #773DC8;
+  --textPrimaryColor: rgb(240, 240, 240);
+  --textSecondaryColor: #333;
+  --bgPrimaryColor: #222;
+  --bgSecondaryColor: #111;
+  --linkColor: rgb(42, 170, 255);
+  --hoverBoxShadowColor: white;
+  --bgTab: #111;
+  --bgTabHover: #222;
+  --bgTh: #ece0ff;
+  }

@@ -9,7 +9,7 @@ section.skills{
       grid-template: 
         "l-c c-c r-c" 650px /
         1fr 15px 1fr;
-      background: $bgSecondaryColor;
+      background: var(--bgSecondaryColor);
       border-radius: 20px;
       .left-col{
         grid-area: l-c;
@@ -18,7 +18,7 @@ section.skills{
       .center-col{
         grid-area: c-c;
         width: 10px;
-        background: $bgPrimaryColor;
+        background: var(--bgPrimaryColor);
         height: 650px;
       }
       .right-col{
@@ -28,7 +28,7 @@ section.skills{
       }
     }
     .in-progress-wrapper{
-      // background: $bgSecondaryColor;
+      // background: var(--bgSecondaryColor);
       .in-progress-top{
         display: flex;
         justify-content: space-evenly;
@@ -40,6 +40,7 @@ section.skills{
         h4{
           @include front-back-end-ttl();
           margin-bottom: 0;
+
         }
       }
       .col-wrapper{
@@ -86,7 +87,7 @@ section.skills{
         .center-col{
           height: 80px;
           width: 10px;
-          background: $bgPrimaryColor;
+          background: var(--bgPrimaryColor);
         }
         .right-col{
           @extend skills-in-progress-left-right-col;
