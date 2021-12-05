@@ -1,6 +1,7 @@
 section{
   // height: 70vh;
-  padding: 100px 0px;
+  margin-bottom: 200px;
+  padding: 30px 0px;
   div.section-border{
     display: flex;
     justify-content: flex-start;
@@ -8,7 +9,7 @@ section{
     height: 10px;
     .border{
       width: 50px;
-      border-bottom: 1px solid $textPrimaryColor;
+      border-bottom: 1px solid var(--textPrimaryColor);
     }
     .border-txt{
       margin-left: 15px;
@@ -17,12 +18,12 @@ section{
     }
   }
   h2{
-    font-size: $fzMM;
+    font-size: $fzL;
     margin: 10px 0 50px;
   }
   .section-body-wrapper{
     padding: 50px;
-    background: $bgSecondaryColor;
+    background: var(--bgSecondaryColor);
     border-radius: 50px;
   }
 }

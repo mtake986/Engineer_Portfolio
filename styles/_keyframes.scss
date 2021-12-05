@@ -1,0 +1,41 @@
+@keyframes arrow-move {
+	0% {
+    transform: translateY(0px);
+	}
+	100% {
+    transform: translateY(-5px);
+	}
+}
+@keyframes fade-out-icons {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes fade-in-icons {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes arrow-move {
+	0%, 100% {
+    transform: translateY(0);
+	}
+	50% {
+    transform: translateY(10px);
+	}
+}
+
+@keyframes side-header-resp {
+  0%{
+    left: -130px;
+  }
+  100%{
+    left: 0;
+  }
+}
