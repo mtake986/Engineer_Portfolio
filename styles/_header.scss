@@ -11,7 +11,7 @@ header{
   background: var(--accentPrimaryColor);
   color: white;
   transition: .3s;
-  @include pc{
+  @include lg-pc{
     left: -200px;
     &.active{
       left: 0px;

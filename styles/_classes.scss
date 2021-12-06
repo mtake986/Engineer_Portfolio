@@ -1,3 +1,4 @@
+
 section.classes{
   // height: 100vh;
   .section-body-wrapper{
@@ -84,6 +85,9 @@ section.classes{
                 border: 1px solid var(--accentPrimaryColor);
                 width: 100%;
                 margin-bottom: 15px;
+                @include tablet{
+                  font-size: $fzExs;
+                }
                 tr{
                   width: 100%;
                   th, td{

@@ -1,15 +1,16 @@
 section.home{
-  // padding: 0;
+  padding-top: 0px;
   position: relative;
-  @include pc{
+  @include lg-pc{
     .toggle-icon-wrapper{
+      z-index: 100;
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       cursor: pointer;
       .toggle-icon{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         position: relative;
         background: var(--accentPrimaryColor);
         cursor: pointer;
@@ -19,20 +20,20 @@ section.home{
         &::before{
           content: "";
           position: absolute;
-          width: 28px;
+          width: 20px;
           height: 2px;
           background: #fff;
           transition: .2s;
-          box-shadow: 0px 10px 0px #fff;
+          box-shadow: 0px 7px 0px #fff;
         }
         &::after{
           content: "";
           position: absolute;
-          width: 28px;
+          width: 20px;
           height: 2px;
           background: #fff;
           transition: .2s;
-          transform: translateY(-10px);
+          transform: translateY(-7px);
           z-index: 10;
         }
         &.active{
@@ -49,7 +50,7 @@ section.home{
     }
   }
   .body-wrapper{
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -62,6 +63,12 @@ section.home{
         "theme sns" 70px /
         250px 1fr;
       grid-gap: 30px 50px;
+      @include lg-pc{
+        grid-template: 
+          "img greeting" 210px
+          "theme sns" 70px /
+          210px 1fr;
+      }
       img{
         grid-area: img;
         width: 250px;
@@ -71,7 +78,10 @@ section.home{
           2px 2px 4px 2px #cba6ff,
           4px 4px 8px 4px #b581ff,
           6px 6px 12px 6px #b47eff,
-          8px 8px 16px 8px #9b54ff,
+          8px 8px 16px 8px #9b54ff;
+        @include lg-pc{
+          width: 200px;
+        }
       }
       .appearance-wrapper{
         grid-area: theme;
@@ -116,7 +126,13 @@ section.home{
           margin: 25px 0;
           color: var(--accentPrimaryColor);
           font-family: $fontMyName;
-          
+          @include lg-pc{
+            font-size: $fzExl;
+          }
+          @include pc{
+            font-size: $fzLL;
+            margin: 10px 0;
+          }
         }
         p.short-intro{
           line-height: 1.5;
@@ -126,40 +142,52 @@ section.home{
         grid-area: sns;
         display: flex;
         align-items: center;
-        // justify-content: space-between;
+        justify-content: space-between;
         gap: 20px;
-        .resume{
-          a{
+        // .resume{
+          a#resume-btn{
+            position: relative;
+            // display: inline-flex;
             padding: 10px 20px;
-            border-radius: 50pc;
+            overflow: hidden;
             background: var(--accentPrimaryColor);
-            color: white;
-            font-size: $fzS;
-            margin-right: 50px;
+            color: var(--bgSecondaryColor);
             transition: .3s;
             &:hover{
-              // box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
               @include hoverAction1();
             }
+            span{
+              position: relative;
+              z-index: 10;
+              font-weight: bold;
+              font-size: $fzS;
+            }
           }
-        }
+          // }
         .sns-icons{
           a{
             display: inline-block;
             margin-left: 10px;
             transition: .3s;
-            &:hover{
-              @include hoverAction1();
+            // &:hover{
+              //   @include hoverAction1();
+              // }
+            i{
+              padding: 9px;
+              color: var(--accentPrimaryColor);
+              background: var(--bgSecondaryColor);
+              font-size: 25px;
+              transition: .3s;
+              &:hover{
+                @include hoverAction1();
+                // background: var(--accentPrimaryColor);
+                // color: var(--bgSecondaryColor);
+              }
             }
-          }
-          i{
-            padding: 7px;
-            color: var(--accentPrimaryColor);
-            background: var(--bgSecondaryColor);
-            font-size: 25px;
           }
         }
       }
     }
   }
 }
+

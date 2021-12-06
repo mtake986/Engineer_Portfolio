@@ -12,8 +12,15 @@ section.works{
       padding: 30px;
       box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
       margin-bottom: 50px;
-      border: 1px solid var(--bgPrimaryColor);
       border-radius: 30px;
+      @include pc{
+        grid-template:
+          "ttl ttl" 40px
+          "img img" 180px
+          "features features" 1fr
+          "made-of source-and-site" 70px /
+          1fr 1fr;
+      }
       h3{
         grid-area: ttl;
         font-size: $fzL;
@@ -21,36 +28,46 @@ section.works{
         color: var(--accentPrimaryColor);
         color: var(--accentSecondaryColor);
         text-align: center;
+        @include tablet{
+          font-size: $fzM;
+        }
       }
       img.works-img{
         grid-area: img;
         width: 300px;
         aspect-ratio: 16/9;
+        margin: 0 auto;
       }
       div.source-site-wrapper{
         grid-area: source-and-site;
         display: flex;
         flex-direction: column;
-        gap: 10px;
         // justify-content: center;
         // align-items: center;
+        p{
+          margin-bottom: 5px;
+          font-size: $fzM;
+        }
         div{
           // font-size: $fzSS;
-          line-height: 25px;
+          line-height: 20px;
           display: flex;
           align-items: center;
-          &:not(:last-child){
-            margin-bottom: 5px;
-          }
           i{
             color: var(--accentPrimaryColor);
-            font-size: $fzM;
-            margin-right: 15px;
+            font-size: $fzS;
+            margin-right: 10px;
+            @include pc{
+              font-size: $fzS;
+            }
           }
           a{
             color: var(--textPrimaryColor);
             color: var(--linkColor);
-            font-size: $fzSS;
+            font-size: $fzS;
+            @include pc{
+              font-size: $fzS;
+            }
             &:hover{
               text-decoration: underline;
             }

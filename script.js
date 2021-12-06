@@ -98,10 +98,19 @@ document.onclick = function applyCursorRippleEffect(e) {
     header.classList.remove('active');
   }
 }
+//////////////////////
+// ripple effect button, not implemented, reference link
+//////////////////////
+// https://www.youtube.com/watch?v=WOSaNbpHNqU&t=25s
 
+// Reseume btn
+const resumeBtn = document.getElementById('resume-btn');
 
+resumeBtn.onmousemove = function(e){
+  const x = e.pageX - resumeBtn.offsetLeft;
+  const y = e.pageY - resumeBtn.offsetTop;
 
-
-
-
+  resumeBtn.style.setProperty('--x', x + 'px');
+  resumeBtn.style.setProperty('--y', y + 'px');
+}
 

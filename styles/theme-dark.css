@@ -3,11 +3,11 @@
   --accentSecondaryColor: #773DC8;
   --textPrimaryColor: rgb(240, 240, 240);
   --textSecondaryColor: #333;
-  --bgPrimaryColor: #222;
+  --bgPrimaryColor: #161616;
   --bgSecondaryColor: #111;
   --linkColor: rgb(42, 170, 255);
   --hoverBoxShadowColor: white;
-  --bgTab: #111;
-  --bgTabHover: #222;
+  --bgTab: #161616;
+  --bgTabHover: #111;
   --bgTh: #ece0ff;
   }

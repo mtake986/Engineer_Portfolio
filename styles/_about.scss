@@ -3,6 +3,9 @@ section.about{
     .long-msg{
       font-size: $fzM;
       line-height: 2;
+      @include pc{
+        font-size: $fzSS;
+      }
       span.color{
         color: var(--accentPrimaryColor);
         font-weight: 700;

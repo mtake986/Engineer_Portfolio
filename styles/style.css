@@ -13,6 +13,42 @@
   --bgTh: #ece0ff;
 }
 
+skills-each-icon-style .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper {
+  padding: 10px 7px;
+  -webkit-box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
+          box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
+  border-radius: 5px;
+  width: 60px;
+  height: 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+skills-each-icon-style .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper h6 {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 7px;
+  text-align: center;
+}
+
+skills-each-icon-style .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper img {
+  margin-bottom: 20px;
+  width: 30px;
+}
+
 skills-five-rate-left-right-col, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col {
   width: 100%;
 }
@@ -21,11 +57,18 @@ skills-five-rate-left-right-col h4, main section.skills .section-body-wrapper .f
   text-align: center;
   font-size: 2rem;
   font-family: "Carter One", cursive;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 skills-five-rate-left-right-col h4 span, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col h4 span, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col h4 span {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  skills-five-rate-left-right-col div.skills-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper {
+    max-width: 400px;
+    margin: 0 auto 50px;
+  }
 }
 
 skills-five-rate-left-right-col div.skills-wrapper p, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper p, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper p {
@@ -49,130 +92,40 @@ skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five, main
   gap: 10px;
 }
 
-skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper {
-  padding: 10px 7px;
-  -webkit-box-shadow: 2px 2px 5px 0px var(--hoverBoxShadowColor);
-          box-shadow: 2px 2px 5px 0px var(--hoverBoxShadowColor);
-  border-radius: 5px;
-  width: 60px;
-  height: 80px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img {
-  margin-bottom: 20px;
-  width: 30px;
-}
-
-skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6 {
-  font-size: 0.8rem;
-  margin-top: 5px;
-  position: absolute;
-  bottom: 7px;
-  text-align: center;
-}
-
-skills-in-progress-left-right-col, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .left-col, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .right-col {
-  width: 100%;
-}
-
-skills-in-progress-left-right-col div.skills-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .left-col div.skills-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .right-col div.skills-wrapper {
-  height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-skills-in-progress-left-right-col div.skills-wrapper .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .left-col div.skills-wrapper .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .right-col div.skills-wrapper .skill-wrapper {
-  padding: 10px 7px;
-  -webkit-box-shadow: 1px 1px 5px 0px var(--hoverBoxShadowColor);
-          box-shadow: 1px 1px 5px 0px var(--hoverBoxShadowColor);
-  border-radius: 5px;
-  width: 60px;
-  height: 80px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-skills-in-progress-left-right-col div.skills-wrapper .skill-wrapper h6, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .left-col div.skills-wrapper .skill-wrapper h6, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .right-col div.skills-wrapper .skill-wrapper h6 {
-  font-size: 0.8rem;
-  margin-top: 5px;
-  position: absolute;
-  bottom: 7px;
-  text-align: center;
-}
-
-skills-in-progress-left-right-col div.skills-wrapper .skill-wrapper img, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .left-col div.skills-wrapper .skill-wrapper img, main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .right-col div.skills-wrapper .skill-wrapper img {
-  margin-bottom: 20px;
-  width: 30px;
-}
-
-works-left-right-col-link:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.after {
+contact-left-right-col-link:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.after {
   display: block;
   opacity: 1;
   visibility: visible;
-  -webkit-animation: fade-in-icons 1.5s;
-          animation: fade-in-icons 1.5s;
+  -webkit-animation: fade-in-icons 1s;
+          animation: fade-in-icons 1s;
 }
 
-works-left-right-col-link:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.before {
+contact-left-right-col-link:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.before {
   opacity: 0;
   visibility: hidden;
   display: none;
-  -webkit-animation: fade-out-icons 1.5s;
-          animation: fade-out-icons 1.5s;
+  -webkit-animation: fade-out-icons 1s;
+          animation: fade-out-icons 1s;
 }
 
-works-left-right-col-link i, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress i, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress i, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly i, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly i {
+contact-left-right-col-link i, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress i, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress i, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly i, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly i {
   padding: 30px 0px 10px;
   color: var(--accentPrimaryColor);
   font-size: 3rem;
   opacity: 0;
   visibility: hidden;
   display: none;
-  -webkit-animation: fade-in-icons 1.5s;
-          animation: fade-in-icons 1.5s;
+  -webkit-animation: fade-in-icons 1s;
+          animation: fade-in-icons 1s;
 }
 
-works-left-right-col-link i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly i.active {
+contact-left-right-col-link i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly i.active, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly i.active {
   opacity: 1;
   visibility: visible;
   display: block;
 }
 
-works-left-right-col-link a, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a {
+contact-left-right-col-link a, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a {
   z-index: 10;
   display: block;
   width: 100%;
@@ -182,29 +135,29 @@ works-left-right-col-link a, main section.contact .section-body-wrapper .email-c
   font-size: 1.2rem;
 }
 
-works-left-right-col-link a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover {
+contact-left-right-col-link a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover {
   text-decoration: underline;
 }
 
-works-left-right-col-link a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover + i#after {
+contact-left-right-col-link a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover + i#after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover + i#after {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-works-left-right-col-link a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover + i#before {
+contact-left-right-col-link a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly a:hover + i#before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly a:hover + i#before {
   display: none;
   opacity: 0;
   visibility: hidden;
 }
 
-works-left-right-col-link p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.email-address, works-left-right-col-link p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.calendly {
+contact-left-right-col-link p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.email-address, contact-left-right-col-link p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.calendly {
   font-size: 1.2rem;
   margin-top: 10px;
   color: var(--linkColor);
 }
 
-works-left-right-col-link p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.sm-txt {
+contact-left-right-col-link p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.sm-txt {
   font-size: 0.8rem;
   padding-bottom: 30px;
   color: var(--textPrimaryColor);
@@ -347,7 +300,7 @@ header {
   transition: .3s;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   header {
     left: -200px;
   }
@@ -471,32 +424,39 @@ header .arrow-wrapper span {
 }
 
 main {
-  padding-left: 150px;
-  max-width: 1100px;
+  padding: 0 50px 0 150px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   main {
-    padding-left: 0;
     padding: 0 100px;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 0 50px;
+  }
+}
+
 main section.home {
+  padding-top: 0px;
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   main section.home .toggle-icon-wrapper {
+    z-index: 100;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
   }
   main section.home .toggle-icon-wrapper .toggle-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: relative;
     background: var(--accentPrimaryColor);
     cursor: pointer;
@@ -513,24 +473,24 @@ main section.home {
   main section.home .toggle-icon-wrapper .toggle-icon::before {
     content: "";
     position: absolute;
-    width: 28px;
+    width: 20px;
     height: 2px;
     background: #fff;
     -webkit-transition: .2s;
     transition: .2s;
-    -webkit-box-shadow: 0px 10px 0px #fff;
-            box-shadow: 0px 10px 0px #fff;
+    -webkit-box-shadow: 0px 7px 0px #fff;
+            box-shadow: 0px 7px 0px #fff;
   }
   main section.home .toggle-icon-wrapper .toggle-icon::after {
     content: "";
     position: absolute;
-    width: 28px;
+    width: 20px;
     height: 2px;
     background: #fff;
     -webkit-transition: .2s;
     transition: .2s;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
     z-index: 10;
   }
   main section.home .toggle-icon-wrapper .toggle-icon.active {
@@ -549,7 +509,7 @@ main section.home {
 }
 
 main section.home .body-wrapper {
-  height: 90vh;
+  height: 100vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +530,12 @@ main section.home .body-wrapper .grid {
   grid-gap: 30px 50px;
 }
 
+@media screen and (max-width: 1400px) {
+  main section.home .body-wrapper .grid {
+    grid-template: "img greeting" 210px "theme sns" 70px / 210px 1fr;
+  }
+}
+
 main section.home .body-wrapper .grid img {
   grid-area: img;
   width: 250px;
@@ -577,6 +543,12 @@ main section.home .body-wrapper .grid img {
   margin-bottom: 20px;
   -webkit-box-shadow: 2px 2px 4px 2px #cba6ff, 4px 4px 8px 4px #b581ff, 6px 6px 12px 6px #b47eff, 8px 8px 16px 8px #9b54ff;
           box-shadow: 2px 2px 4px 2px #cba6ff, 4px 4px 8px 4px #b581ff, 6px 6px 12px 6px #b47eff, 8px 8px 16px 8px #9b54ff;
+}
+
+@media screen and (max-width: 1400px) {
+  main section.home .body-wrapper .grid img {
+    width: 200px;
+  }
 }
 
 main section.home .body-wrapper .grid .appearance-wrapper {
@@ -640,6 +612,19 @@ main section.home .body-wrapper .grid div.greeting-wrapper h1 {
   font-family: "Carter One", cursive;
 }
 
+@media screen and (max-width: 1400px) {
+  main section.home .body-wrapper .grid div.greeting-wrapper h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main section.home .body-wrapper .grid div.greeting-wrapper h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+}
+
 main section.home .body-wrapper .grid div.greeting-wrapper p.short-intro {
   line-height: 1.5;
 }
@@ -652,23 +637,32 @@ main section.home .body-wrapper .grid .resume-and-sns-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .resume a {
+main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn {
+  position: relative;
   padding: 10px 20px;
-  border-radius: 50pc;
+  overflow: hidden;
   background: var(--accentPrimaryColor);
-  color: white;
-  font-size: 1rem;
-  margin-right: 50px;
+  color: var(--bgSecondaryColor);
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .resume a:hover {
+main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
+}
+
+main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn span {
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a {
@@ -678,21 +672,22 @@ main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a {
   transition: .3s;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a:hover {
+main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a i {
+  padding: 9px;
+  color: var(--accentPrimaryColor);
+  background: var(--bgSecondaryColor);
+  font-size: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a i:hover {
   -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons i {
-  padding: 7px;
-  color: var(--accentPrimaryColor);
-  background: var(--bgSecondaryColor);
-  font-size: 25px;
-}
-
 main section {
-  margin-bottom: 200px;
-  padding: 30px 0px;
+  padding: 100px 0px;
 }
 
 main section div.section-border {
@@ -733,6 +728,12 @@ main section .section-body-wrapper {
 main section.about .section-body-wrapper .long-msg {
   font-size: 1.5rem;
   line-height: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.about .section-body-wrapper .long-msg {
+    font-size: 1.2rem;
+  }
 }
 
 main section.about .section-body-wrapper .long-msg span.color {
@@ -830,6 +831,12 @@ main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table {
+    font-size: 0.9rem;
+  }
+}
+
 main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr {
   width: 100%;
 }
@@ -861,6 +868,21 @@ main section.skills .section-body-wrapper .front-back-end-wrapper {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  main section.skills .section-body-wrapper .front-back-end-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 main section.skills .section-body-wrapper .front-back-end-wrapper .left-col {
   grid-area: l-c;
 }
@@ -872,9 +894,31 @@ main section.skills .section-body-wrapper .front-back-end-wrapper .center-col {
   height: 650px;
 }
 
+@media screen and (max-width: 1024px) {
+  main section.skills .section-body-wrapper .front-back-end-wrapper .center-col {
+    display: none;
+  }
+}
+
 main section.skills .section-body-wrapper .front-back-end-wrapper .right-col {
   grid-area: r-c;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.skills .section-body-wrapper .front-back-end-wrapper .right-col {
+    padding-left: 0;
+  }
+}
+
+main section.skills .section-body-wrapper .in-progress-wrapper {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.skills .section-body-wrapper .in-progress-wrapper {
+    margin-top: 0;
+  }
 }
 
 main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top {
@@ -887,7 +931,7 @@ main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0;
+  margin-bottom: 15px;
 }
 
 main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top div.two-arrows {
@@ -895,24 +939,32 @@ main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top 
           animation: arrow-move 1s infinite;
 }
 
+@media screen and (max-width: 1024px) {
+  main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top div.two-arrows {
+    display: none;
+  }
+}
+
 main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top h4 {
   text-align: center;
   font-size: 2rem;
   font-family: "Carter One", cursive;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-bottom: 0;
 }
 
-main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper {
-  display: -ms-grid;
-  display: grid;
-  grid-template: "l-c c-c r-c" 1fr / 1fr 10px 1fr;
-}
-
-main section.skills .section-body-wrapper .in-progress-wrapper .col-wrapper .center-col {
-  height: 80px;
-  width: 10px;
-  background: var(--bgPrimaryColor);
+main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 main section.works .section-body-wrapper {
@@ -928,8 +980,13 @@ main section.works .section-body-wrapper .each-work {
   -webkit-box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
   margin-bottom: 50px;
-  border: 1px solid var(--bgPrimaryColor);
   border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work {
+    grid-template: "ttl ttl" 40px "img img" 180px "features features" 1fr "made-of source-and-site" 70px / 1fr 1fr;
+  }
 }
 
 main section.works .section-body-wrapper .each-work h3 {
@@ -941,10 +998,17 @@ main section.works .section-body-wrapper .each-work h3 {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work h3 {
+    font-size: 1.5rem;
+  }
+}
+
 main section.works .section-body-wrapper .each-work img.works-img {
   grid-area: img;
   width: 300px;
   aspect-ratio: 16/9;
+  margin: 0 auto;
 }
 
 main section.works .section-body-wrapper .each-work div.source-site-wrapper {
@@ -956,11 +1020,15 @@ main section.works .section-body-wrapper .each-work div.source-site-wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+}
+
+main section.works .section-body-wrapper .each-work div.source-site-wrapper p {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 main section.works .section-body-wrapper .each-work div.source-site-wrapper div {
-  line-height: 25px;
+  line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,20 +1037,28 @@ main section.works .section-body-wrapper .each-work div.source-site-wrapper div 
           align-items: center;
 }
 
-main section.works .section-body-wrapper .each-work div.source-site-wrapper div:not(:last-child) {
-  margin-bottom: 5px;
-}
-
 main section.works .section-body-wrapper .each-work div.source-site-wrapper div i {
   color: var(--accentPrimaryColor);
-  font-size: 1.5rem;
-  margin-right: 15px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work div.source-site-wrapper div i {
+    font-size: 1rem;
+  }
 }
 
 main section.works .section-body-wrapper .each-work div.source-site-wrapper div a {
   color: var(--textPrimaryColor);
   color: var(--linkColor);
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work div.source-site-wrapper div a {
+    font-size: 1rem;
+  }
 }
 
 main section.works .section-body-wrapper .each-work div.source-site-wrapper div a:hover {
@@ -1056,7 +1132,6 @@ main section.contact .section-body-wrapper .email-calendly-wrapper .left-col, ma
   -webkit-box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
           box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
   margin-bottom: 20px;
-  border: 1px solid var(--bgPrimaryColor);
   border-radius: 30px;
   -webkit-transition: .3s;
   transition: .3s;
@@ -1065,62 +1140,6 @@ main section.contact .section-body-wrapper .email-calendly-wrapper .left-col, ma
 main section.contact .section-body-wrapper .email-calendly-wrapper .left-col:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
           box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
-}
-
-main section.contact .section-body-wrapper .email-calendly-wrapper .left-col span, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col span {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 120px;
-  height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  z-index: 0;
-}
-
-main section.contact .section-body-wrapper .email-calendly-wrapper .left-col span::before, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col span::before {
-  content: "Email";
-  position: absolute;
-  width: 150%;
-  height: 30px;
-  background: var(--accentPrimaryColor);
-  -webkit-transform: rotate(-45deg) translateY(-20px);
-          transform: rotate(-45deg) translateY(-20px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: uppercase;
-  color: var(--textSecondaryColor);
-  font-size: 1rem;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-main section.contact .section-body-wrapper .email-calendly-wrapper .left-col span::after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col span::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background: #5318a5;
-  -webkit-box-shadow: 103px -103px #5318a5;
-          box-shadow: 103px -103px #5318a5;
 }
 
 footer {
