@@ -5,14 +5,39 @@
   text-align: center;
   font-size: $fzL;
   font-family: $fontAccent;
-  margin-bottom: 30px;
-}
-@mixin skill-icon(){
-  width: 30px;
-}
-@mixin skill-wrapper(){
-}
+  margin-bottom: 15px;
 
+}
+// ///////////
+// Start: Skills section
+// ///////////
+skills-each-icon-style{
+  .skill-wrapper{
+    padding: 10px 7px;
+    box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
+    border-radius: 5px;
+    // width: 40px;
+    // height: 50px;
+    width: 60px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h6{
+      font-size: $fzExss;
+      margin-top: 5px;
+      position: absolute;
+      bottom: 7px;
+      text-align: center;
+    }
+    img{
+      margin-bottom: 20px;
+      width: 30px;
+    }
+  }
+}
 skills-five-rate-left-right-col{
   // padding: 20px 30px;
   width: 100%;
@@ -23,6 +48,16 @@ skills-five-rate-left-right-col{
     }
   }
   div.skills-wrapper{
+    @include pc{
+      max-width: 400px;
+      margin: 0 auto 50px;
+    }
+    // @include pc{
+    //   display: flex;
+    //   justify-content: center;
+    //   margin: 0 auto;
+    //   position: relative;
+    // }
     p{
       font-size: $fzSS;
     }
@@ -35,83 +70,35 @@ skills-five-rate-left-right-col{
         display: flex;
         align-items: center;
         gap: 10px;
-        .skill-wrapper{
-          padding: 10px 7px;
-          box-shadow: 2px 2px 5px 0px var(--hoverBoxShadowColor);
+        @extend skills-each-icon-style; 
+        // /////
+        // Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row
+        // /////
+      }
+    }
+  }
+}
+// ///////////
+// End: Skills section
+// ///////////
 
-          border-radius: 5px;
-          width: 60px;
-          height: 80px;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          img{
-            margin-bottom: 20px;
-            @include skill-icon();
-          }
-          h6{
-            font-size: $fzExss;
-            margin-top: 5px;
-            position: absolute;
-            bottom: 7px;
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
-skills-in-progress-left-right-col{
-  width: 100%;
-  div.skills-wrapper{
-    // Idk haha
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    .skill-wrapper{
-      padding: 10px 7px;
-      box-shadow: 1px 1px 5px 0px var(--hoverBoxShadowColor);
-      border-radius: 5px;
-      // width: 40px;
-      // height: 50px;
-      width: 60px;
-      height: 80px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      h6{
-        font-size: $fzExss;
-        margin-top: 5px;
-        position: absolute;
-        bottom: 7px;
-        text-align: center;
-      }
-      img{
-        margin-bottom: 20px;
-        @include skill-icon();
-      }
-    }
-  }
-}
-works-left-right-col-link{
+
+// ///////////
+// Start: Works section
+// ///////////
+contact-left-right-col-link{
   &:hover{
     i.after{
       display: block;
       opacity: 1;
       visibility: visible;
-      animation: fade-in-icons 1.5s;
+      animation: fade-in-icons 1s;
     }
     i.before{
       opacity: 0;
       visibility: hidden;
       display: none;
-      animation: fade-out-icons 1.5s;
+      animation: fade-out-icons 1s;
     }
   }
   i{
@@ -123,7 +110,7 @@ works-left-right-col-link{
     opacity: 0;
     visibility: hidden;
     display: none;
-    animation: fade-in-icons 1.5s;
+    animation: fade-in-icons 1s;
     &.active{
       opacity: 1;
       visibility: visible;
@@ -166,6 +153,9 @@ works-left-right-col-link{
     color: var(--textPrimaryColor);
   } 
 }
+// ///////////
+// End: Works section
+// ///////////
 hover-underline{
   &:hover{
     text-decoration: underline;

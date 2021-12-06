@@ -73,9 +73,9 @@
             <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best full stack developers in a human history.</p>
           </div>
           <div class="resume-and-sns-icons">
-            <div class="resume">
-              <a href="files/Resume.docx">Resume</a>
-            </div>
+            <!-- <div class="resume"> -->
+              <a href="./files/Resume.docx" id="resume-btn"><span>Resume</span></a>
+            <!-- </div> -->
             <div class="sns-icons">
               <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/mtake986"><i class="fab fa-github"></i></a>
@@ -579,8 +579,11 @@
             <div class="skills-wrapper">
               <!-- <h5>HTML</h5> -->
               <!-- <div class="skills-arrow"></div> -->
-              <p>Pro</p>
+              <p class="pro">Pro</p>
               <div class="icons-wrapper">
+                <!-- Note!!! -->
+                <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
+                <!--  Note!!! -->
                 <div class="five">
                   <div class="skill-wrapper">
                     <img src="icons/html.png" alt="html-icon">
@@ -611,10 +614,6 @@
                     <img src="icons/git.png" alt="git-icon">
                     <h6 class="skill-name">Git</h6>
                   </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/github.png" alt="github-icon">
-                    <h6 class="skill-name">GitHub</h6>
-                  </div>
                 </div>
                 <div class="two">
                   <div class="skill-wrapper">
@@ -633,7 +632,7 @@
                   </div>
                 </div>
               </div>
-              <p>Newbie</p>
+              <p class="newbie"></p>Newbie</p>
             </div>
           </div>
           <div class="center-col"></div>
@@ -641,10 +640,11 @@
             <h4>BACK-END <span> etc.</span></h4>
             <div class="skills-wrapper">
               <!-- <h5>HTML</h5> -->
-              <p>Pro</p>
+              <p class="pro">Pro</p>
               <div class="icons-wrapper">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
+                <!-- Note!!! -->
+                <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
+                <!--  Note!!! -->
                 <div class="five">
                   <div class="skill-wrapper">
                     <img src="icons/python.png" alt="python-icon">
@@ -666,10 +666,6 @@
                     <img src="icons/postgresql.png" alt="postgresql-icon">
                     <h6 class="skill-name">Postg.</h6>
                   </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/algo.svg" alt="algorithm-icon" class="algo">
-                    <h6 class="skill-name">Algor.</h6>
-                  </div>
                 </div>
                 <div class="two">
                   <div class="skill-wrapper">
@@ -684,7 +680,7 @@
                   </div>
                 </div>
               </div>
-              <p>Newbie</p>
+              <p class="newbie">Newbie</p>
             </div>
           </div>
         </div>
@@ -700,35 +696,18 @@
               <i class="fas fa-arrow-up"></i>
             </div>
           </div>
-          <div class="col-wrapper">
-            <div class="left-col">
-              <div class="skills-wrapper">
-                <div class="skill-wrapper">
-                  <img src="icons/react.png" alt="react-icon">
-                  <h6 class="skill-name">React</h6>
-                </div>
-                <div class="skill-wrapper">
-                  <img src="icons/typescript.png" alt="typescript-icon">
-                  <h6 class="skill-name">TypeS.</h6>
-                </div>
-              </div>
+          <div class="skills-wrapper">
+            <div class="skill-wrapper">
+              <img src="icons/react.png" alt="react-icon">
+              <h6 class="skill-name">React</h6>
             </div>
-            <div class="center-col"></div>
-            <div class="right-col">
-              <div class="skills-wrapper">
-                <div class="skill-wrapper">
-                  <img src="icons/django.png" alt="django-icon">
-                  <h6 class="skill-name">Django</h6>
-                </div>
-                <!-- <div class="skill-wrapper">
-                  <img src="icons/java.png" alt="Java-icon">
-                  <h6 class="skill-name">Java</h6>
-                </div>
-                <div class="skill-wrapper">
-                  <img src="icons/rest-api.svg" alt="REST-API-icon">
-                  <h6 class="skill-name">R. API</h6>
-                </div> -->
-              </div>
+            <div class="skill-wrapper">
+              <img src="icons/typescript.png" alt="typescript-icon">
+              <h6 class="skill-name">TypeS.</h6>
+            </div>
+            <div class="skill-wrapper">
+              <img src="icons/django.png" alt="django-icon">
+              <h6 class="skill-name">Django</h6>
             </div>
           </div>
         </div>
@@ -746,6 +725,7 @@
           <h3 class="work-ttl">Calories & PFC Manager</h3>
           <img src="files/works_pfc.png" alt="image of Calories & PFC Manager" class="works-img">
           <div class="source-site-wrapper">
+            <p class="other">Other: </p>
             <div class="check-it-out-wrapper">
               <i class="fab fa-chrome"></i>
               <!-- <i class="fab fa-safari"></i> -->
@@ -783,6 +763,7 @@
           <h3 class="work-ttl">Engineer Portfolio</h3>
           <img src="files/works_portfolio.png" alt="image of portfolio website" class="works-img">
           <div class="source-site-wrapper">
+            <p class="Other">Other: </p>
             <div class="check-it-out-wrapper">
               <i class="fab fa-chrome"></i>
               <!-- <i class="fab fa-safari"></i> -->
@@ -798,8 +779,8 @@
             <!-- <p>Includes everything to lose and gain weight:</p> -->
             <p>Features:</p>
             <ul>
-              <li>A simple Job Portfolio</li>
-              <li>Engrish and Japanese versions</li>
+              <li>A portfolio website as my resume.</li>
+              <li>Mainly Sass and JS.</li>
             </ul>
           </div>
           <div class="made-of-wrapper">

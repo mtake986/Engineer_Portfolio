@@ -22,9 +22,10 @@ $jpfontAccent: 'Yuji Syuku', serif;
 $jpfontPrimary: 'Noto Sans JP', sans-serif;
 
 
-$sm: 425px;
+// $sm: 425px;
 $md: 768px;
 $lg: 1024px;
+$lg-pc: 1400px;
 // $lg-pc: 1200px;
 
 // @media screen and (max-width: $md) {
@@ -33,11 +34,11 @@ $lg: 1024px;
 //     width: 95%;
 //   }
 // }
-@mixin mobile{
-  @media screen and (max-width: $sm){
-    @content;
-  }
-}
+// @mixin mobile{
+//   @media screen and (max-width: $sm){
+//     @content;
+//   }
+// }
 @mixin tablet{
   @media screen and (max-width: $md){
     @content;
@@ -45,6 +46,11 @@ $lg: 1024px;
 }
 @mixin pc{
   @media screen and (max-width: $lg){
+    @content;
+  }
+}
+@mixin lg-pc{
+  @media screen and (max-width: $lg-pc){
     @content;
   }
 }

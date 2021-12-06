@@ -62,12 +62,14 @@ a{
 @import "./header";
 
 main{
-  padding-left: 150px;
-  max-width: 1100px;
+  padding: 0 50px 0 150px;
+  max-width: 1200px;
   margin: 0px auto;
-  @include pc{
-    padding-left: 0;
+  @include lg-pc{
     padding: 0 100px;
+  }
+  @include pc{
+    padding: 0 50px;
   }
   @import "./home";
   @import "./section";
@@ -76,7 +78,6 @@ main{
   @import "./skills";
   @import "./works";
   @import "./contact";
-
 }
 @import "./footer";
 // width: clamp(200px, preferred, 500px);
@@ -97,6 +98,7 @@ main{
 .ripple {
   width: 5px;
   height: 5px;
+  // transform: translate(-10px, -10px);
   background-color: transparent;
   position: fixed;
   border-radius: 50%;
