@@ -13,28 +13,41 @@
 // ///////////
 skills-each-icon-style{
   .skill-wrapper{
-    padding: 10px 7px;
+    padding: 10px;
     box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
     border-radius: 5px;
     // width: 40px;
     // height: 50px;
     width: 60px;
-    height: 80px;
+    height: 75px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include tablet{
+      padding: 7px;
+      width: 45px;
+      height: 60px;
+    }
     h6{
       font-size: $fzExss;
       margin-top: 5px;
       position: absolute;
       bottom: 7px;
       text-align: center;
+    @include tablet{
+      font-size: $fzExsss;
+      margin-top: 10px;
+    }
     }
     img{
       margin-bottom: 20px;
       width: 30px;
+      @include tablet{
+        margin-bottom: 15px;
+        width: 25px;
+      }
     }
   }
 }
@@ -65,11 +78,23 @@ skills-five-rate-left-right-col{
       border-left: 1px solid var(--textPrimaryColor);
       margin: 20px 0px 20px 20px;
       padding: 20px 0px 20px 20px;
+      @include tablet{
+        margin: 10px 0 10px 10px;
+        padding: 10px 0px 10px 10px;
+      }
+      // @include tablet{
+      //   margin: 10px 0;
+      //   padding: 10px 0;
+      // }
       div.five, .four, .three, .two, .one{
         height: 90px;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+        @include tablet{
+          height: 70px;
+          gap: 10px;
+        }
         @extend skills-each-icon-style; 
         // /////
         // Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row
@@ -82,9 +107,25 @@ skills-five-rate-left-right-col{
 // End: Skills section
 // ///////////
 
-
 // ///////////
-// Start: Works section
+// Start: works section
+// ///////////
+
+works-inside-ttl{
+  p{
+    font-size: $fzM;
+    font-weight: bold;
+    margin-bottom: 5px;
+    // @include tablet{
+    //   font-size: $fzM;
+    // }
+  }
+}
+// ///////////
+// End: works section
+// ///////////
+// ///////////
+// Start: contact section
 // ///////////
 contact-left-right-col-link{
   &:hover{
@@ -141,9 +182,12 @@ contact-left-right-col-link{
     }
   }
   p.email-address, p.calendly{
-    font-size: $fzSS;
+    font-size: $fzM;
     margin-top: 10px;
     color: var(--linkColor);
+    @include tablet{
+      font-size: $fzSS;
+    }
   } 
   p.sm-txt{
     // grid-area: p;

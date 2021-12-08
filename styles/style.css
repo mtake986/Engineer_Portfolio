@@ -14,12 +14,12 @@
 }
 
 skills-each-icon-style .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper {
-  padding: 10px 7px;
+  padding: 10px;
   -webkit-box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
           box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
   border-radius: 5px;
   width: 60px;
-  height: 80px;
+  height: 75px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +36,14 @@ skills-each-icon-style .skill-wrapper, skills-five-rate-left-right-col div.skill
           justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  skills-each-icon-style .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper {
+    padding: 7px;
+    width: 45px;
+    height: 60px;
+  }
+}
+
 skills-each-icon-style .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper h6 {
   font-size: 0.8rem;
   margin-top: 5px;
@@ -44,9 +52,23 @@ skills-each-icon-style .skill-wrapper h6, skills-five-rate-left-right-col div.sk
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  skills-each-icon-style .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper h6, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper h6, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper h6 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
 skills-each-icon-style .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper img {
   margin-bottom: 20px;
   width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  skills-each-icon-style .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper img, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper img, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper img {
+    margin-bottom: 15px;
+    width: 25px;
+  }
 }
 
 skills-five-rate-left-right-col, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col {
@@ -81,6 +103,13 @@ skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper, main section.
   padding: 20px 0px 20px 20px;
 }
 
+@media screen and (max-width: 768px) {
+  skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper {
+    margin: 10px 0 10px 10px;
+    padding: 10px 0px 10px 10px;
+  }
+}
+
 skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one {
   height: 90px;
   display: -webkit-box;
@@ -89,7 +118,20 @@ skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five, main
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one {
+    height: 70px;
+    gap: 10px;
+  }
+}
+
+works-inside-ttl p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 contact-left-right-col-link:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.after {
@@ -152,9 +194,15 @@ contact-left-right-col-link a:hover + i#before, main section.contact .section-bo
 }
 
 contact-left-right-col-link p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.email-address, contact-left-right-col-link p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.calendly {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 10px;
   color: var(--linkColor);
+}
+
+@media screen and (max-width: 768px) {
+  contact-left-right-col-link p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.email-address, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.email-address, contact-left-right-col-link p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.calendly, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.calendly {
+    font-size: 1.2rem;
+  }
 }
 
 contact-left-right-col-link p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly p.sm-txt, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly p.sm-txt {
@@ -254,6 +302,22 @@ hover-underline:hover, footer p a:hover {
   }
 }
 
+@-webkit-keyframes ripple-effect {
+  to {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0.01;
+  }
+}
+
+@keyframes ripple-effect {
+  to {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0.01;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -269,6 +333,12 @@ body {
   background: var(--bgPrimaryColor);
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
 }
 
 a {
@@ -441,9 +511,27 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 15px;
+  }
+}
+
 main section.home {
   padding-top: 0px;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  main section.home {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.home {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -476,8 +564,8 @@ main section.home {
     width: 20px;
     height: 2px;
     background: #fff;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .3s;
+    transition: .3s;
     -webkit-box-shadow: 0px 7px 0px #fff;
             box-shadow: 0px 7px 0px #fff;
   }
@@ -487,8 +575,8 @@ main section.home {
     width: 20px;
     height: 2px;
     background: #fff;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .3s;
+    transition: .3s;
     -webkit-transform: translateY(-7px);
             transform: translateY(-7px);
     z-index: 10;
@@ -523,16 +611,29 @@ main section.home .body-wrapper {
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  main section.home .body-wrapper {
+    height: auto;
+  }
+}
+
 main section.home .body-wrapper .grid {
   display: -ms-grid;
   display: grid;
-  grid-template: "img greeting" 250px "theme sns" 70px / 250px 1fr;
+  grid-template: "img greeting greeting" 250px "theme resume sns" 70px / 250px 150px 1fr;
   grid-gap: 30px 50px;
 }
 
 @media screen and (max-width: 1400px) {
   main section.home .body-wrapper .grid {
-    grid-template: "img greeting" 210px "theme sns" 70px / 210px 1fr;
+    grid-template: "img greeting greeting" 210px "theme resume sns" 70px / 210px 150px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.home .body-wrapper .grid {
+    grid-template: "img" 210px "greeting" 1fr  "resume" 50px "sns" 50px  "theme" 70px /  250px;
+    grid-gap: 30px;
   }
 }
 
@@ -548,6 +649,12 @@ main section.home .body-wrapper .grid img {
 @media screen and (max-width: 1400px) {
   main section.home .body-wrapper .grid img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.home .body-wrapper .grid img {
+    margin: 0 auto;
   }
 }
 
@@ -584,7 +691,8 @@ main section.home .body-wrapper .grid .appearance-wrapper .dots-wrapper #white-m
   cursor: pointer;
 }
 
-main section.home .body-wrapper .grid .appearance-wrapper .dots-wrapper #white-mode:hover, main section.home .body-wrapper .grid .appearance-wrapper .dots-wrapper #dark-mode:hover {
+main section.home .body-wrapper .grid .appearance-wrapper .dots-wrapper #white-mode.active, main section.home .body-wrapper .grid .appearance-wrapper .dots-wrapper #dark-mode.active {
+  pointer-events: none;
   -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
 }
@@ -629,22 +737,11 @@ main section.home .body-wrapper .grid div.greeting-wrapper p.short-intro {
   line-height: 1.5;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons {
-  grid-area: sns;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
-}
-
-main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn {
+main section.home .body-wrapper .grid a#resume-btn {
+  grid-area: resume;
   position: relative;
+  display: inline-block;
+  height: 43px;
   padding: 10px 20px;
   overflow: hidden;
   background: var(--accentPrimaryColor);
@@ -653,26 +750,60 @@ main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn {
   transition: .3s;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn:hover {
+main section.home .body-wrapper .grid a#resume-btn:hover {
   -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons a#resume-btn span {
+main section.home .body-wrapper .grid a#resume-btn span {
+  line-height: 25px;
   position: relative;
   z-index: 10;
   font-weight: bold;
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a {
+main section.home .body-wrapper .grid .sns-icons {
+  grid-area: sns;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  main section.home .body-wrapper .grid .sns-icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+main section.home .body-wrapper .grid .sns-icons a {
   display: inline-block;
-  margin-left: 10px;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a i {
+main section.home .body-wrapper .grid .sns-icons a:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main section.home .body-wrapper .grid .sns-icons a:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+main section.home .body-wrapper .grid .sns-icons a i {
   padding: 9px;
   color: var(--accentPrimaryColor);
   background: var(--bgSecondaryColor);
@@ -681,7 +812,7 @@ main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a i {
   transition: .3s;
 }
 
-main section.home .body-wrapper .grid .resume-and-sns-icons .sns-icons a i:hover {
+main section.home .body-wrapper .grid .sns-icons a i:hover {
   -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
 }
@@ -700,7 +831,6 @@ main section div.section-border {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10px;
 }
 
 main section div.section-border .border {
@@ -714,15 +844,35 @@ main section div.section-border .border-txt {
   line-height: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  main section div.section-border .border-txt {
+    font-size: 0.8rem;
+  }
+}
+
 main section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 10px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main section h2 {
+    font-size: 2rem;
+    margin: 10px 0 30px;
+  }
 }
 
 main section .section-body-wrapper {
   padding: 50px;
   background: var(--bgSecondaryColor);
   border-radius: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main section .section-body-wrapper {
+    padding: 30px;
+    border-radius: 30px;
+  }
 }
 
 main section.about .section-body-wrapper .long-msg {
@@ -736,6 +886,12 @@ main section.about .section-body-wrapper .long-msg {
   }
 }
 
+@media screen and (max-width: 768px) {
+  main section.about .section-body-wrapper .long-msg {
+    font-size: 0.9rem;
+  }
+}
+
 main section.about .section-body-wrapper .long-msg span.color {
   color: var(--accentPrimaryColor);
   font-weight: 700;
@@ -746,7 +902,13 @@ main section.classes .section-body-wrapper {
   background: none;
 }
 
-main section.classes .section-body-wrapper .tab-ttls {
+@media screen and (max-width: 425px) {
+  main section.classes .section-body-wrapper .pc-tab-table-wrapper {
+    display: none;
+  }
+}
+
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,18 +920,18 @@ main section.classes .section-body-wrapper .tab-ttls {
           align-items: center;
 }
 
-main section.classes .section-body-wrapper .tab-ttls .tab-wrapper.active > .tab-ttl {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper.active > .tab-ttl {
   background: var(--accentPrimaryColor);
   color: var(--textSecondaryColor);
   cursor: default;
   pointer-events: none;
 }
 
-main section.classes .section-body-wrapper .tab-ttls .tab-wrapper.active > .tab-ttl:hover {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper.active > .tab-ttl:hover {
   background: var(--accentPrimaryColor);
 }
 
-main section.classes .section-body-wrapper .tab-ttls .tab-wrapper > .tab-ttl {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper > .tab-ttl {
   padding: 10px 20px;
   display: inline-block;
   width: 70px;
@@ -782,22 +944,23 @@ main section.classes .section-body-wrapper .tab-ttls .tab-wrapper > .tab-ttl {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+  font-size: 1rem;
 }
 
-main section.classes .section-body-wrapper .tab-ttls .tab-wrapper > .tab-ttl:hover {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper > .tab-ttl:hover {
   background: var(--bgTabHover);
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper {
   background: var(--bgSecondaryColor);
-  height: 800px;
+  height: 1300px;
   border-radius: 0 50px 50px 50px;
   position: relative;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year {
   position: absolute;
-  padding: 40px;
+  padding: 50px;
   width: 100%;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -807,23 +970,35 @@ main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year {
   transition: .3s;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year.active {
+@media screen and (max-width: 768px) {
+  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year {
+    padding: 20px;
+  }
+}
+
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year.active {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
   visibility: visible;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper {
   margin-bottom: 50px;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper h4, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper h4 {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper h4 {
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table {
+@media screen and (max-width: 768px) {
+  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper h4 {
+    margin-bottom: 10px;
+  }
+}
+
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table {
   text-align: center;
   border-collapse: collapse;
   border: 1px solid var(--accentPrimaryColor);
@@ -832,32 +1007,151 @@ main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .
 }
 
 @media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table {
-    font-size: 0.9rem;
+  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table {
+    font-size: 0.8rem;
   }
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr {
   width: 100%;
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr td {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr td {
   padding: 5px 10px;
   border-left: 1px dashed var(--accentSecondaryColor);
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr th {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th {
   background: var(--bgTh);
   color: var(--accentSecondaryColor);
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr td {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr td {
   border-bottom: 1px dashed var(--accentSecondaryColor);
   border-right: 1px dashed var(--accentSecondaryColor);
 }
 
-main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .fr div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sp div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .jr div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .table-wrapper .class-wrapper .year .sr div.semester-table-wrapper table tr th.other {
+main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th.other, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th.other {
   width: 20%;
+}
+
+@media screen and (min-width: 426px) {
+  main section.classes .section-body-wrapper .mobile-tab-table-wrapper {
+    display: none;
+  }
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper.active > .tab-ttl {
+  background: var(--accentPrimaryColor);
+  color: var(--textSecondaryColor);
+  cursor: default;
+  pointer-events: none;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper.active > .tab-ttl:hover {
+  background: var(--accentPrimaryColor);
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper > .tab-ttl {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background: var(--bgTab);
+  color: var(--textPrimaryColor);
+  border: 1px solid var(--accentPrimaryColor);
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 1rem;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper > .tab-ttl:hover {
+  background: var(--bgTabHover);
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper {
+  background: var(--bgSecondaryColor);
+  height: 900px;
+  border-radius: 0 10px 10px 10px;
+  position: relative;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr {
+  padding: 20px;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper {
+  margin-bottom: 30px;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper h4, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper h4, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper h4, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper h4 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper {
+  border: 1px solid var(--accentPrimaryColor);
+  border-top: none;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl {
+  padding: 5px 10px;
+  background: var(--bgTh);
+  border-top: 1px solid var(--accentPrimaryColor);
+  border-bottom: 1px dashed var(--accentPrimaryColor);
+  font-size: 0.8rem;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span {
+  padding: 5px 10px;
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span:not(:last-child), main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span:not(:last-child), main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span:not(:last-child), main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span:not(:last-child) {
+  border-right: 1px dashed var(--accentPrimaryColor);
+}
+
+main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span.other, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span.other, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span.other, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span.other {
+  color: var(--bgPrimaryColor);
 }
 
 main section.skills .section-body-wrapper .front-back-end-wrapper {
@@ -934,6 +1228,12 @@ main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top 
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top {
+    margin-bottom: 5px;
+  }
+}
+
 main section.skills .section-body-wrapper .in-progress-wrapper .in-progress-top div.two-arrows {
   -webkit-animation: arrow-move 1s infinite;
           animation: arrow-move 1s infinite;
@@ -964,54 +1264,147 @@ main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrappe
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-main section.works .section-body-wrapper {
-  padding: 50px;
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper {
+    padding: 20px;
+  }
 }
 
 main section.works .section-body-wrapper .each-work {
-  display: -ms-grid;
-  display: grid;
-  grid-template: "ttl ttl" 40px "img features" 180px "source-and-site made-of" 70px / 300px 1fr;
-  grid-gap: 20px;
-  padding: 30px;
+  padding: 50px;
   -webkit-box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
   margin-bottom: 50px;
   border-radius: 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   main section.works .section-body-wrapper .each-work {
-    grid-template: "ttl ttl" 40px "img img" 180px "features features" 1fr "made-of source-and-site" 70px / 1fr 1fr;
+    padding: 30px;
   }
 }
 
 main section.works .section-body-wrapper .each-work h3 {
   grid-area: ttl;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Carter One", cursive;
   color: var(--accentPrimaryColor);
   color: var(--accentSecondaryColor);
   text-align: center;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
   main section.works .section-body-wrapper .each-work h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
-main section.works .section-body-wrapper .each-work img.works-img {
+main section.works .section-body-wrapper .each-work .works-grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "img features" 200px "made-of source-and-site" 80px / 280px 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper {
+    grid-template: "img features" 170px "made-of source-and-site" 80px / 200px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper img.works-img {
   grid-area: img;
-  width: 300px;
+  width: 280px;
   aspect-ratio: 16/9;
   margin: 0 auto;
 }
 
-main section.works .section-body-wrapper .each-work div.source-site-wrapper {
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper img.works-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper img.works-img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper img.works-img {
+    width: 100%;
+  }
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper {
+  grid-area: features;
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  list-style: circle;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper ul li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper ul li {
+    font-size: 0.9rem;
+  }
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper {
+  grid-area: made-of;
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components {
+  color: var(--textPrimaryColor);
+  font-size: 1rem;
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components span {
+  color: var(--accentPrimaryColor);
+  font-size: 1.2rem;
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components img {
+  width: 30px;
+  display: inline;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components img {
+    width: 25px;
+    margin-right: 5px;
+  }
+}
+
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper {
   grid-area: source-and-site;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1022,100 +1415,35 @@ main section.works .section-body-wrapper .each-work div.source-site-wrapper {
           flex-direction: column;
 }
 
-main section.works .section-body-wrapper .each-work div.source-site-wrapper p {
-  margin-bottom: 5px;
-  font-size: 1.5rem;
-}
-
-main section.works .section-body-wrapper .each-work div.source-site-wrapper div {
-  line-height: 20px;
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 
-main section.works .section-body-wrapper .each-work div.source-site-wrapper div i {
-  color: var(--accentPrimaryColor);
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  main section.works .section-body-wrapper .each-work div.source-site-wrapper div i {
-    font-size: 1rem;
-  }
-}
-
-main section.works .section-body-wrapper .each-work div.source-site-wrapper div a {
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper div a {
   color: var(--textPrimaryColor);
   color: var(--linkColor);
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-  main section.works .section-body-wrapper .each-work div.source-site-wrapper div a {
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper div a {
     font-size: 1rem;
   }
 }
 
-main section.works .section-body-wrapper .each-work div.source-site-wrapper div a:hover {
+main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper div a:hover {
   text-decoration: underline;
 }
 
-main section.works .section-body-wrapper .each-work div.features-wrapper {
-  grid-area: features;
-}
-
-main section.works .section-body-wrapper .each-work div.features-wrapper p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-main section.works .section-body-wrapper .each-work div.features-wrapper ul li {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-  list-style: circle;
-  margin-left: 25px;
-}
-
-main section.works .section-body-wrapper .each-work div.made-of-wrapper {
-  grid-area: made-of;
-}
-
-main section.works .section-body-wrapper .each-work div.made-of-wrapper p.made-of {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-main section.works .section-body-wrapper .each-work div.made-of-wrapper p.components {
-  color: var(--textPrimaryColor);
-  font-size: 1rem;
-}
-
-main section.works .section-body-wrapper .each-work div.made-of-wrapper p.components span {
-  color: var(--accentPrimaryColor);
-  font-size: 1.2rem;
-}
-
-main section.works .section-body-wrapper .each-work div.made-of-wrapper p.components img {
-  width: 30px;
-  display: inline;
-  margin-right: 10px;
-}
-
 main section.contact .section-body-wrapper {
-  padding: 50px;
   color: var(--textPrimaryColor);
-}
-
-main section.contact .section-body-wrapper h3.get-in-touch {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
 }
 
 main section.contact .section-body-wrapper .email-calendly-wrapper {
@@ -1123,6 +1451,16 @@ main section.contact .section-body-wrapper .email-calendly-wrapper {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main section.contact .section-body-wrapper .email-calendly-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 main section.contact .section-body-wrapper .email-calendly-wrapper .left-col, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col {
@@ -1153,6 +1491,13 @@ footer p {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 768px) {
+  footer p {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+
 footer p a {
   color: var(--linkColor);
   cursor: pointer;
@@ -1171,21 +1516,5 @@ footer p a i {
   position: fixed;
   border-radius: 50%;
   border: 1px solid var(--accentPrimaryColor);
-}
-
-@-webkit-keyframes ripple-effect {
-  to {
-    -webkit-transform: scale(3);
-            transform: scale(3);
-    opacity: 0.01;
-  }
-}
-
-@keyframes ripple-effect {
-  to {
-    -webkit-transform: scale(3);
-            transform: scale(3);
-    opacity: 0.01;
-  }
 }
 /*# sourceMappingURL=style.css.map */

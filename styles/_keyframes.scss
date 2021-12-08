@@ -39,3 +39,18 @@
     left: 0;
   }
 }
+
+
+@keyframes ripple-effect {
+  to {
+    transform:scale(3);
+    opacity: 0.01;
+  }
+}
+
+
+
+
+
+
+

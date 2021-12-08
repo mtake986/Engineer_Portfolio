@@ -1,113 +1,133 @@
 section.works{
   .section-body-wrapper{
-    padding: 50px;
+    @include tablet{
+      padding: 20px;
+    }
     .each-work{
-      display: grid;
-      grid-template:
-        "ttl ttl" 40px
-        "img features" 180px
-        "source-and-site made-of" 70px /
-        300px 1fr;
-      grid-gap: 20px;
-      padding: 30px;
+      padding: 50px;
       box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
       margin-bottom: 50px;
       border-radius: 30px;
-      @include pc{
-        grid-template:
-          "ttl ttl" 40px
-          "img img" 180px
-          "features features" 1fr
-          "made-of source-and-site" 70px /
-          1fr 1fr;
+      @include tablet{
+        padding: 30px;
       }
       h3{
         grid-area: ttl;
-        font-size: $fzL;
+        font-size: $fzLL;
         font-family: $fontAccent;
         color: var(--accentPrimaryColor);
         color: var(--accentSecondaryColor);
         text-align: center;
+        margin-bottom: 15px;
         @include tablet{
-          font-size: $fzM;
+          font-size: $fzMM;
         }
       }
-      img.works-img{
-        grid-area: img;
-        width: 300px;
-        aspect-ratio: 16/9;
-        margin: 0 auto;
-      }
-      div.source-site-wrapper{
-        grid-area: source-and-site;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        p{
-          margin-bottom: 5px;
-          font-size: $fzM;
+      .works-grid-wrapper{
+        display: grid;
+        grid-template:
+        "img features" 200px
+        "made-of source-and-site" 80px /
+        280px 1fr;
+        grid-gap: 20px;
+        @include pc{
+          grid-template:
+            "img features" 170px
+            "made-of source-and-site" 80px /
+            200px 1fr
         }
-        div{
-          // font-size: $fzSS;
-          line-height: 20px;
+        @include tablet{
           display: flex;
-          align-items: center;
-          i{
-            color: var(--accentPrimaryColor);
-            font-size: $fzS;
-            margin-right: 10px;
-            @include pc{
-              font-size: $fzS;
+          flex-direction: column;
+          gap: 20px;
+        }
+        img.works-img{
+          grid-area: img;
+          width: 280px;
+          aspect-ratio: 16/9;
+          margin: 0 auto;
+          @include pc{
+            width: 100%;
+          }
+          @include tablet{
+            width: 200px;
+          }
+          @include mobile{
+            width: 100%;
+          }
+        }
+        div.features-wrapper{
+          grid-area: features;
+          @extend works-inside-ttl;
+          ul{
+            li{
+              font-size: $fzSS;
+              margin-bottom: 5px;
+              list-style: circle;
+              margin-left: 25px;
+              @include pc {
+                font-size: $fzS;
+              }
+              @include tablet{
+                font-size: $fzExs;
+              }
             }
           }
-          a{
+        }
+        div.made-of-wrapper{
+          grid-area: made-of;
+          @extend works-inside-ttl;
+          div.components{
             color: var(--textPrimaryColor);
-            color: var(--linkColor);
             font-size: $fzS;
-            @include pc{
-              font-size: $fzS;
+            span{
+              color: var(--accentPrimaryColor);
+              font-size: $fzSS;
             }
-            &:hover{
-              text-decoration: underline;
+            img{
+              width: 30px;
+              display: inline;
+              margin-right: 10px;
+              @include pc{
+                width: 25px;
+                margin-right: 5px;
+              }
             }
           }
         }
-      }
-      div.features-wrapper{
-        grid-area: features;
-        p{
-          font-size: $fzM;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-        ul{
-          li{
-            font-size: $fzSS;
-            margin-bottom: 5px;
-            list-style: circle;
-            margin-left: 25px;
-          }
-        }
-      }
-      div.made-of-wrapper{
-        grid-area: made-of;
-        p.made-of{
-          font-size: $fzM;
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-        p.components{
-          color: var(--textPrimaryColor);
-          font-size: $fzS;
-          span{
-            color: var(--accentPrimaryColor);
-            font-size: $fzSS;
-          }
-          img{
-            width: 30px;
-            display: inline;
-            margin-right: 10px;
+        div.source-site-wrapper{
+          grid-area: source-and-site;
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
+          @extend works-inside-ttl;
+          div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            // i{
+            //   color: var(--accentPrimaryColor);
+            //   font-size: $fzS;
+            //   margin-right: 10px;
+            //   margin-bottom: 5px;
+            //   @include pc{
+            //     font-size: $fzS;
+            //   }
+            // }
+            a{
+              color: var(--textPrimaryColor);
+              color: var(--linkColor);
+              // font-size: $fzS;
+              font-size: $fzSS;
+              margin-bottom: 5px;
+              @include tablet{
+                font-size: $fzS;
+              }
+              &:hover{
+                text-decoration: underline;
+              }
+            }
           }
         }
       }

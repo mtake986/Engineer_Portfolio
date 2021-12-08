@@ -1,6 +1,12 @@
 section.home{
   padding-top: 0px;
   position: relative;
+  @include tablet{
+    text-align: center;
+  }
+  @include tablet{
+    padding-top: 50px;
+  }
   @include lg-pc{
     .toggle-icon-wrapper{
       z-index: 100;
@@ -23,7 +29,7 @@ section.home{
           width: 20px;
           height: 2px;
           background: #fff;
-          transition: .2s;
+          transition: .3s;
           box-shadow: 0px 7px 0px #fff;
         }
         &::after{
@@ -32,7 +38,7 @@ section.home{
           width: 20px;
           height: 2px;
           background: #fff;
-          transition: .2s;
+          transition: .3s;
           transform: translateY(-7px);
           z-index: 10;
         }
@@ -56,18 +62,31 @@ section.home{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    @include tablet{
+      height: auto;
+    }
     .grid{
       display: grid;
       grid-template: 
-        "img greeting" 250px
-        "theme sns" 70px /
-        250px 1fr;
+        "img greeting greeting" 250px
+        "theme resume sns" 70px /
+        250px 150px 1fr;
       grid-gap: 30px 50px;
       @include lg-pc{
         grid-template: 
-          "img greeting" 210px
-          "theme sns" 70px /
-          210px 1fr;
+          "img greeting greeting" 210px
+          "theme resume sns" 70px /
+          210px 150px 1fr;
+      }
+      @include tablet{
+        grid-template: 
+          "img" 210px
+          "greeting" 1fr 
+          "resume" 50px
+          "sns" 50px 
+          "theme" 70px / 
+          250px;
+        grid-gap: 30px;
       }
       img{
         grid-area: img;
@@ -81,6 +100,9 @@ section.home{
           8px 8px 16px 8px #9b54ff;
         @include lg-pc{
           width: 200px;
+        }
+        @include tablet{
+          margin: 0 auto;
         }
       }
       .appearance-wrapper{
@@ -103,10 +125,14 @@ section.home{
             border-radius: 50%;
             cursor: pointer;
             // transition: .3s;
-            &:hover{
-              // box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
-              @include hoverAction1();
+            &.active{
+              pointer-events: none;
+              box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
             }
+            // &:hover{
+            //   // box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
+            //   @include hoverAction1();
+            // }
           }
           #white-mode{
             background: #fff;
@@ -138,51 +164,57 @@ section.home{
           line-height: 1.5;
         }
       }
-      .resume-and-sns-icons{
-        grid-area: sns;
+      a#resume-btn{
+        grid-area: resume;
+        position: relative;
+        display: inline-block;
+        height: 43px;
+        padding: 10px 20px;
+        overflow: hidden;
+        background: var(--accentPrimaryColor);
+        color: var(--bgSecondaryColor);
+        transition: .3s;
+        &:hover{
+          @include hoverAction1();
+        }
+        span{
+          line-height: 25px;
+          position: relative;
+          z-index: 10;
+          font-weight: bold;
+          font-size: $fzS;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .sns-icons{
+        grid-area: sns; 
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        // .resume{
-          a#resume-btn{
-            position: relative;
-            // display: inline-flex;
-            padding: 10px 20px;
-            overflow: hidden;
-            background: var(--accentPrimaryColor);
-            color: var(--bgSecondaryColor);
+        justify-content: center;
+        @include tablet{
+          justify-content: space-between;
+        }
+        a{
+          display: inline-block;
+          transition: .3s;
+          &:not(:last-child){
+            margin-right: 20px;
+          }
+          @include tablet{
+            &:not(:last-child){
+              margin-right: 0;
+            }
+          }
+          i{
+            padding: 9px;
+            color: var(--accentPrimaryColor);
+            background: var(--bgSecondaryColor);
+            font-size: 25px;
             transition: .3s;
             &:hover{
               @include hoverAction1();
-            }
-            span{
-              position: relative;
-              z-index: 10;
-              font-weight: bold;
-              font-size: $fzS;
-            }
-          }
-          // }
-        .sns-icons{
-          a{
-            display: inline-block;
-            margin-left: 10px;
-            transition: .3s;
-            // &:hover{
-              //   @include hoverAction1();
-              // }
-            i{
-              padding: 9px;
-              color: var(--accentPrimaryColor);
-              background: var(--bgSecondaryColor);
-              font-size: 25px;
-              transition: .3s;
-              &:hover{
-                @include hoverAction1();
-                // background: var(--accentPrimaryColor);
-                // color: var(--bgSecondaryColor);
-              }
+              // background: var(--accentPrimaryColor);
+              // color: var(--bgSecondaryColor);
             }
           }
         }

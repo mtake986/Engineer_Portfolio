@@ -4,106 +4,224 @@ section.classes{
   .section-body-wrapper{
     padding: 0;
     background: none;
-    .tab-ttls{
-      // margin-bottom: 20px;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      .tab-wrapper{
-        &.active > .tab-ttl{
-          background: var(--accentPrimaryColor);
-          color: var(--textSecondaryColor);
-          cursor: default;
-          pointer-events: none;
-          &:hover{
+    .pc-tab-table-wrapper{
+      @include mobile{
+        display: none;
+      }
+      .tab-ttls{
+        // margin-bottom: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .tab-wrapper{
+          &.active > .tab-ttl{
             background: var(--accentPrimaryColor);
+            color: var(--textSecondaryColor);
+            cursor: default;
+            pointer-events: none;
+            &:hover{
+              background: var(--accentPrimaryColor);
+            }
+          }
+          & > .tab-ttl{
+            // line-height: 45px;
+            padding: 10px 20px;
+            display: inline-block;
+            width: 70px;
+            text-align: center;
+            // padding: 10px 20px;
+            border-radius: 10px 10px 0 0;
+            background: var(--bgTab);
+            color: var(--textPrimaryColor);
+            border: 1px solid var(--accentPrimaryColor);
+            font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
+            font-size: $fzS;
+            &:hover{
+              background: var(--bgTabHover);
+              // Check this out to make a hover action cool
+              // https://www.youtube.com/watch?v=WOSaNbpHNqU
+            }
           }
         }
-        & > .tab-ttl{
-          // line-height: 45px;
-          padding: 10px 20px;
-          display: inline-block;
-          width: 70px;
-          text-align: center;
-          // padding: 10px 20px;
-          border-radius: 10px 10px 0 0;
-          background: var(--bgTab);
-          color: var(--textPrimaryColor);
-          border: 1px solid var(--accentPrimaryColor);
-          font-weight: 700;
-          cursor: pointer;
-          transition: .3s;
-          &:hover{
-            background: var(--bgTabHover);
-            // Check this out to make a hover action cool
-            // https://www.youtube.com/watch?v=WOSaNbpHNqU
+      }
+      .table-wrapper{
+        .pc-class-wrapper{
+          background: var(--bgSecondaryColor);
+          height: 1300px;
+          border-radius: 0 50px 50px 50px;
+          // padding: 30px;
+          position: relative;
+          .year{
+            // background: var(--bgSecondaryColor);
+            position: absolute;
+            // top: 30px;
+            // left: 30px;
+            padding: 50px;
+            width: 100%;
+            transform: scale(0);
+            opacity: 0;
+            visibility: hidden;
+            // display: none;
+            transition: .3s;
+            @include tablet{
+              padding: 20px;
+            }
+            &.active{
+              transform: scale(1);
+              opacity: 1;
+              visibility: visible;
+              // display: block;
+            }
+            .fr, .sp, .jr, .sr{
+              // position: absolute;
+              // top: 0;
+              // left: 0;
+              
+              // transform: scale(0);
+              // opacity: 0;
+              div.semester-table-wrapper{
+                margin-bottom: 50px;
+                h4{
+                  margin-bottom: 20px;
+                  font-size: $fzMM;
+                  @include tablet{
+                    margin-bottom: 10px;
+                  }
+                }
+                table{
+                  text-align: center;
+                  border-collapse: collapse;
+                  border: 1px solid var(--accentPrimaryColor);
+                  width: 100%;
+                  margin-bottom: 15px;
+                  @include tablet{
+                    font-size: $fzExss;
+                  }
+                  tr{
+                    width: 100%;
+                    th, td{
+                      padding: 5px 10px;
+                      border-left: 1px dashed var(--accentSecondaryColor);
+                    }
+                    th{
+                      background: var(--bgTh);
+                      color: var(--accentSecondaryColor);
+                    }
+                    td{
+                      border-bottom: 1px dashed var(--accentSecondaryColor);
+                      border-right: 1px dashed var(--accentSecondaryColor);
+                    }
+                    th.other{
+                      width: 20%;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-    .table-wrapper{
-      .class-wrapper{
-        background: var(--bgSecondaryColor);
-        height: 800px;
-        border-radius: 0 50px 50px 50px;
-        // padding: 30px;
-        position: relative;
-        .year{
-          // background: var(--bgSecondaryColor);
-          position: absolute;
-          // top: 30px;
-          // left: 30px;
-          padding: 40px;
-          width: 100%;
-          transform: scale(0);
-          opacity: 0;
-          visibility: hidden;
-          // display: none;
-          transition: .3s;
-          &.active{
-            transform: scale(1);
-            opacity: 1;
-            visibility: visible;
-            // display: block;
+    .mobile-tab-table-wrapper{
+      @include more-than-mobile{
+        display: none;
+      }
+      .mobile-tab-ttls{
+        // margin-bottom: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .mobile-tab-wrapper{
+          &.active > .tab-ttl{
+            background: var(--accentPrimaryColor);
+            color: var(--textSecondaryColor);
+            cursor: default;
+            pointer-events: none;
+            &:hover{
+              background: var(--accentPrimaryColor);
+            }
           }
-          .fr, .sp, .jr, .sr{
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            
-            // transform: scale(0);
-            // opacity: 0;
-            div.semester-table-wrapper{
-              margin-bottom: 50px;
-              h4{
-                margin-bottom: 20px;
-                font-size: $fzMM;
-              }
-              table{
-                text-align: center;
-                border-collapse: collapse;
-                border: 1px solid var(--accentPrimaryColor);
-                width: 100%;
-                margin-bottom: 15px;
-                @include tablet{
-                  font-size: $fzExs;
+          & > .tab-ttl{
+            // line-height: 45px;
+            padding: 10px 20px;
+            display: inline-block;
+            width: 70px;
+            text-align: center;
+            // padding: 10px 20px;
+            border-radius: 10px 10px 0 0;
+            background: var(--bgTab);
+            color: var(--textPrimaryColor);
+            border: 1px solid var(--accentPrimaryColor);
+            font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
+            font-size: $fzS;
+            &:hover{
+              background: var(--bgTabHover);
+              // Check this out to make a hover action cool
+              // https://www.youtube.com/watch?v=WOSaNbpHNqU
+            }
+          }
+        }
+      }
+      .mobile-table-wrapper{
+        .mobile-class-wrapper{
+          background: var(--bgSecondaryColor);
+          height: 900px;
+          border-radius: 0 10px 10px 10px;
+          position: relative;
+          .mobile-class-year{
+            // background: var(--bgSecondaryColor);
+            position: absolute;
+            // top: 30px;
+            // left: 30px;
+            width: 100%;
+            transform: scale(0);
+            opacity: 0;
+            visibility: hidden;
+            // display: none;
+            transition: .3s;
+            &.active{
+              transform: scale(1);
+              opacity: 1;
+              visibility: visible;
+              // display: block;
+            }
+            .mobile-fr, .mobile-sp, .mobile-jr, .mobile-sr{
+              padding: 20px;
+              .semester-table-wrapper{
+                margin-bottom: 30px;
+                h4{
+                  margin-bottom: 10px;
+                  font-size: $fzMM;
                 }
-                tr{
-                  width: 100%;
-                  th, td{
-                    padding: 5px 10px;
-                    border-left: 1px dashed var(--accentSecondaryColor);
-                  }
-                  th{
-                    background: var(--bgTh);
-                    color: var(--accentSecondaryColor);
-                  }
-                  td{
-                    border-bottom: 1px dashed var(--accentSecondaryColor);
-                    border-right: 1px dashed var(--accentSecondaryColor);
-                  }
-                  th.other{
-                    width: 20%;
+                .all-class-wrapper{
+                  border: 1px solid var(--accentPrimaryColor);
+                  border-top: none;
+                  .one-class-wrapper{
+                    // border: 1px solid var(--accentPrimaryColor);
+                    div.mobile-class-ttl{
+                      padding: 5px 10px;
+                      background: var(--bgTh);
+                      border-top: 1px solid var(--accentPrimaryColor);
+                      border-bottom: 1px dashed var(--accentPrimaryColor);
+                      font-size: $fzExss;
+                    }
+                    div.class-info{
+                      display: flex;
+                      font-size: $fzExsss;
+                      span{
+                        padding: 5px 10px;
+                        &:not(:last-child){
+                          border-right: 1px dashed var(--accentPrimaryColor);
+                        }
+                        &.other{
+                          color: var(--bgPrimaryColor);
+                        }
+                      }
+                    }
                   }
                 }
               }

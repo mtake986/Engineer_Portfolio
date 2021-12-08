@@ -1,14 +1,21 @@
 section.contact{
   .section-body-wrapper{
-    padding: 50px;
     color: var(--textPrimaryColor);
-    h3.get-in-touch{
-      font-size: $fzMM;
-      margin-bottom: 30px;
-    }
+    // h3.get-in-touch{
+    //   font-size: $fzMM;
+    //   margin-bottom: 30px;
+    //   @include tablet{
+    //     font-size: $fzM;
+    //     margin-bottom: 15px;
+    //   }
+    // }
     .email-calendly-wrapper{
       display: flex;
       gap: 50px;
+      @include tablet{
+        flex-direction: column;
+        gap: 20px;
+      }
       .left-col, .right-col{
         position: relative;
         width: 100%;

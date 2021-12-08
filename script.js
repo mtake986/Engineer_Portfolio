@@ -2,7 +2,6 @@ console.log('Is it working??')
 
 var tabs = document.querySelectorAll('.tab-wrapper');
 var eachYearClass = document.querySelectorAll('.year');
-// console.log(tabs, eachYearClass);
 
 for (var i = 0; i < tabs.length; i++)  {
   tabs[i].addEventListener('click', function(){
@@ -16,6 +15,23 @@ for (var i = 0; i < tabs.length; i++)  {
     this.className = 'tab-wrapper active';
   })
 };
+
+var mobileTabs = document.querySelectorAll('.mobile-tab-wrapper');
+var mobileEachYearClass = document.querySelectorAll('.mobile-class-year');
+
+for (var i = 0; i < mobileTabs.length; i++)  {
+  mobileTabs[i].addEventListener('click', function(){
+    for (var i = 0; i < mobileEachYearClass.length; i++)  {
+      mobileEachYearClass[i].className = 'mobile-class-year'
+    }
+    document.getElementById(this.dataset.id).className = 'mobile-class-year active';
+    for (var i = 0; i < mobileTabs.length; i++)  {
+      mobileTabs[i].className = 'mobile-tab-wrapper'
+    }
+    this.className = 'mobile-tab-wrapper active';
+  })
+};
+
 
 var emailAddress = document.getElementById('emailAddress')
 var emailIcons = document.getElementsByClassName('fa-paper-plane')
@@ -43,6 +59,8 @@ console.log({emailAddress, emailIcons, calendly, calendlyIcons})
 // change theme
 //////////////////////
 let themeDots = document.getElementsByClassName("theme-dot")
+var whiteModeDot = document.getElementById('white-mode')
+var darkModeDot = document.getElementById('dark-mode')
 // let blackCover = document.getElementsByClassName('black-cover')
 for (let i = 0; i < themeDots.length; i++)  {
   themeDots[i].addEventListener("click", function(){
@@ -56,9 +74,13 @@ for (let i = 0; i < themeDots.length; i++)  {
 function setTheme(mode){
   if (mode == "light"){
     document.getElementById('theme-style').href = './styles/style.css'
+    whiteModeDot.classList.toggle('active')
+    darkModeDot.classList.toggle('active')
   }
   if (mode == "dark"){
     document.getElementById('theme-style').href = './styles/theme-dark.css'
+    whiteModeDot.classList.toggle('active')
+    darkModeDot.classList.toggle('active')
   }
 }
 //////////////////////

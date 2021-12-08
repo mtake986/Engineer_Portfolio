@@ -31,6 +31,9 @@ body{
   background: var(--bgPrimaryColor);
   font-family: $fontSecondary;
   font-size: $fzSS;
+  @include tablet{
+    font-size: $fzExs;
+  }
 }
 // &::selection{
 //   background: var(--accentPrimaryColor);
@@ -71,6 +74,9 @@ main{
   @include pc{
     padding: 0 50px;
   }
+  @include tablet{
+    padding: 0 15px;
+  }
   @import "./home";
   @import "./section";
   @import "./about";
@@ -103,11 +109,4 @@ main{
   position: fixed;
   border-radius: 50%;
   border: 1px solid var(--accentPrimaryColor);
-}
-
-@keyframes ripple-effect {
-  to {
-    transform:scale(3);
-    opacity: 0.01;
-  }
 }

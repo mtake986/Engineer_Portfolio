@@ -5,7 +5,7 @@ section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 10px;
+    // height: 10px;
     .border{
       width: 50px;
       border-bottom: 1px solid var(--textPrimaryColor);
@@ -14,15 +14,26 @@ section{
       margin-left: 15px;
       font-size: $fzExs;
       line-height: 10%;
+      @include tablet{
+        font-size: $fzExss;
+      }
     }
   }
   h2{
-    font-size: $fzL;
+    font-size: $fzLL;
     margin: 10px 0 50px;
+    @include tablet{
+      font-size: $fzL;
+      margin: 10px 0 30px;
+    }
   }
   .section-body-wrapper{
     padding: 50px;
     background: var(--bgSecondaryColor);
     border-radius: 50px;
+    @include tablet{
+      padding: 30px;
+      border-radius: 30px;
+    }
   }
 }

@@ -9,6 +9,7 @@ $fzSS: 1.2rem;
 $fzS: 1rem;
 $fzExs: .9rem;
 $fzExss: .8rem;
+$fzExsss: 10px;
 
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Trade+Winds&display=swap');
 
@@ -21,12 +22,11 @@ $fontSecondary: 'Poppins', sans-serif;
 $jpfontAccent: 'Yuji Syuku', serif;
 $jpfontPrimary: 'Noto Sans JP', sans-serif;
 
-
-// $sm: 425px;
+$more-than-mobile: 426px;
+$sm: 425px;
 $md: 768px;
 $lg: 1024px;
 $lg-pc: 1400px;
-// $lg-pc: 1200px;
 
 // @media screen and (max-width: $md) {
 //   body{
@@ -34,11 +34,17 @@ $lg-pc: 1400px;
 //     width: 95%;
 //   }
 // }
-// @mixin mobile{
-//   @media screen and (max-width: $sm){
-//     @content;
-//   }
-// }
+
+@mixin more-than-mobile{
+  @media screen and (min-width: $more-than-mobile){
+    @content;
+  }
+}
+@mixin mobile{
+  @media screen and (max-width: $sm){
+    @content;
+  }
+}
 @mixin tablet{
   @media screen and (max-width: $md){
     @content;

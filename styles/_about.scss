@@ -6,6 +6,9 @@ section.about{
       @include pc{
         font-size: $fzSS;
       }
+      @include tablet{
+        font-size: $fzExs;
+      }
       span.color{
         color: var(--accentPrimaryColor);
         font-weight: 700;
