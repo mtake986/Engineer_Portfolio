@@ -1,9 +1,6 @@
 section.home{
   padding-top: 0px;
   position: relative;
-  @include more-than-mobile{
-    padding: 50px;
-  }
   @include tablet{
     text-align: center;
   }
