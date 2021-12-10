@@ -22,6 +22,9 @@ section.works{
         @include tablet{
           font-size: $fzMM;
         }
+        @include mobile{
+          font-size: $fzM;
+        }
       }
       .works-grid-wrapper{
         display: grid;

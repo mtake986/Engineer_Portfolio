@@ -22,11 +22,12 @@ $fontSecondary: 'Poppins', sans-serif;
 $jpfontAccent: 'Yuji Syuku', serif;
 $jpfontPrimary: 'Noto Sans JP', sans-serif;
 
-$more-than-mobile: 426px;
 $sm: 425px;
 $md: 768px;
 $lg: 1024px;
 $lg-pc: 1400px;
+$more-than-mobile: 426px;
+$more-than-tablet: 769px;
 
 // @media screen and (max-width: $md) {
 //   body{
@@ -35,11 +36,6 @@ $lg-pc: 1400px;
 //   }
 // }
 
-@mixin more-than-mobile{
-  @media screen and (min-width: $more-than-mobile){
-    @content;
-  }
-}
 @mixin mobile{
   @media screen and (max-width: $sm){
     @content;
@@ -57,6 +53,16 @@ $lg-pc: 1400px;
 }
 @mixin lg-pc{
   @media screen and (max-width: $lg-pc){
+    @content;
+  }
+}
+@mixin more-than-mobile{
+  @media screen and (min-width: $more-than-mobile){
+    @content;
+  }
+}
+@mixin more-than-tablet{
+  @media screen and (min-width: $more-than-tablet){
     @content;
   }
 }
