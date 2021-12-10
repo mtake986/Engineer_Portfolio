@@ -522,6 +522,12 @@ main section.home {
   position: relative;
 }
 
+@media screen and (min-width: 426px) {
+  main section.home {
+    padding: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main section.home {
     text-align: center;
