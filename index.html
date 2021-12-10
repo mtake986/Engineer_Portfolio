@@ -25,1124 +25,1132 @@
   <link rel="stylesheet" type="text/css" href="" id="theme-style">
   <script src='script.js' defer></script>
 </head>
-<body id="en">
+<body id="en" onload="myFunction()">
   <!-- <div class="black-cover"></div> -->
-  <header class="side-header" id="side-header">
-    <div class="logo-wrapper">
-      <span class="m">M</span>
-      <span class="t">T</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></li></a>
-        <li><a href="#about"><i class="fas fa-user"></i><span>About</span></li></a>
-        <li><a href="#classes"><i class="fas fa-school"></i><span>Classes</span></li></a>
-        <li><a href="#skills"><i class="fas fa-laptop-code"></i><span>Skills</span></li></a>
-        <li><a href="#works"><i class="fas fa-briefcase"></i><span>Works</span></li></a>
-        <li><a href="#contact"><i class="fas fa-address-card"></i><span>Contact</span></li></a>
-      </ul>
-    </nav>
-    <div class="arrow-wrapper">
-      <span>&#8595;</span>
-    </div>
-  </header>
-
-  <main>
-    <section class="home" id="home">
-      <div class="toggle-icon-wrapper">
-        <div class="toggle-icon" id="toggle"></div>
+  <div id="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="after-load">
+    <header class="side-header" id="side-header">
+      <div class="logo-wrapper">
+        <span class="m">M</span>
+        <span class="t">T</span>
       </div>
-      <!-- <div class="theme-change-wrapper">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-exchange-alt"></i>
-        <i class="fas fa-moon"></i>
-      </div> -->
-      <div class="body-wrapper">
-        <div class="grid">
-          <img src="files/face.jpg" alt="Masa's face">
-          <div class="appearance-wrapper">
-            <h4>Appearance</h4>
-            <div class="dots-wrapper">
-              <div data-mode="light" id="white-mode" class="theme-dot active"></div>
-              <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
-            </div>
-          </div>
-          <div class="greeting-wrapper">
-            <p class="greeting">Hi there!! I'm</p>
-            <h1>MASAHIRO TAKECHI</h1>
-            <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best full stack developers in a human history.</p>
-          </div>
-          <!-- <div class="resume"> -->
-          <a href="./files/Resume.docx" id="resume-btn"><span>Resume</span></a>
-          <!-- </div> -->
-          <div class="sns-icons">
-            <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/mtake986"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/channel/UCunf6uNCzI7Njmga2CPLVcQ"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/masahirotakechi"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@masahirotakechi?lang=en"><i class="fab fa-tiktok"></i></a>
-          </div>
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></li></a>
+          <li><a href="#about"><i class="fas fa-user"></i><span>About</span></li></a>
+          <li><a href="#classes"><i class="fas fa-school"></i><span>Classes</span></li></a>
+          <li><a href="#skills"><i class="fas fa-laptop-code"></i><span>Skills</span></li></a>
+          <li><a href="#works"><i class="fas fa-briefcase"></i><span>Works</span></li></a>
+          <li><a href="#contact"><i class="fas fa-address-card"></i><span>Contact</span></li></a>
+        </ul>
+      </nav>
+      <div class="arrow-wrapper">
+        <span>&#8595;</span>
+      </div>
+    </header>
+  
+    <main>
+      <section class="home" id="home">
+        <div class="toggle-icon-wrapper">
+          <div class="toggle-icon" id="toggle"></div>
         </div>
-      </div>
-    </section>
-    
-    <section class="about" id="about">
-      <div class="section-border">
-        <div class="border"></div>
-        <span class="border-txt">SOME INFO</span>
-      </div>
-      <h2 class="sec-ttl">ABOUT ME</h2>
-      <div class="section-body-wrapper">
-        <div class="long-msg">
-          <p>
-            I'm a full stack developer with primary focus on <span class="color">Python (Django)</span> + <span class="color">JavaScript (React.js)</span>. 
-            Every two months, I start building a new app to tickle my brain, refine my coding skills and creativity, and learn more web techs. Moreover, I am passionate about creating websites and web apps that incorporate interactive design and modern technologies. I specialize in <span class="color">back-end development</span> more, but also love experimenting with new front-end technologies, <!-- with the aim -->to skyrocket 1. speed, 2. productivity, 3. performance, and 4. quality.
-            <!-- I love self-teaching to learn how to code, and now I have more than enough programming knowledge and creativity through self-teaching and college classes.  -->
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="classes" id="classes">
-      <div class="section-border">
-        <div class="border"></div>
-        <span class="border-txt">I'VE TAKEN THESE COLLEGE</span>
-      </div>
-      <h2 class="sec-ttl">CLASSES</h2>
-      <div class="section-body-wrapper">
-        <div class="pc-tab-table-wrapper">
-          <!-- Start: Tabs -->
-          <div class="tab-ttls">
-            <div class="tab-wrapper active" data-id="fr">
-              <span class="tab-ttl">Fr.</span>
-            </div>
-            <div class="tab-wrapper" data-id="sp">
-              <span class="tab-ttl">Sp.</span>
-            </div>
-            <div class="tab-wrapper" data-id="jr">
-              <span class="tab-ttl">Jr.</span>
-            </div>
-            <div class="tab-wrapper" data-id="sr">
-              <span class="tab-ttl">Sr.</span>
-            </div>
-          </div>
-          <!-- End: Tabs -->
-          <!-- Start: Table -->
-          <div class="table-wrapper">
-            <div class="pc-class-wrapper bgheight-fr">
-              <!-- Start: freshman -->
-              <div class="year active" id="fr">
-                <div class="fr">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                      </tr>
-                      <tr>
-                        <td>BSA1103</td>
-                        <td>Introduction to Business</td>
-                        <td>3</td>
-                        <td>B+</td>
-                      </tr>
-                      <tr>
-                        <td>IND1013</td>
-                        <td>The Making of Pre-modern Europe</td>
-                        <td>3</td>
-                        <td>B+</td>
-                      </tr>
-                      <tr>
-                        <td>COM1003</td>
-                        <td>Public Speaking</td>
-                        <td>3</td>
-                        <td>B-</td>
-                      </tr>
-                      <tr>
-                        <td>HIS2113</td>
-                        <td>United States History I</td>
-                        <td>3</td>
-                        <td>C+</td>
-                      </tr>
-                      <tr>
-                        <td>ENG1033</td>
-                        <td>Academic Writing</td>
-                        <td>3</td>
-                        <td>C-</td>
-                      </tr>
-                    </table>
-                    <!-- <p>※Excuse: I wasn't used to take classes in English, so the GPAs are low.</p> -->
-                  </div>
-                  <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                      </tr>
-                      <tr>
-                        <td>EDU1783</td>
-                        <td>Introduction to Education</td>
-                        <td>3</td>
-                        <td>P</td>
-                      </tr>
-                      <tr>
-                        <td>ENS1023</td>
-                        <td>Environmental Science</td>
-                        <td>3</td>
-                        <td>P</td>
-                      </tr>
-                      <tr>
-                        <td>MTH1023</td>
-                        <td>Mathematical Literacy</td>
-                        <td>3</td>
-                        <td>P</td>
-                      </tr>
-                      <tr>
-                        <td>MTH1033</td>
-                        <td>College Algebra</td>
-                        <td>3</td>
-                        <td>P</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <!-- Start: sophomore -->
-              <div class="year" id="sp">
-                <div class="sp">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                      </tr>
-                      <tr>
-                        <td>HSC1023</td>
-                        <td>Personal Health and Safety</td>
-                        <td>3</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>MGT2003</td>
-                        <td>Survey of Management</td>
-                        <td>3</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>MKT2003</td>
-                        <td>Marketing Concepts</td>
-                        <td>3</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>SPN1105</td>
-                        <td>Intensive Elementary Spanish I</td>
-                        <td>5</td>
-                        <td>B+</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                        <!-- Otherはなんかちゃう -->
-                      </tr>
-                      <tr>
-                        <td>PSY1003</td>
-                        <td>General Psychology</td>
-                        <td>3</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>PSY2023</td>
-                        <td>Abnormal Psychology</td>
-                        <td>3</td>
-                        <td>C+</td>
-                      </tr>
-                      <tr>
-                        <td>MTH1053</td>
-                        <td>Intro to Statistics</td>
-                        <td>3</td>
-                        <td>B+</td>
-                      </tr>
-                      <tr>
-                        <td>ECN2013</td>
-                        <td>Principles of Microeconomics</td>
-                        <td>3</td>
-                        <td>A</td>
-                      </tr>
-                      <tr>
-                        <td>SPN 1205</td>
-                        <td>Intensive Elementary Spanish II</td>
-                        <td>5</td>
-                        <td>B+</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <!-- Start: junior -->
-              <div class="year" id="jr">
-                <div class="jr">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                        <!-- Otherはなんかちゃう -->
-                      </tr>
-                      <tr>
-                        <td>CSE100</td>
-                        <td>Introduction to Computing</td>
-                        <td>1</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>CSE170</td>
-                        <td>Technical Teamwork</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>CSE212</td>
-                        <td>Programming with Data Structures</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>WDD130</td>
-                        <td>Wed Fundamentals</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>CIT111</td>
-                        <td>Introduction to Databases</td>
-                        <td>3</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>CIT171</td>
-                        <td>Introduction to Cybersecurity</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>ECEN106</td>
-                        <td>Computer Systems</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                      <tr>
-                        <td>REL225C</td>
-                        <td>Foundations of the Restoration</td>
-                        <td>2</td>
-                        <td>A+</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div class="winter-semester semester-table-wrapper">
-                    <h4>Winter</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                        <!-- Otherはなんかちゃう -->
-                      </tr>
-                      <tr>
-                        <td>CSE121A</td>
-                        <td>Clojure</td>
-                        <td>1</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>CSE121B</td>
-                        <td>JavaScript</td>
-                        <td>1</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>CSE180</td>
-                        <td>Algorithmic Thinking</td>
-                        <td>3</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>CSE250</td>
-                        <td>Data Science Programming</td>
-                        <td>2</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>CSE251</td>
-                        <td>Parallelism and Concurrency</td>
-                        <td>3</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>CSE310</td>
-                        <td>Applied Programming</td>
-                        <td>4</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>REL200C</td>
-                        <td>The Eternal Family</td>
-                        <td>2</td>
-                        <td>N</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <!-- <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <table>
-                      <tr>
-                        <th>ID</th>
-                        <th class="wide">Name</th>
-                        <th>Cred.</th>
-                        <th>GPA</th>
-                        <th class="other wide">Other</th>
-                      </tr>
-                      <tr>
-                        <td>CSE100</td>
-                        <td>Introduction to Computing</td>
-                        <td>1</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>CSE170</td>
-                        <td>Technical Teamwork</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>CSE212</td>
-                        <td>Programming with Data Structures</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>WDD130</td>
-                        <td>Wed Fundamentals</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>CIT111</td>
-                        <td>Introduction to Databases</td>
-                        <td>3</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>CIT171</td>
-                        <td>Introduction to Cybersecurity</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>ECEN106</td>
-                        <td>Computer Systems</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>REL225C</td>
-                        <td>Foundations of the Restoration</td>
-                        <td>2</td>
-                        <td>A+</td>
-                        <td></td>
-                      </tr>
-                    </table>
-                  </div> -->
-                </div>
-              </div>
-              <!-- Start: senior -->
-              <div class="year" id="sr">
-                <div class="sr">
-                  xcvhjbvuibi
-                </div>
+        <!-- <div class="theme-change-wrapper">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-exchange-alt"></i>
+          <i class="fas fa-moon"></i>
+        </div> -->
+        <div class="body-wrapper">
+          <div class="grid">
+            <img src="files/face.jpg" alt="Masa's face">
+            <div class="appearance-wrapper">
+              <h4>Appearance</h4>
+              <div class="dots-wrapper">
+                <div data-mode="light" id="white-mode" class="theme-dot active"></div>
+                <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
               </div>
             </div>
-          </div>
-          <!-- End: Table -->
-        </div>
-        <div class="mobile-tab-table-wrapper">
-          <div class="mobile-tab-ttls">
-            <div class="mobile-tab-wrapper active" data-id="mobile-fr">
-              <span class="tab-ttl">Fr.</span>
+            <div class="greeting-wrapper">
+              <p class="greeting">Hi there!! I'm</p>
+              <h1>MASAHIRO TAKECHI</h1>
+              <p class="short-intro">I'm from Japan, 21 years old, studying CS at BYU-Idaho, and on the way to become one of the best of the best self-taught full stack developers in a human history.</p>
             </div>
-            <div class="mobile-tab-wrapper" data-id="mobile-sp">
-              <span class="tab-ttl">Sp.</span>
-            </div>
-            <div class="mobile-tab-wrapper" data-id="mobile-jr">
-              <span class="tab-ttl">Jr.</span>
-            </div>
-            <div class="mobile-tab-wrapper" data-id="mobile-sr">
-              <span class="tab-ttl">Sr.</span>
-            </div>
-          </div>
-          <div class="mobile-table-wrapper">
-            <div class="mobile-class-wrapper bgheightmobile-fr">
-              <div class="mobile-class-year active" id="mobile-fr">
-                <div class="mobile-fr">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Introduction to Business</div>
-                        <div class="class-info">
-                          <span class="class-id">BSA1103</span>
-                          <span>3</span>
-                          <span class="class-grade">B+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">The Making of Pre-modern Europe</div>
-                        <div class="class-info">
-                          <span class="class-id">IND1013</span>
-                          <span>3</span>
-                          <span class="class-grade">B+</span>
-                          <span></span>
-                        </div>
-                        
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Public Speaking</div>
-                        <div class="class-info">
-                          <span class="class-id">COM1003</span>
-                          <span>3</span>
-                          <span class="class-grade">B-</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">United States History I</div>
-                        <div class="class-info">
-                          <span class="class-id">HIS2113</span>
-                          <span>3</span>
-                          <span class="class-grade">C+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Academic Writing</div>
-                        <div class="class-info">
-                          <span class="class-id">ENG1033</span>
-                          <span>3</span>
-                          <span class="class-grade">C-</span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Introduction to Education</div>
-                        <div class="class-info">
-                          <span>EDU1783</span>
-                          <span>3</span>
-                          <span>P</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Environmental Science</div>
-                        <div class="class-info">
-                          <span>ENS1023</span>
-                          <span>3</span>
-                          <span>P</span>
-                          <span></span>
-                        </div>
-                        
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Mathematical Literacy</div>
-                        <div class="class-info">
-                          <span>MTH1023</span>
-                          <span>3</span>
-                          <span>P</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">College Algebra</div>
-                        <div class="class-info">
-                          <span>MTH1033</span>
-                          <span>3</span>
-                          <span>P</span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile-class-year" id="mobile-sp">
-                <div class="mobile-sp">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Personal Health and Safety</div>
-                        <div class="class-info">
-                          <span>HSC1023</span>
-                          <span>3</span>
-                          <span>A</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Survey of Management</div>
-                        <div class="class-info">
-                          <span>MGT2003</span>
-                          <span>3</span>
-                          <span>A</span>
-                          <span></span>
-                        </div>
-                        
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Marketing Concepts</div>
-                        <div class="class-info">
-                          <span>MKT2003</span>
-                          <span>3</span>
-                          <span>A</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Intensive Elementary Spanish I</div>
-                        <div class="class-info">
-                          <span>SPN1105</span>
-                          <span>5</span>
-                          <span>B+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">General Psychology</div>
-                        <div class="class-info">
-                          <span>PSY1003</span>
-                          <span>3</span>
-                          <span>A</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Abnormal Psychology</div>
-                        <div class="class-info">
-                          <span>PSY2023</span>
-                          <span>3</span>
-                          <span>C+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Intro to Statistics</div>
-                        <div class="class-info">
-                          <span>MTH1053</span>
-                          <span>3</span>
-                          <span>B+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Principles of Microeconomics</div>
-                        <div class="class-info">
-                          <span>ECN2013</span>
-                          <span>3</span>
-                          <span>A</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Intensive Elementary Spanish II</div>
-                        <div class="class-info">
-                          <span>SPN 1205</span>
-                          <span>5</span>
-                          <span>B+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile-class-year" id="mobile-jr">
-                <div class="mobile-jr">
-                  <div class="fall-semester semester-table-wrapper">
-                    <h4>Fall</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Introduction to Computing</div>
-                        <div class="class-info">
-                          <span>CSE100</span>
-                          <span>1</span>
-                          <span>A+</span>
-                          <!-- <span></span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Technical Teamwork</div>
-                        <div class="class-info">
-                          <span>CSE170</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <!-- <span></span> -->
-                        </div>
-                        
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Programming with Data Structures</div>
-                        <div class="class-info">
-                          <span>CSE212</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <!-- <span></span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Wed Fundamentals</div>
-                        <div class="class-info">
-                          <span>WDD130</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Introduction to Databases</div>
-                        <div class="class-info">
-                          <span>CIT111</span>
-                          <span>3</span>
-                          <span>A+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Introduction to Cybersecurity</div>
-                        <div class="class-info">
-                          <span>CIT171</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Computer Systems</div>
-                        <div class="class-info">
-                          <span>ECEN106</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Foundations of the Restoration</div>
-                        <div class="class-info">
-                          <span>REL225C</span>
-                          <span>2</span>
-                          <span>A+</span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="spring-semester semester-table-wrapper">
-                    <h4>Spring</h4>
-                    <div class="all-class-wrapper">
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Clojure</div>
-                        <div class="class-info">
-                          <span>CSE121A</span>
-                          <span>1</span>
-                          <span>N</span>
-                          <!-- <span></span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">JavaScript</div>
-                        <div class="class-info">
-                          <span>CSE121B</span>
-                          <span>1</span>
-                          <span>N</span>
-                          <!-- <span></span> -->
-                        </div>
-                        
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Algorithmic Thinking</div>
-                        <div class="class-info">
-                          <span>CSE180</span>
-                          <span>3</span>
-                          <span>N</span>
-                          <!-- <span></span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Data Science Programming</div>
-                        <div class="class-info">
-                          <span>CSE250</span>
-                          <span>2</span>
-                          <span>N</span>
-                          <!-- <span></span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Parallelism and Concurrency</div>
-                        <div class="class-info">
-                          <span>CSE251</span>
-                          <span>3</span>
-                          <span>N</span>
-                          <!-- <span class="other">other</span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">Applied Programming</div>
-                        <div class="class-info">
-                          <span>CSE310</span>
-                          <span>4</span>
-                          <span>N</span>
-                          <!-- <span class="other">other</span> -->
-                        </div>
-                      </div>
-                      <div class="one-class-wrapper">
-                        <div class="mobile-class-ttl">The Eternal Family</div>
-                        <div class="class-info">
-                          <span>REL200C</span>
-                          <span>2</span>
-                          <span>N</span>
-                          <!-- <span class="other">other</span> -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile-class-year" id="mobile-sr">
-                <div class="mobile-sr">
-                  none
-                </div>
-              </div>
-    
+            <!-- <div class="resume"> -->
+            <a href="./files/Resume.docx" id="resume-btn"><span>Resume</span></a>
+            <!-- </div> -->
+            <div class="sns-icons">
+              <a href="https://www.linkedin.com/in/masahirotakechi/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/mtake986"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UCunf6uNCzI7Njmga2CPLVcQ"><i class="fab fa-youtube"></i></a>
+              <a href="https://twitter.com/masahirotakechi"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/@masahirotakechi?lang=en"><i class="fab fa-tiktok"></i></a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <div class="section-border">
-        <div class="border"></div>
-        <span class="border-txt">WATCH OUT MY</span>
-      </div>
-      <h2 class="sec-ttl">SKILLS</h2>
-      <div class="section-body-wrapper">
-        <div class="front-back-end-wrapper">
-          <div class="left-col">
-            <h4>FRONT END <span> etc.</span></h4>
+      </section>
+      
+      <section class="about" id="about">
+        <div class="section-border">
+          <div class="border"></div>
+          <span class="border-txt">SOME INFO</span>
+        </div>
+        <h2 class="sec-ttl">ABOUT ME</h2>
+        <div class="section-body-wrapper">
+          <div class="long-msg">
+            <p>
+              I'm a full stack developer with primary focus on <span class="color">Python (Django)</span> + <span class="color">JavaScript (React.js)</span>. 
+              Every two months, I start building a new app to tickle my brain, refine my coding skills and creativity, and learn more web techs. Moreover, I am passionate about creating websites and web apps that incorporate interactive design and modern technologies. I specialize in <span class="color">back-end development</span> more, but also love experimenting with new front-end technologies, <!-- with the aim -->to skyrocket 1. speed, 2. productivity, 3. performance, and 4. quality.
+              <!-- I love self-teaching to learn how to code, and now I have more than enough programming knowledge and creativity through self-teaching and college classes.  -->
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="classes" id="classes">
+        <div class="section-border">
+          <div class="border"></div>
+          <span class="border-txt">I'VE TAKEN THESE COLLEGE</span>
+        </div>
+        <h2 class="sec-ttl">CLASSES</h2>
+        <div class="section-body-wrapper">
+          <div class="pc-tab-table-wrapper">
+            <!-- Start: Tabs -->
+            <div class="tab-ttls">
+              <div class="tab-wrapper active" data-id="fr">
+                <span class="tab-ttl">Fr.</span>
+              </div>
+              <div class="tab-wrapper" data-id="sp">
+                <span class="tab-ttl">Sp.</span>
+              </div>
+              <div class="tab-wrapper" data-id="jr">
+                <span class="tab-ttl">Jr.</span>
+              </div>
+              <div class="tab-wrapper" data-id="sr">
+                <span class="tab-ttl">Sr.</span>
+              </div>
+            </div>
+            <!-- End: Tabs -->
+            <!-- Start: Table -->
+            <div class="table-wrapper">
+              <div class="pc-class-wrapper bgheight-fr">
+                <!-- Start: freshman -->
+                <div class="year active" id="fr">
+                  <div class="fr">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                        </tr>
+                        <tr>
+                          <td>BSA1103</td>
+                          <td>Introduction to Business</td>
+                          <td>3</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>IND1013</td>
+                          <td>The Making of Pre-modern Europe</td>
+                          <td>3</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>COM1003</td>
+                          <td>Public Speaking</td>
+                          <td>3</td>
+                          <td>B-</td>
+                        </tr>
+                        <tr>
+                          <td>HIS2113</td>
+                          <td>United States History I</td>
+                          <td>3</td>
+                          <td>C+</td>
+                        </tr>
+                        <tr>
+                          <td>ENG1033</td>
+                          <td>Academic Writing</td>
+                          <td>3</td>
+                          <td>C-</td>
+                        </tr>
+                      </table>
+                      <!-- <p>※Excuse: I wasn't used to take classes in English, so the GPAs are low.</p> -->
+                    </div>
+                    <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                        </tr>
+                        <tr>
+                          <td>EDU1783</td>
+                          <td>Introduction to Education</td>
+                          <td>3</td>
+                          <td>P</td>
+                        </tr>
+                        <tr>
+                          <td>ENS1023</td>
+                          <td>Environmental Science</td>
+                          <td>3</td>
+                          <td>P</td>
+                        </tr>
+                        <tr>
+                          <td>MTH1023</td>
+                          <td>Mathematical Literacy</td>
+                          <td>3</td>
+                          <td>P</td>
+                        </tr>
+                        <tr>
+                          <td>MTH1033</td>
+                          <td>College Algebra</td>
+                          <td>3</td>
+                          <td>P</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Start: sophomore -->
+                <div class="year" id="sp">
+                  <div class="sp">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                        </tr>
+                        <tr>
+                          <td>HSC1023</td>
+                          <td>Personal Health and Safety</td>
+                          <td>3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>MGT2003</td>
+                          <td>Survey of Management</td>
+                          <td>3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>MKT2003</td>
+                          <td>Marketing Concepts</td>
+                          <td>3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>SPN1105</td>
+                          <td>Intensive Elementary Spanish I</td>
+                          <td>5</td>
+                          <td>B+</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                          <!-- Otherはなんかちゃう -->
+                        </tr>
+                        <tr>
+                          <td>PSY1003</td>
+                          <td>General Psychology</td>
+                          <td>3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>PSY2023</td>
+                          <td>Abnormal Psychology</td>
+                          <td>3</td>
+                          <td>C+</td>
+                        </tr>
+                        <tr>
+                          <td>MTH1053</td>
+                          <td>Intro to Statistics</td>
+                          <td>3</td>
+                          <td>B+</td>
+                        </tr>
+                        <tr>
+                          <td>ECN2013</td>
+                          <td>Principles of Microeconomics</td>
+                          <td>3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>SPN 1205</td>
+                          <td>Intensive Elementary Spanish II</td>
+                          <td>5</td>
+                          <td>B+</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Start: junior -->
+                <div class="year" id="jr">
+                  <div class="jr">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                          <!-- Otherはなんかちゃう -->
+                        </tr>
+                        <tr>
+                          <td>CSE100</td>
+                          <td>Introduction to Computing</td>
+                          <td>1</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>CSE170</td>
+                          <td>Technical Teamwork</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>CSE212</td>
+                          <td>Programming with Data Structures</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>WDD130</td>
+                          <td>Wed Fundamentals</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>CIT111</td>
+                          <td>Introduction to Databases</td>
+                          <td>3</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>CIT171</td>
+                          <td>Introduction to Cybersecurity</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>ECEN106</td>
+                          <td>Computer Systems</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                        <tr>
+                          <td>REL225C</td>
+                          <td>Foundations of the Restoration</td>
+                          <td>2</td>
+                          <td>A+</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="winter-semester semester-table-wrapper">
+                      <h4>Winter</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                          <!-- Otherはなんかちゃう -->
+                        </tr>
+                        <tr>
+                          <td>CSE121A</td>
+                          <td>Clojure</td>
+                          <td>1</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>CSE121B</td>
+                          <td>JavaScript</td>
+                          <td>1</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>CSE180</td>
+                          <td>Algorithmic Thinking</td>
+                          <td>3</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>CSE250</td>
+                          <td>Data Science Programming</td>
+                          <td>2</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>CSE251</td>
+                          <td>Parallelism and Concurrency</td>
+                          <td>3</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>CSE310</td>
+                          <td>Applied Programming</td>
+                          <td>4</td>
+                          <td>N</td>
+                        </tr>
+                        <tr>
+                          <td>REL200C</td>
+                          <td>The Eternal Family</td>
+                          <td>2</td>
+                          <td>N</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!-- <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <table>
+                        <tr>
+                          <th>ID</th>
+                          <th class="wide">Name</th>
+                          <th>Cred.</th>
+                          <th>GPA</th>
+                          <th class="other wide">Other</th>
+                        </tr>
+                        <tr>
+                          <td>CSE100</td>
+                          <td>Introduction to Computing</td>
+                          <td>1</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>CSE170</td>
+                          <td>Technical Teamwork</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>CSE212</td>
+                          <td>Programming with Data Structures</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>WDD130</td>
+                          <td>Wed Fundamentals</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>CIT111</td>
+                          <td>Introduction to Databases</td>
+                          <td>3</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>CIT171</td>
+                          <td>Introduction to Cybersecurity</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>ECEN106</td>
+                          <td>Computer Systems</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>REL225C</td>
+                          <td>Foundations of the Restoration</td>
+                          <td>2</td>
+                          <td>A+</td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- Start: senior -->
+                <div class="year" id="sr">
+                  <div class="sr">
+                    xcvhjbvuibi
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End: Table -->
+          </div>
+          <div class="mobile-tab-table-wrapper">
+            <div class="mobile-tab-ttls">
+              <div class="mobile-tab-wrapper active" data-id="mobile-fr">
+                <span class="tab-ttl">Fr.</span>
+              </div>
+              <div class="mobile-tab-wrapper" data-id="mobile-sp">
+                <span class="tab-ttl">Sp.</span>
+              </div>
+              <div class="mobile-tab-wrapper" data-id="mobile-jr">
+                <span class="tab-ttl">Jr.</span>
+              </div>
+              <div class="mobile-tab-wrapper" data-id="mobile-sr">
+                <span class="tab-ttl">Sr.</span>
+              </div>
+            </div>
+            <div class="mobile-table-wrapper">
+              <div class="mobile-class-wrapper bgheightmobile-fr">
+                <div class="mobile-class-year active" id="mobile-fr">
+                  <div class="mobile-fr">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Introduction to Business</div>
+                          <div class="class-info">
+                            <span class="class-id">BSA1103</span>
+                            <span>3</span>
+                            <span class="class-grade">B+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">The Making of Pre-modern Europe</div>
+                          <div class="class-info">
+                            <span class="class-id">IND1013</span>
+                            <span>3</span>
+                            <span class="class-grade">B+</span>
+                            <span></span>
+                          </div>
+                          
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Public Speaking</div>
+                          <div class="class-info">
+                            <span class="class-id">COM1003</span>
+                            <span>3</span>
+                            <span class="class-grade">B-</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">United States History I</div>
+                          <div class="class-info">
+                            <span class="class-id">HIS2113</span>
+                            <span>3</span>
+                            <span class="class-grade">C+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Academic Writing</div>
+                          <div class="class-info">
+                            <span class="class-id">ENG1033</span>
+                            <span>3</span>
+                            <span class="class-grade">C-</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Introduction to Education</div>
+                          <div class="class-info">
+                            <span>EDU1783</span>
+                            <span>3</span>
+                            <span>P</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Environmental Science</div>
+                          <div class="class-info">
+                            <span>ENS1023</span>
+                            <span>3</span>
+                            <span>P</span>
+                            <span></span>
+                          </div>
+                          
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Mathematical Literacy</div>
+                          <div class="class-info">
+                            <span>MTH1023</span>
+                            <span>3</span>
+                            <span>P</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">College Algebra</div>
+                          <div class="class-info">
+                            <span>MTH1033</span>
+                            <span>3</span>
+                            <span>P</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-class-year" id="mobile-sp">
+                  <div class="mobile-sp">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Personal Health and Safety</div>
+                          <div class="class-info">
+                            <span>HSC1023</span>
+                            <span>3</span>
+                            <span>A</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Survey of Management</div>
+                          <div class="class-info">
+                            <span>MGT2003</span>
+                            <span>3</span>
+                            <span>A</span>
+                            <span></span>
+                          </div>
+                          
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Marketing Concepts</div>
+                          <div class="class-info">
+                            <span>MKT2003</span>
+                            <span>3</span>
+                            <span>A</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Intensive Elementary Spanish I</div>
+                          <div class="class-info">
+                            <span>SPN1105</span>
+                            <span>5</span>
+                            <span>B+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">General Psychology</div>
+                          <div class="class-info">
+                            <span>PSY1003</span>
+                            <span>3</span>
+                            <span>A</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Abnormal Psychology</div>
+                          <div class="class-info">
+                            <span>PSY2023</span>
+                            <span>3</span>
+                            <span>C+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Intro to Statistics</div>
+                          <div class="class-info">
+                            <span>MTH1053</span>
+                            <span>3</span>
+                            <span>B+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Principles of Microeconomics</div>
+                          <div class="class-info">
+                            <span>ECN2013</span>
+                            <span>3</span>
+                            <span>A</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Intensive Elementary Spanish II</div>
+                          <div class="class-info">
+                            <span>SPN 1205</span>
+                            <span>5</span>
+                            <span>B+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-class-year" id="mobile-jr">
+                  <div class="mobile-jr">
+                    <div class="fall-semester semester-table-wrapper">
+                      <h4>Fall</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Introduction to Computing</div>
+                          <div class="class-info">
+                            <span>CSE100</span>
+                            <span>1</span>
+                            <span>A+</span>
+                            <!-- <span></span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Technical Teamwork</div>
+                          <div class="class-info">
+                            <span>CSE170</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <!-- <span></span> -->
+                          </div>
+                          
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Programming with Data Structures</div>
+                          <div class="class-info">
+                            <span>CSE212</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <!-- <span></span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Wed Fundamentals</div>
+                          <div class="class-info">
+                            <span>WDD130</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Introduction to Databases</div>
+                          <div class="class-info">
+                            <span>CIT111</span>
+                            <span>3</span>
+                            <span>A+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Introduction to Cybersecurity</div>
+                          <div class="class-info">
+                            <span>CIT171</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Computer Systems</div>
+                          <div class="class-info">
+                            <span>ECEN106</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Foundations of the Restoration</div>
+                          <div class="class-info">
+                            <span>REL225C</span>
+                            <span>2</span>
+                            <span>A+</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spring-semester semester-table-wrapper">
+                      <h4>Spring</h4>
+                      <div class="all-class-wrapper">
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Clojure</div>
+                          <div class="class-info">
+                            <span>CSE121A</span>
+                            <span>1</span>
+                            <span>N</span>
+                            <!-- <span></span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">JavaScript</div>
+                          <div class="class-info">
+                            <span>CSE121B</span>
+                            <span>1</span>
+                            <span>N</span>
+                            <!-- <span></span> -->
+                          </div>
+                          
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Algorithmic Thinking</div>
+                          <div class="class-info">
+                            <span>CSE180</span>
+                            <span>3</span>
+                            <span>N</span>
+                            <!-- <span></span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Data Science Programming</div>
+                          <div class="class-info">
+                            <span>CSE250</span>
+                            <span>2</span>
+                            <span>N</span>
+                            <!-- <span></span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Parallelism and Concurrency</div>
+                          <div class="class-info">
+                            <span>CSE251</span>
+                            <span>3</span>
+                            <span>N</span>
+                            <!-- <span class="other">other</span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">Applied Programming</div>
+                          <div class="class-info">
+                            <span>CSE310</span>
+                            <span>4</span>
+                            <span>N</span>
+                            <!-- <span class="other">other</span> -->
+                          </div>
+                        </div>
+                        <div class="one-class-wrapper">
+                          <div class="mobile-class-ttl">The Eternal Family</div>
+                          <div class="class-info">
+                            <span>REL200C</span>
+                            <span>2</span>
+                            <span>N</span>
+                            <!-- <span class="other">other</span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-class-year" id="mobile-sr">
+                  <div class="mobile-sr">
+                    none
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="skills" id="skills">
+        <div class="section-border">
+          <div class="border"></div>
+          <span class="border-txt">WATCH OUT MY</span>
+        </div>
+        <h2 class="sec-ttl">SKILLS</h2>
+        <div class="section-body-wrapper">
+          <div class="front-back-end-wrapper">
+            <div class="left-col">
+              <h4>FRONT END <span> etc.</span></h4>
+              <div class="skills-wrapper">
+                <!-- <h5>HTML</h5> -->
+                <!-- <div class="skills-arrow"></div> -->
+                <p class="pro">Pro</p>
+                <div class="icons-wrapper">
+                  <!-- Note!!! -->
+                  <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
+                  <!--  Note!!! -->
+                  <div class="five">
+                    <div class="skill-wrapper">
+                      <img src="icons/html.png" alt="html-icon">
+                      <h6 class="skill-name">HTML</h6>
+                    </div>
+                    <!-- <div class="skill-wrapper">
+                      <img src="icons/html.png" alt="html-icon">
+                      <h6 class="skill-name">HTML</h6>
+                    </div> -->
+                    <div class="skill-wrapper">
+                      <img src="icons/css.png" alt="css-icon">
+                      <h6 class="skill-name">CSS</h6>
+                    </div>
+                    <div class="skill-wrapper">
+                      <img src="icons/sass.png" alt="sass-icon">
+                      <h6 class="skill-name">Sass</h6>
+                    </div>
+                  </div>
+                  <div class="four">
+                    
+                  </div>
+                  <div class="three">
+                    <div class="skill-wrapper">
+                      <img src="icons/js.png" alt="js-icon">
+                      <h6 class="skill-name">JS</h6>
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="skill-wrapper">
+                      <img src="icons/react.png" alt="react-icon">
+                      <h6 class="skill-name">React</h6>
+                    </div>
+                    <div class="skill-wrapper">
+                      <img src="icons/tailwind-css.png" alt="tailwind-css-icon">
+                      <h6 class="skill-name">Tw css</h6>
+                    </div>
+                    <div class="skill-wrapper">
+                      <img src="icons/git.png" alt="git-icon">
+                      <h6 class="skill-name">Git</h6>
+                    </div>
+                  </div>
+                  <div class="one">
+                    <div class="skill-wrapper">
+                      <img src="icons/microsoft.png" alt="m365-icon">
+                      <h6 class="skill-name">M365</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="newbie"></p>Newbie</p>
+              </div>
+            </div>
+            <div class="center-col"></div>
+            <div class="right-col">
+              <h4>BACK-END <span> etc.</span></h4>
+              <div class="skills-wrapper">
+                <!-- <h5>HTML</h5> -->
+                <p class="pro">Pro</p>
+                <div class="icons-wrapper">
+                  <!-- Note!!! -->
+                  <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
+                  <!--  Note!!! -->
+                  <div class="five">
+                    <div class="skill-wrapper">
+                      <img src="icons/python.png" alt="python-icon">
+                      <h6 class="skill-name">Python</h6>
+                    </div>
+                  </div>
+                  <div class="four">
+                    <div class="skill-wrapper">
+                      <img src="icons/django.png" alt="django-icon">
+                      <h6 class="skill-name">Django</h6>
+                    </div>
+                  </div>
+                  <div class="three">
+                    <div class="skill-wrapper">
+                      <img src="icons/mysql.png" alt="mysql-icon">
+                      <h6 class="skill-name">MySQL</h6>
+                    </div>
+                    <div class="skill-wrapper">
+                      <img src="icons/postgresql.png" alt="postgresql-icon">
+                      <h6 class="skill-name">Postg.</h6>
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="skill-wrapper">
+                      <img src="icons/ruby.png" alt="ruby-icon">
+                      <h6 class="skill-name">Ruby</h6>
+                    </div>
+                  </div>
+                  <div class="one">
+                    <div class="skill-wrapper">
+                      <img src="icons/c.png" alt="c-icon">
+                      <h6 class="skill-name">C</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="newbie">Newbie</p>
+              </div>
+            </div>
+          </div>
+          <div class="in-progress-wrapper">
+            <div class="in-progress-top">
+              <div class="two-arrows">
+                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-up"></i>
+              </div>
+              <h4>IN PROGRESS</h4>
+              <div class="two-arrows">
+                <i class="fas fa-arrow-up delay"></i>
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
             <div class="skills-wrapper">
-              <!-- <h5>HTML</h5> -->
-              <!-- <div class="skills-arrow"></div> -->
-              <p class="pro">Pro</p>
-              <div class="icons-wrapper">
-                <!-- Note!!! -->
-                <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
-                <!--  Note!!! -->
-                <div class="five">
-                  <div class="skill-wrapper">
-                    <img src="icons/html.png" alt="html-icon">
-                    <h6 class="skill-name">HTML</h6>
-                  </div>
-                  <!-- <div class="skill-wrapper">
-                    <img src="icons/html.png" alt="html-icon">
-                    <h6 class="skill-name">HTML</h6>
-                  </div> -->
-                  <div class="skill-wrapper">
-                    <img src="icons/css.png" alt="css-icon">
-                    <h6 class="skill-name">CSS</h6>
-                  </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/sass.png" alt="sass-icon">
-                    <h6 class="skill-name">Sass</h6>
-                  </div>
-                </div>
-                <div class="four">
-                  
-                </div>
-                <div class="three">
-                  <div class="skill-wrapper">
-                    <img src="icons/js.png" alt="js-icon">
-                    <h6 class="skill-name">JS</h6>
-                  </div>
-                </div>
-                <div class="two">
-                  <div class="skill-wrapper">
-                    <img src="icons/react.png" alt="react-icon">
-                    <h6 class="skill-name">React</h6>
-                  </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/tailwind-css.png" alt="tailwind-css-icon">
-                    <h6 class="skill-name">Tw css</h6>
-                  </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/git.png" alt="git-icon">
-                    <h6 class="skill-name">Git</h6>
-                  </div>
-                </div>
-                <div class="one">
-                  <div class="skill-wrapper">
-                    <img src="icons/microsoft.png" alt="m365-icon">
-                    <h6 class="skill-name">M365</h6>
-                  </div>
-                </div>
+              <div class="skill-wrapper">
+                <img src="icons/react.png" alt="react-icon">
+                <h6 class="skill-name">React</h6>
               </div>
-              <p class="newbie"></p>Newbie</p>
-            </div>
-          </div>
-          <div class="center-col"></div>
-          <div class="right-col">
-            <h4>BACK-END <span> etc.</span></h4>
-            <div class="skills-wrapper">
-              <!-- <h5>HTML</h5> -->
-              <p class="pro">Pro</p>
-              <div class="icons-wrapper">
-                <!-- Note!!! -->
-                <!-- Maximum numbers of skills icons in each row is 4, so if choose 4 out of all skills if you have more than five to place in one row -->
-                <!--  Note!!! -->
-                <div class="five">
-                  <div class="skill-wrapper">
-                    <img src="icons/python.png" alt="python-icon">
-                    <h6 class="skill-name">Python</h6>
-                  </div>
-                </div>
-                <div class="four">
-                  <div class="skill-wrapper">
-                    <img src="icons/django.png" alt="django-icon">
-                    <h6 class="skill-name">Django</h6>
-                  </div>
-                </div>
-                <div class="three">
-                  <div class="skill-wrapper">
-                    <img src="icons/mysql.png" alt="mysql-icon">
-                    <h6 class="skill-name">MySQL</h6>
-                  </div>
-                  <div class="skill-wrapper">
-                    <img src="icons/postgresql.png" alt="postgresql-icon">
-                    <h6 class="skill-name">Postg.</h6>
-                  </div>
-                </div>
-                <div class="two">
-                  <div class="skill-wrapper">
-                    <img src="icons/ruby.png" alt="ruby-icon">
-                    <h6 class="skill-name">Ruby</h6>
-                  </div>
-                </div>
-                <div class="one">
-                  <div class="skill-wrapper">
-                    <img src="icons/c.png" alt="c-icon">
-                    <h6 class="skill-name">C</h6>
-                  </div>
-                </div>
+              <div class="skill-wrapper">
+                <img src="icons/typescript.png" alt="typescript-icon">
+                <h6 class="skill-name">TypeS.</h6>
               </div>
-              <p class="newbie">Newbie</p>
-            </div>
-          </div>
-        </div>
-        <div class="in-progress-wrapper">
-          <div class="in-progress-top">
-            <div class="two-arrows">
-              <i class="fas fa-arrow-up"></i>
-              <i class="fas fa-arrow-up"></i>
-            </div>
-            <h4>IN PROGRESS</h4>
-            <div class="two-arrows">
-              <i class="fas fa-arrow-up delay"></i>
-              <i class="fas fa-arrow-up"></i>
-            </div>
-          </div>
-          <div class="skills-wrapper">
-            <div class="skill-wrapper">
-              <img src="icons/react.png" alt="react-icon">
-              <h6 class="skill-name">React</h6>
-            </div>
-            <div class="skill-wrapper">
-              <img src="icons/typescript.png" alt="typescript-icon">
-              <h6 class="skill-name">TypeS.</h6>
-            </div>
-            <div class="skill-wrapper">
-              <img src="icons/django.png" alt="django-icon">
-              <h6 class="skill-name">Django</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="works" id="works">
-      <div class="section-border">
-        <div class="border"></div>
-        <span class="border-txt">TAKE A LOOK AT MY</span>
-      </div>
-      <h2 class="sec-ttl">WORKS</h2>
-      <div class="section-body-wrapper">
-        <div class="each-work">
-          <h3 class="work-ttl">Calories & PFC Manager</h3>
-          <div class="works-grid-wrapper">
-            <img src="files/works_pfc.png" alt="image of Calories & PFC Manager" class="works-img">
-            <div class="features-wrapper">
-              <!-- <h6>Made Of: Python, Django, HTML/CSS, etc.</h6> -->
-              <!-- <p>Includes everything to lose and gain weight:</p> -->
-              <p>Features:</p>
-              <ul>
-                <li>register foods and routine foods, leave memos, comment to other users' memos</li>
-                <li>set a goal for Calories and PFC balance that users want to take in a day</li> 
-                <!-- <li></li>
-                  <li></li> -->
-              </ul>
-            </div>
-            <div class="made-of-wrapper">
-              <p class="made-of">Made of: </p>
-              <div class="components">
-                <img src="icons/html.png" alt="">
-                <img src="icons/css.png" alt="">
-                <img src="icons/django.png" alt="">
-                <img src="icons/python.png" alt="">
-                <!-- <img src="icons/python.png" alt=""> -->
-              </div>
-            </div>
-            <div class="source-site-wrapper">
-              <p class="other">Other: </p>
-              <!-- <div class="check-it-out-wrapper">
-                <i class="fab fa-chrome"></i>
-                <a href="https://pfc-calc.xyz" target="_blank">Live</a>
-              </div>
-              <div class="source-code-wrapper">
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/mtake986/pfc_calc" target="_blank">Repo</a>
-              </div> -->
-              <div class="live-repo">
-                <a href="#" target="_blank">Live</a>
-                <a href="https://github.com/mtake986/pfc_calc" target="_blank">Repo</a>
+              <div class="skill-wrapper">
+                <img src="icons/django.png" alt="django-icon">
+                <h6 class="skill-name">Django</h6>
               </div>
             </div>
           </div>
         </div>
-        <div class="each-work">
-          <h3 class="work-ttl">Engineer Portfolio</h3>
-          <div class="works-grid-wrapper">
-            <img src="files/works_portfolio.png" alt="image of portfolio website" class="works-img">
-            <div class="features-wrapper">
-              <!-- <h6>Made Of: Python, Django, HTML/CSS, etc.</h6> -->
-              <!-- <p>Includes everything to lose and gain weight:</p> -->
-              <p>Features:</p>
-              <ul>
-                <li>A portfolio website as my resume.</li>
-                <li>Mainly Sass and JS.</li>
-              </ul>
-            </div>
-            <div class="made-of-wrapper">
-              <p class="made-of">Made of: </p>
-              <div class="components">
-                <img src="icons/html.png" alt="">
-                <img src="icons/sass.png" alt="">
-                <img src="icons/js.png" alt="">
+      </section>
+  
+      <section class="works" id="works">
+        <div class="section-border">
+          <div class="border"></div>
+          <span class="border-txt">TAKE A LOOK AT MY</span>
+        </div>
+        <h2 class="sec-ttl">WORKS</h2>
+        <div class="section-body-wrapper">
+          <div class="each-work">
+            <h3 class="work-ttl">Calories & PFC Manager</h3>
+            <div class="works-grid-wrapper">
+              <img src="files/works_pfc.png" alt="image of Calories & PFC Manager" class="works-img">
+              <div class="features-wrapper">
+                <!-- <h6>Made Of: Python, Django, HTML/CSS, etc.</h6> -->
+                <!-- <p>Includes everything to lose and gain weight:</p> -->
+                <p>Features:</p>
+                <ul>
+                  <li>register foods and routine foods, leave memos, comment to other users' memos</li>
+                  <li>set a goal for Calories and PFC balance that users want to take in a day</li> 
+                  <!-- <li></li>
+                    <li></li> -->
+                </ul>
+              </div>
+              <div class="made-of-wrapper">
+                <p class="made-of">Made of: </p>
+                <div class="components">
+                  <img src="icons/html.png" alt="">
+                  <img src="icons/css.png" alt="">
+                  <img src="icons/django.png" alt="">
+                  <img src="icons/python.png" alt="">
+                  <!-- <img src="icons/python.png" alt=""> -->
+                </div>
+              </div>
+              <div class="source-site-wrapper">
+                <p class="other">Other: </p>
+                <!-- <div class="check-it-out-wrapper">
+                  <i class="fab fa-chrome"></i>
+                  <a href="https://pfc-calc.xyz" target="_blank">Live</a>
+                </div>
+                <div class="source-code-wrapper">
+                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/mtake986/pfc_calc" target="_blank">Repo</a>
+                </div> -->
+                <div class="live-repo">
+                  <a href="#" target="_blank">Live</a>
+                  <a href="https://github.com/mtake986/pfc_calc" target="_blank">Repo</a>
+                </div>
               </div>
             </div>
-            <div class="source-site-wrapper">
-              <p class="Other">Other: </p>
-              <!-- <div class="check-it-out-wrapper">
-                <i class="fab fa-chrome"></i>
-                <a href="#" target="_blank">Check it out on the web</a>
+          </div>
+          <div class="each-work">
+            <h3 class="work-ttl">Engineer Portfolio</h3>
+            <div class="works-grid-wrapper">
+              <img src="files/works_portfolio.png" alt="image of portfolio website" class="works-img">
+              <div class="features-wrapper">
+                <!-- <h6>Made Of: Python, Django, HTML/CSS, etc.</h6> -->
+                <!-- <p>Includes everything to lose and gain weight:</p> -->
+                <p>Features:</p>
+                <ul>
+                  <li>A portfolio website as my resume.</li>
+                  <li>Mainly Sass and JS.</li>
+                </ul>
               </div>
-              <div class="source-code-wrapper">
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/mtake986/Engineer_Portfolio" target="_blank">Source Code</a>
-              </div> -->
-              <div class="live-repo">
-                <a href="#" target="_blank">Live</a>
-                <a href="https://github.com/mtake986/Engineer_Portfolio" target="_blank">Repo</a>
+              <div class="made-of-wrapper">
+                <p class="made-of">Made of: </p>
+                <div class="components">
+                  <img src="icons/html.png" alt="">
+                  <img src="icons/sass.png" alt="">
+                  <img src="icons/js.png" alt="">
+                </div>
+              </div>
+              <div class="source-site-wrapper">
+                <p class="Other">Other: </p>
+                <!-- <div class="check-it-out-wrapper">
+                  <i class="fab fa-chrome"></i>
+                  <a href="#" target="_blank">Check it out on the web</a>
+                </div>
+                <div class="source-code-wrapper">
+                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/mtake986/Engineer_Portfolio" target="_blank">Source Code</a>
+                </div> -->
+                <div class="live-repo">
+                  <a href="#" target="_blank">Live</a>
+                  <a href="https://github.com/mtake986/Engineer_Portfolio" target="_blank">Repo</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="section-border">
-        <div class="border"></div>
-        <span class="border-txt">SAY HELLO</span>
-      </div>
-      <h2 class="sec-ttl">CONTACT</h2>
-      <div class="section-body-wrapper">
-        <!-- <h3 class="get-in-touch">Get in Touch</h3> -->
-        <div class="email-calendly-wrapper">
-          <div class="left-col">
-            <a href="https://outlook.office.com/mail/inbox" id="emailAddress">
-              <i class="far fa-paper-plane active before"></i>
-              <i class="fas fa-paper-plane after"></i>
-              <p class="email-address">tak21011@byui.edu</p>
-              <p class="sm-txt">Shoot me an email!</p>
-            </a>
-            <!-- <p class="email-ttl">Email</p> -->
-            <!-- <span></span> -->
-          </div>
-          <div class="right-col">
-            <a href="https://calendly.com/masahirotakechi" id="calendly">
-              <i class="far fa-calendar-alt active before"></i>
-              <i class="fas fa-calendar-alt after"></i>
-              <p class="calendly">Calendly</p>
-              <p class="sm-txt">Set up a meeting!</p>
-            </a>
-          </div>
+      </section>
+  
+      <section class="contact" id="contact">
+        <div class="section-border">
+          <div class="border"></div>
+          <span class="border-txt">SAY HELLO</span>
         </div>
-        <!-- <h3 class="contact-form">Contact Form</h3> -->
-        <!-- <form action="">
-          <label for="name">HTML</label>
-          <input type="text" id="name" name="name">
-        </form> -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; Masahiro Takechi All Rights Reserved. 
-      <!-- <a href="index_jp.html">日本語<i class="fas fa-external-link-alt"></i></a> -->
-    </p>
-  </footer>
+        <h2 class="sec-ttl">CONTACT</h2>
+        <div class="section-body-wrapper">
+          <!-- <h3 class="get-in-touch">Get in Touch</h3> -->
+          <div class="email-calendly-wrapper">
+            <div class="left-col">
+              <a href="https://outlook.office.com/mail/inbox" id="emailAddress">
+                <i class="far fa-paper-plane active before"></i>
+                <i class="fas fa-paper-plane after"></i>
+                <p class="email-address">tak21011@byui.edu</p>
+                <p class="sm-txt">Shoot me an email!</p>
+              </a>
+              <!-- <p class="email-ttl">Email</p> -->
+              <!-- <span></span> -->
+            </div>
+            <div class="right-col">
+              <a href="https://calendly.com/masahirotakechi" id="calendly">
+                <i class="far fa-calendar-alt active before"></i>
+                <i class="fas fa-calendar-alt after"></i>
+                <p class="calendly">Calendly</p>
+                <p class="sm-txt">Set up a meeting!</p>
+              </a>
+            </div>
+          </div>
+          <!-- <h3 class="contact-form">Contact Form</h3> -->
+          <!-- <form action="">
+            <label for="name">HTML</label>
+            <input type="text" id="name" name="name">
+          </form> -->
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; Masahiro Takechi All Rights Reserved. 
+        <!-- <a href="index_jp.html">日本語<i class="fas fa-external-link-alt"></i></a> -->
+      </p>
+    </footer>
+  </div>
 </body>
 </html>

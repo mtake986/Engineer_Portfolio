@@ -179,3 +179,15 @@ resumeBtn.onmousemove = function(e){
   resumeBtn.style.setProperty('--y', y + 'px');
 }
 
+
+var showContent;
+
+function myFunction() {
+  showContent = setTimeout(showPage, 3000);
+}
+const loader = document.getElementById("loader")
+const afterLoadContent = document.getElementById("after-load")
+function showPage() {
+  loader.style.display = "none";
+  afterLoadContent.style.display = "block";
+}
