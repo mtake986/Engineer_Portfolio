@@ -9,6 +9,12 @@ section.contact{
     //     margin-bottom: 15px;
     //   }
     // }
+    @include tablet{
+      padding: 30px;
+    }
+    @include mobile{
+      padding: 20px;
+    }
     .email-calendly-wrapper{
       display: flex;
       gap: 50px;

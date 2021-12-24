@@ -20,9 +20,6 @@ section.classes{
             color: var(--textSecondaryColor);
             cursor: default;
             pointer-events: none;
-            &:hover{
-              background: var(--accentPrimaryColor);
-            }
           }
           & > .tab-ttl{
             // line-height: 45px;
@@ -44,6 +41,9 @@ section.classes{
               // Check this out to make a hover action cool
               // https://www.youtube.com/watch?v=WOSaNbpHNqU
             }
+            &.tab-fr-sp{
+              width: 100px;
+            }
           }
         }
       }
@@ -51,40 +51,38 @@ section.classes{
         .pc-class-wrapper{
           background: var(--bgSecondaryColor);
           border-radius: 0 50px 50px 50px;
-          // padding: 30px;
+          // padding: 50px;
           position: relative;
-          height: 650px;
+          height: 1200px;
           @include pc{
-            height: 600px;
+            height: 1200px;
           }
           @include tablet{
-            height: 700px;
+            height: 1050px;
+            border-radius: 0 20px 20px 20px;
           }
-          &.bgHeightPc-fr{
-            height: 700px;
+          // @include mobile {
+          //   height: 950px;
+          // }
+          &.bgHeightPc-fr-sp{
+            height: 1200px;
             @include pc{
-              height: 600px;
+              height: 1200px;
             }
             @include tablet{
-              height: 700px;
+              height: 1050px;
             }
-          }
-          &.bgHeightPc-sp{
-            height: 700px;
-            @include pc{
-              height: 600px;
-            }
-            @include tablet{
-              height: 750px;
-            }
+            // @include mobile {
+            //   height: 950px;
+            // }
           }
           &.bgHeightPc-jr{
-            height: 850px;
+            height: 800px;
             @include pc{
               height: 800px;
             }
             @include tablet{
-              height: 950px;
+              height: 700px;
             }
           }
           &.bgHeightPc-sr{
@@ -134,16 +132,14 @@ section.classes{
                   border: 1px solid var(--accentPrimaryColor);
                   width: 100%;
                   margin-bottom: 15px;
-                  @include pc{
-                    font-size: $fzS;
-                  }
+                  font-size: $fzS;
                   @include tablet{
-                    font-size: $fzExs;
+                    font-size: $fzExss;
                   }
                   tr{
                     width: 100%;
                     th, td{
-                      padding: 5px 10px;
+                      padding: 5px;
                       border-left: 1px dashed var(--accentSecondaryColor);
                     }
                     th{
@@ -153,6 +149,11 @@ section.classes{
                     td{
                       border-bottom: 1px dashed var(--accentSecondaryColor);
                       border-right: 1px dashed var(--accentSecondaryColor);
+                    }
+                    th.pc-class-id, td.pc-class-id{
+                      @include tablet{
+                        display: none;
+                      }
                     }
                   }
                 }
@@ -201,23 +202,27 @@ section.classes{
               // Check this out to make a hover action cool
               // https://www.youtube.com/watch?v=WOSaNbpHNqU
             }
+            &.mobile-tab-fr-sp{
+              width: 100px;
+            }
           }
         }
       }
       .mobile-table-wrapper{
         .mobile-class-wrapper{
           background: var(--bgSecondaryColor);
-          height: 650px;
+          // todo: height change 
+          height: 900px;
           border-radius: 0 20px 20px 20px;
           position: relative;
-          &.bgheightmobile-fr{
-            height: 600px;
+          &.bgheightmobile-fr-sp{
+            height: 850px;
           }
-          &.bgheightmobile-sp{
-            height: 600px;
-          }
+          // &.bgheigh-mobile-sp{
+          //   height: 600px;
+          // }
           &.bgheightmobile-jr{
-            height: 950px;
+            height: 900px;
           }
           &.bgheightmobile-sr{
             height: 60px;
@@ -237,15 +242,39 @@ section.classes{
               transform: scale(1);
               opacity: 1;
               visibility: visible;
+              padding: 20px;
               // display: block;
             }
-            .mobile-fr, .mobile-sp, .mobile-jr, .mobile-sr{
-              padding: 20px;
+            .mobile-fr-sp, .mobile-jr, .mobile-sr{
               .semester-table-wrapper{
+                font-size: $fzExsss;
                 margin-bottom: 30px;
                 h4{
                   margin-bottom: 5px;
                   font-size: $fzM;
+                }
+                table{
+                  font-size: $fzExsss;
+                  text-align: center;
+                  border-collapse: collapse;
+                  border: 1px solid var(--accentPrimaryColor);
+                  width: 100%;
+                  margin-bottom: 15px;
+                  tr{
+                    width: 100%;
+                    th, td{
+                      padding: 5px;
+                      border-left: 1px dashed var(--accentSecondaryColor);
+                    }
+                    th{
+                      background: var(--bgTh);
+                      color: var(--accentSecondaryColor);
+                    }
+                    td{
+                      border-bottom: 1px dashed var(--accentSecondaryColor);
+                      border-right: 1px dashed var(--accentSecondaryColor);
+                    }
+                  }
                 }
                 .all-class-wrapper{
                   border: 1px solid var(--accentPrimaryColor);
@@ -257,18 +286,10 @@ section.classes{
                       background: var(--bgTh);
                       border-top: 1px solid var(--accentPrimaryColor);
                       border-bottom: 1px dashed var(--accentPrimaryColor);
-                      font-size: $fzExs;
                       color: #333;
-                      @include mobile{
-                        font-size: $fzExss;
-                      }
                     }
                     div.class-info{
                       display: flex;
-                      font-size: $fzExss;
-                      @include mobile{
-                        font-size: $fzExsss;
-                      }
                       span{
                         padding: 5px 10px;
                         border-right: 1px dashed var(--accentPrimaryColor);

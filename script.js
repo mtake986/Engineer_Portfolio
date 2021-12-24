@@ -23,8 +23,8 @@ for (var i = 0; i < tabs.length; i++)  {
     // Change table height in Classes section on "pc" screen
     const targetTablePc = document.getElementById(this.dataset.id).getAttribute("id")
     console.log(document.getElementById(this.dataset.id).getAttribute("id"), targetTablePc)
-    if (targetTablePc === "fr"){
-      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-fr'
+    if (targetTablePc === "fr-sp"){
+      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-fr-sp'
     }
     else if (targetTablePc === "sp") {
       bgHeightPc.className = 'pc-class-wrapper bgHeightPc-sp'
@@ -57,8 +57,8 @@ for (var i = 0; i < mobileTabs.length; i++)  {
     // Change table height in Classes section on "mobile" screen
     const targetTableMobile = document.getElementById(this.dataset.id).getAttribute("id")
     console.log(document.getElementById(this.dataset.id).getAttribute("id"), targetTableMobile)
-    if (targetTableMobile === "mobile-fr"){
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-fr'
+    if (targetTableMobile === "mobile-fr-sp-sp"){
+      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-fr-sp-sp'
     }
     else if (targetTableMobile === "mobile-sp") {
       bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-sp'
@@ -182,8 +182,8 @@ resumeBtn.onmousemove = function(e){
 
 var showContent;
 
-function myFunction() {
-  showContent = setTimeout(showPage, 3000);
+function loadFunction() {
+  showContent = setTimeout(showPage, 2000);
 }
 const loader = document.getElementById("loader")
 const afterLoadContent = document.getElementById("after-load")

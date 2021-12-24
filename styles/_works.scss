@@ -1,6 +1,9 @@
 section.works{
   .section-body-wrapper{
     @include tablet{
+      padding: 30px;
+    }
+    @include mobile {
       padding: 20px;
     }
     .each-work{
@@ -10,6 +13,9 @@ section.works{
       border-radius: 30px;
       @include tablet{
         padding: 30px;
+      }
+      @include mobile{
+        padding: 20px;
       }
       h3{
         grid-area: ttl;

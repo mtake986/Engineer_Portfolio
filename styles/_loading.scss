@@ -1,13 +1,14 @@
 
 div#loader{
-  width: 100vw;
   height: 100vh;
   background: white;
-  display: block;
   display: flex;
-  padding: 0 37%;
+  padding: 0 30%;
   justify-content: space-around;
   align-items: center;
+  @include mobile {
+    padding: 0 15%;
+  }
   div{
     width: 20px;
     height: 20px;
