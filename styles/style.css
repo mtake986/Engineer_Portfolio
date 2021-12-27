@@ -1622,25 +1622,23 @@ main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made
 }
 
 main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components {
-  color: var(--textPrimaryColor);
-  font-size: 1rem;
-}
-
-main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components span {
-  color: var(--accentPrimaryColor);
-  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components img {
   width: 30px;
-  display: inline;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 1024px) {
   main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper div.components img {
     width: 25px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
 
