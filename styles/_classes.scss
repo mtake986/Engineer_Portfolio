@@ -53,24 +53,24 @@ section.classes{
           border-radius: 0 50px 50px 50px;
           // padding: 50px;
           position: relative;
-          height: 1200px;
+          height: 1250px;
           @include pc{
-            height: 1200px;
+            height: 1250px;
           }
           @include tablet{
-            height: 1050px;
+            height: 1100px;
             border-radius: 0 20px 20px 20px;
           }
           // @include mobile {
           //   height: 950px;
           // }
           &.bgHeightPc-fr-sp{
-            height: 1200px;
+            height: 1250px;
             @include pc{
-              height: 1200px;
+              height: 1250px;
             }
             @include tablet{
-              height: 1050px;
+              height: 1100px;
             }
             // @include mobile {
             //   height: 950px;
@@ -119,6 +119,9 @@ section.classes{
               // opacity: 0;
               div.semester-table-wrapper{
                 margin-bottom: 50px;
+                span{
+                  margin-left: -10px;
+                }
                 h4{
                   margin-bottom: 20px;
                   font-size: $fzMM;
@@ -216,13 +219,10 @@ section.classes{
           border-radius: 0 20px 20px 20px;
           position: relative;
           &.bgheightmobile-fr-sp{
-            height: 850px;
-          }
-          // &.bgheigh-mobile-sp{
-          //   height: 600px;
-          // }
-          &.bgheightmobile-jr{
             height: 900px;
+          }
+          &.bgheightmobile-jr{
+            height: 850px;
           }
           &.bgheightmobile-sr{
             height: 60px;
@@ -249,6 +249,9 @@ section.classes{
               .semester-table-wrapper{
                 font-size: $fzExsss;
                 margin-bottom: 30px;
+                span{
+                  margin-left: -10px;
+                }
                 h4{
                   margin-bottom: 5px;
                   font-size: $fzM;

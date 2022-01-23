@@ -57,8 +57,8 @@ for (var i = 0; i < mobileTabs.length; i++)  {
     // Change table height in Classes section on "mobile" screen
     const targetTableMobile = document.getElementById(this.dataset.id).getAttribute("id")
     console.log(document.getElementById(this.dataset.id).getAttribute("id"), targetTableMobile)
-    if (targetTableMobile === "mobile-fr-sp-sp"){
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-fr-sp-sp'
+    if (targetTableMobile === "mobile-fr-sp"){
+      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-fr-sp'
     }
     else if (targetTableMobile === "mobile-sp") {
       bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-sp'
