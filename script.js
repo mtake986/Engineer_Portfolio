@@ -183,7 +183,7 @@ resumeBtn.onmousemove = function(e){
 var showContent;
 
 function loadFunction() {
-  showContent = setTimeout(showPage, 2000);
+  showContent = setTimeout(showPage, 1);
 }
 const loader = document.getElementById("loader")
 const afterLoadContent = document.getElementById("after-load")

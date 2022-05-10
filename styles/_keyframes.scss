@@ -42,8 +42,11 @@
 
 
 @keyframes ripple-effect {
+  from {
+    transform: translate(-2px, -2px);
+  }
   to {
-    transform:scale(3);
+    transform: translate(-2px, -2px) scale(3);
     opacity: 0.01;
   }
 }

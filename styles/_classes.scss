@@ -53,17 +53,14 @@ section.classes{
           border-radius: 0 50px 50px 50px;
           // padding: 50px;
           position: relative;
-          height: 1250px;
+          height: 1275px;
           @include pc{
-            height: 1250px;
+            height: 1275px;
           }
           @include tablet{
             height: 1100px;
             border-radius: 0 20px 20px 20px;
           }
-          // @include mobile {
-          //   height: 950px;
-          // }
           &.bgHeightPc-fr-sp{
             height: 1250px;
             @include pc{
@@ -77,12 +74,12 @@ section.classes{
             // }
           }
           &.bgHeightPc-jr{
-            height: 800px;
+            height: 1000px;
             @include pc{
-              height: 800px;
+              height: 1000px;
             }
             @include tablet{
-              height: 700px;
+              height: 900px;
             }
           }
           &.bgHeightPc-sr{
@@ -222,7 +219,7 @@ section.classes{
             height: 900px;
           }
           &.bgheightmobile-jr{
-            height: 850px;
+            height: 1100px;
           }
           &.bgheightmobile-sr{
             height: 60px;
