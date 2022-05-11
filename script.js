@@ -191,3 +191,15 @@ function showPage() {
   loader.style.display = "none";
   afterLoadContent.style.display = "block";
 }
+
+
+// classes section
+let selectYears = document.getElementById("selectYears")
+let years = document.querySelectorAll("option")
+let allYears = document.querySelectorAll(".year")
+selectYears.onchange = (e) => {
+  e.preventDefault();
+  const whichYear = years[selectYears.selectedIndex]
+  const year = allYears[selectYears.selectedIndex]
+  console.log(whichYear, year);
+}
