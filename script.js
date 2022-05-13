@@ -199,7 +199,13 @@ let years = document.querySelectorAll("option")
 let allYears = document.querySelectorAll(".year")
 selectYears.onchange = (e) => {
   e.preventDefault();
-  const whichYear = years[selectYears.selectedIndex]
-  const year = allYears[selectYears.selectedIndex]
-  console.log(whichYear, year);
+
+  // remove class "active"
+  const exYear = document.querySelector(".year.active")
+  exYear.classList.remove("active")
+
+  // add class "active"
+  const selectedYear = allYears[selectYears.selectedIndex]
+  selectedYear.classList.add("active")
+  console.log(selectedYear);
 }

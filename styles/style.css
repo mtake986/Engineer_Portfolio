@@ -2,6 +2,7 @@
 :root {
   --accentPrimaryColor: #9b54ff;
   --accentSecondaryColor: #773DC8;
+  --accentSecondaryColor: #eadaff;
   --textPrimaryColor: #333;
   --textSecondaryColor: #fff;
   --bgPrimaryColor: #f7f7f7;
@@ -1047,10 +1048,86 @@ main section.about .section-body-wrapper .long-msg span.color {
   font-weight: 700;
 }
 
+main section.classes .sec-ttl-years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.classes .sec-ttl-years select {
+  margin: 15px 0 45px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  outline: none;
+  border: var(--accentPrimaryColor) 1px solid;
+}
+
 main section.classes .section-body-wrapper {
   padding: 0;
   background: none;
   height: 100%;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year {
+  display: none;
+  padding: 50px;
+  background: var(--bgSecondaryColor);
+  border-radius: 10px;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year.active {
+  display: block;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper:not(:first-of-type) {
+  border-bottom: 1px dashed var(--accentPrimaryColor);
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper.table-header {
+  background: #f6efff;
+  color: var(--accentPrimaryColor);
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper .crd-grd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper .crd-grd div {
+  min-width: 50px;
 }
 
 @media screen and (max-width: 425px) {

@@ -1,10 +1,69 @@
 
 section.classes{
   // height: 100vh;
+  .sec-ttl-years {
+    display: flex;
+    justify-content: space-between;
+    select {
+      margin: 15px 0 45px;
+      padding: 5px 15px;
+      font-size: $fzSS;
+      outline: none;
+      border: var(--accentPrimaryColor) 1px solid;
+    }
+  }
   .section-body-wrapper{
     padding: 0;
     background: none;
     height: 100%;
+    .all-years-classes-wrapper {
+      div.year{
+        display: none;
+        &.active{
+          display: block;
+        }
+        padding: 50px;
+        background: var(--bgSecondaryColor);
+        border-radius: 10px;
+        .semester {
+          &:not(:first-of-type) {
+            margin-top: 50px;
+          }
+          h4 {
+            font-size: $fzMM;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+          .all-classes-wrapper {
+            div.one-class-wrapper{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              text-align: center;
+              padding: 5px 10px;
+              &:not(:first-of-type) {
+                border-bottom: 1px dashed var(--accentPrimaryColor);
+              }
+              &.table-header{
+                // font-weight: bold;
+                background: #f6efff;
+                color: var(--accentPrimaryColor);
+              }
+              .crd-grd {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                text-align: right;
+                div {
+                  min-width: 50px;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
     .pc-tab-table-wrapper{
       @include mobile{
         display: none;
