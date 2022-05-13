@@ -10,7 +10,7 @@ section.skills{
         "l-c c-c r-c" 650px /
         1fr 15px 1fr;
       background: var(--bgSecondaryColor);
-      border-radius: 20px;
+      border-radius: 10px;
       @include pc{
         display: flex;
         flex-direction: column;

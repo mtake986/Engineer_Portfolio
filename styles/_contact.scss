@@ -26,10 +26,12 @@ section.contact{
         position: relative;
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
-        border-radius: 30px;
+        border-radius: 10px;
         transition: .3s;
         box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
+        // @include tablet {
+        //   margin-bottom: 20px;
+        // }
         &:hover{
           box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
         }
