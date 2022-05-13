@@ -42,11 +42,10 @@ section.classes{
               text-align: center;
               padding: 5px 10px;
               &:not(:first-of-type) {
-                border-bottom: 1px dashed var(--accentPrimaryColor);
+                border-top: 1px dashed var(--accentPrimaryColor);
               }
               &.table-header{
                 // font-weight: bold;
-                background: #f6efff;
                 color: var(--accentPrimaryColor);
               }
               .crd-grd {

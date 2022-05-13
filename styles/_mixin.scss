@@ -6,6 +6,9 @@
   font-size: $fzL;
   font-family: $fontAccent;
   margin-bottom: 15px;
+  @include tablet{
+    font-size: $fzM;
+  }
 
 }
 // ///////////
@@ -73,6 +76,9 @@ skills-five-rate-left-right-col{
     // }
     p{
       font-size: $fzSS;
+      @include tablet{
+        font-size: $fzS;
+      }
     }
     .icons-wrapper{
       border-left: 1px solid var(--textPrimaryColor);
