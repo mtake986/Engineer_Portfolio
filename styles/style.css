@@ -7,7 +7,7 @@
   --bgPrimaryColor: #f7f7f7;
   --bgSecondaryColor: #fff;
   --linkColor: rgb(42, 170, 255);
-  --hoverBoxShadowColor: #333;
+  --hoverBoxShadowColor: rgb(160, 160, 160, 0.8);
   --bgTab: #fff;
   --bgTabHover: #f7f7f7;
   --bgTh: #ece0ff;
@@ -15,8 +15,8 @@
 
 skills-each-icon-style .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper div.five .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .four .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .three .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .two .skill-wrapper, skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .left-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .front-back-end-wrapper .right-col div.skills-wrapper .icons-wrapper .one .skill-wrapper, main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrapper .skill-wrapper {
   padding: 10px;
-  -webkit-box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
-          box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
+  -webkit-box-shadow: 1px 1px 2px 0px var(--hoverBoxShadowColor);
+          box-shadow: 1px 1px 2px 0px var(--hoverBoxShadowColor);
   border-radius: 5px;
   width: 60px;
   height: 75px;
@@ -470,8 +470,8 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 2px 2px 5px 0px white;
-          box-shadow: 2px 2px 5px 0px white;
+  -webkit-box-shadow: 2px 2px 2px 0px white;
+          box-shadow: 2px 2px 2px 0px white;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -913,8 +913,8 @@ main section.home .body-wrapper .grid a#resume-btn {
 }
 
 main section.home .body-wrapper .grid a#resume-btn:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
-          box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
+  -webkit-box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
+          box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
 }
 
 main section.home .body-wrapper .grid a#resume-btn span {
@@ -975,8 +975,8 @@ main section.home .body-wrapper .grid .sns-icons a i {
 }
 
 main section.home .body-wrapper .grid .sns-icons a i:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
-          box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
+  -webkit-box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
+          box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
 }
 
 main section {
@@ -1074,6 +1074,7 @@ main section.classes .sec-ttl-years select {
   font-size: 1.2rem;
   outline: none;
   border: var(--accentPrimaryColor) 1px solid;
+  cursor: pointer;
 }
 
 main section.classes .section-body-wrapper {
@@ -1138,353 +1139,6 @@ main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper .crd-grd div {
   min-width: 50px;
-}
-
-@media screen and (max-width: 425px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper {
-    display: none;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper.active > .tab-ttl {
-  background: var(--accentPrimaryColor);
-  color: var(--textSecondaryColor);
-  cursor: default;
-  pointer-events: none;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper > .tab-ttl {
-  padding: 10px 20px;
-  display: inline-block;
-  width: 70px;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
-  background: var(--bgTab);
-  color: var(--textPrimaryColor);
-  border: 1px solid var(--accentPrimaryColor);
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-  font-size: 1rem;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper > .tab-ttl:hover {
-  background: var(--bgTabHover);
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .tab-ttls .tab-wrapper > .tab-ttl.tab-fr-sp {
-  width: 100px;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper {
-  background: var(--bgSecondaryColor);
-  border-radius: 0 50px 50px 50px;
-  position: relative;
-  height: 1275px;
-}
-
-@media screen and (max-width: 1024px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper {
-    height: 1275px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper {
-    height: 1100px;
-    border-radius: 0 20px 20px 20px;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-fr-sp {
-  height: 1250px;
-}
-
-@media screen and (max-width: 1024px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-fr-sp {
-    height: 1250px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-fr-sp {
-    height: 1100px;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-jr {
-  height: 1000px;
-}
-
-@media screen and (max-width: 1024px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-jr {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-jr {
-    height: 900px;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper.bgHeightPc-sr {
-  height: 150px;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year {
-  position: absolute;
-  padding: 50px;
-  width: 100%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year {
-    padding: 30px;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper {
-  margin-bottom: 50px;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper span, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper span, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper span, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper span {
-  margin-left: -5px;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper h4 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper h4, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper h4 {
-    margin-bottom: 10px;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table {
-  text-align: center;
-  border-collapse: collapse;
-  border: 1px solid var(--accentPrimaryColor);
-  width: 100%;
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table {
-    font-size: 0.8rem;
-  }
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr {
-  width: 100%;
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr td {
-  padding: 5px;
-  border-left: 1px dashed var(--accentSecondaryColor);
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th {
-  background: var(--bgTh);
-  color: var(--accentSecondaryColor);
-}
-
-main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr td, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr td {
-  border-bottom: 1px dashed var(--accentSecondaryColor);
-  border-right: 1px dashed var(--accentSecondaryColor);
-}
-
-@media screen and (max-width: 768px) {
-  main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr th.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .fr div.semester-table-wrapper table tr td.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr th.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sp div.semester-table-wrapper table tr td.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr th.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .jr div.semester-table-wrapper table tr td.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr th.pc-class-id, main section.classes .section-body-wrapper .pc-tab-table-wrapper .table-wrapper .pc-class-wrapper .year .sr div.semester-table-wrapper table tr td.pc-class-id {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 426px) {
-  main section.classes .section-body-wrapper .mobile-tab-table-wrapper {
-    display: none;
-  }
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper.active > .tab-ttl {
-  background: var(--accentPrimaryColor);
-  color: var(--textSecondaryColor);
-  cursor: default;
-  pointer-events: none;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper.active > .tab-ttl:hover {
-  background: var(--accentPrimaryColor);
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper > .tab-ttl {
-  padding: 10px;
-  display: inline-block;
-  width: 60px;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
-  background: var(--bgTab);
-  color: var(--textPrimaryColor);
-  border: 1px solid var(--accentPrimaryColor);
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-  font-size: 1rem;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper > .tab-ttl:hover {
-  background: var(--bgTabHover);
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-tab-ttls .mobile-tab-wrapper > .tab-ttl.mobile-tab-fr-sp {
-  width: 100px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper {
-  background: var(--bgSecondaryColor);
-  height: 900px;
-  border-radius: 0 20px 20px 20px;
-  position: relative;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper.bgheightmobile-fr-sp {
-  height: 900px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper.bgheightmobile-jr {
-  height: 1100px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper.bgheightmobile-sr {
-  height: 60px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year {
-  position: absolute;
-  width: 100%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year.active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-  padding: 20px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper {
-  font-size: 10px;
-  margin-bottom: 30px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper span.semester-sm-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper span.semester-sm-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper span.semester-sm-ttl {
-  margin-left: -5px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper h4, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper h4, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper h4 {
-  margin-bottom: 5px;
-  font-size: 1.5rem;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table {
-  font-size: 10px;
-  text-align: center;
-  border-collapse: collapse;
-  border: 1px solid var(--accentPrimaryColor);
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table tr, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table tr, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table tr {
-  width: 100%;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table tr th, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table tr td, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table tr th, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table tr td, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table tr th, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table tr td {
-  padding: 5px;
-  border-left: 1px dashed var(--accentSecondaryColor);
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table tr th, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table tr th, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table tr th {
-  background: var(--bgTh);
-  color: var(--accentSecondaryColor);
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper table tr td, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper table tr td, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper table tr td {
-  border-bottom: 1px dashed var(--accentSecondaryColor);
-  border-right: 1px dashed var(--accentSecondaryColor);
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper .all-class-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper {
-  border: 1px solid var(--accentPrimaryColor);
-  border-top: none;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.mobile-class-ttl {
-  padding: 5px 10px;
-  background: var(--bgTh);
-  border-top: 1px solid var(--accentPrimaryColor);
-  border-bottom: 1px dashed var(--accentPrimaryColor);
-  color: #333;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-fr-sp .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-jr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span, main section.classes .section-body-wrapper .mobile-tab-table-wrapper .mobile-table-wrapper .mobile-class-wrapper .mobile-class-year .mobile-sr .semester-table-wrapper .all-class-wrapper .one-class-wrapper div.class-info span {
-  display: block;
-  padding: 5px 10px 5px 10px;
-  border-right: 1px dashed var(--accentPrimaryColor);
 }
 
 main section.skills .section-body-wrapper .front-back-end-wrapper {
@@ -1620,8 +1274,8 @@ main section.skills .section-body-wrapper .in-progress-wrapper div.skills-wrappe
 
 main section.works .section-body-wrapper .each-work {
   padding: 50px;
-  -webkit-box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
-          box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
+  -webkit-box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
+          box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
   margin-bottom: 50px;
   border-radius: 30px;
 }
@@ -1834,17 +1488,17 @@ main section.contact .section-body-wrapper .email-calendly-wrapper .left-col, ma
   position: relative;
   width: 100%;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
-          box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
   margin-bottom: 20px;
   border-radius: 30px;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
+          box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
 }
 
 main section.contact .section-body-wrapper .email-calendly-wrapper .left-col:hover, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col:hover {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
-          box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
+  -webkit-box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
+          box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
 }
 
 footer {

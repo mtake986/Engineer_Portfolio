@@ -8,7 +8,7 @@ section.works{
     }
     .each-work{
       padding: 50px;
-      box-shadow: 0px 0px 10px -5px var(--hoverBoxShadowColor);
+      box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
       margin-bottom: 50px;
       border-radius: 30px;
       @include tablet{
