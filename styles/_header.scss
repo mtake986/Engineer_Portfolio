@@ -71,7 +71,7 @@ header{
           transition: .3s;
           &:hover{
             background: rgba( 255, 255, 255, 0.2 );
-            box-shadow: 2px 2px 5px 0px white;
+            box-shadow: 2px 2px 2px 0px white;
             backdrop-filter: blur( 4px );
             // -webkit-backdrop-filter: blur( 4px );
             border-radius: 10px;

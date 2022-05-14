@@ -1,6 +1,9 @@
 section{
   // height: 70vh;
   padding: 100px 0px;
+  @include tablet{
+    padding: 50px 0px;
+  }
   div.section-border{
     display: flex;
     justify-content: flex-start;
@@ -30,10 +33,12 @@ section{
   .section-body-wrapper{
     padding: 50px;
     background: var(--bgSecondaryColor);
-    border-radius: 50px;
+    border-radius: 10px;
     @include tablet{
       padding: 30px;
-      border-radius: 30px;
+    }
+    @include mobile{
+      padding: 20px;
     }
   }
 }

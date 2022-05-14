@@ -26,12 +26,14 @@ section.contact{
         position: relative;
         width: 100%;
         text-align: center;
-        box-shadow: 0px 0px 15px -7px rgba(161, 161, 161, 0.79);
-        margin-bottom: 20px;
-        border-radius: 30px;
+        border-radius: 10px;
         transition: .3s;
+        box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
+        // @include tablet {
+        //   margin-bottom: 20px;
+        // }
         &:hover{
-          box-shadow: 0px 0px 15px 0px rgba(161, 161, 161, 0.79);
+          box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
         }
         a#emailAddress{
           @extend contact-left-right-col-link;

@@ -1,1 +1,4 @@
-- [] classes / have one select tab and readers can choose a year (19-23) to view the classes
+- [x] classes: have one select tab and readers can choose a year (19-23) to view the classes, 051222
+- [ ] classes: responsive
+- [x] all: less box-shadow, 051322
+- [x] all: less border-radius, 051322

@@ -1,101 +1,11 @@
 console.log('Is it working??')
 
-var tabs = document.querySelectorAll('.tab-wrapper');
-var eachYearClass = document.querySelectorAll('.year');
-var eachYearClass2 = document.getElementsByClassName('year');
-const bgHeightPc = document.querySelector('.pc-class-wrapper');
-console.log(eachYearClass, eachYearClass2)
-
-for (var i = 0; i < tabs.length; i++)  {
-  tabs[i].addEventListener('click', function(){
-    // Add a class called active to a table showed
-    for (var i = 0; i < eachYearClass.length; i++)  {
-      eachYearClass[i].className = 'year'
-    }
-    document.getElementById(this.dataset.id).className = 'year active';
-
-    // Add a class called active to a tab showed
-    for (var i = 0; i < tabs.length; i++)  {
-      tabs[i].className = 'tab-wrapper'
-    }
-    this.className = 'tab-wrapper active';
-
-    // Change table height in Classes section on "pc" screen
-    const targetTablePc = document.getElementById(this.dataset.id).getAttribute("id")
-    console.log(document.getElementById(this.dataset.id).getAttribute("id"), targetTablePc)
-    if (targetTablePc === "fr-sp"){
-      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-fr-sp'
-    }
-    else if (targetTablePc === "sp") {
-      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-sp'
-    }
-    else if (targetTablePc === "jr") {
-      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-jr'
-    }
-    else {
-      bgHeightPc.className = 'pc-class-wrapper bgHeightPc-sr'
-    }
-  })
-};
-
-var mobileTabs = document.querySelectorAll('.mobile-tab-wrapper');
-var mobileEachYearClass = document.querySelectorAll('.mobile-class-year');
-const bgHeightMobile = document.querySelector('.mobile-class-wrapper')
-console.log('下は')
-console.log(bgHeightPc, bgHeightMobile)
-for (var i = 0; i < mobileTabs.length; i++)  {
-  mobileTabs[i].addEventListener('click', function(){
-    for (var i = 0; i < mobileEachYearClass.length; i++)  {
-      mobileEachYearClass[i].className = 'mobile-class-year'
-    }
-    document.getElementById(this.dataset.id).className = 'mobile-class-year active';
-    for (var i = 0; i < mobileTabs.length; i++)  {
-      mobileTabs[i].className = 'mobile-tab-wrapper'
-    }
-    this.className = 'mobile-tab-wrapper active';
-
-    // Change table height in Classes section on "mobile" screen
-    const targetTableMobile = document.getElementById(this.dataset.id).getAttribute("id")
-    console.log(document.getElementById(this.dataset.id).getAttribute("id"), targetTableMobile)
-    if (targetTableMobile === "mobile-fr-sp"){
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-fr-sp'
-    }
-    else if (targetTableMobile === "mobile-sp") {
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-sp'
-    }
-    else if (targetTableMobile === "mobile-jr") {
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-jr'
-    }
-    else {
-      bgHeightMobile.className = 'mobile-class-wrapper bgheightmobile-sr'
-    }
-            
-  })
-};
-
-
 
 var emailAddress = document.getElementById('emailAddress')
 var emailIcons = document.getElementsByClassName('fa-paper-plane')
 var calendly = document.getElementById('calendly')
 var calendlyIcons = document.getElementsByClassName('fa-calendar-alt')
 console.log({emailAddress, emailIcons, calendly, calendlyIcons})
-
-// emailAddress.addEventListener('mouseover', function(){
-//   for (let i = 0; i < emailIcons.length; i++)  {
-//     if (emailIcons[i].classList.contains('active')){
-//       emailIcons[i].className = 'fa-paper-plane'
-//       emailIcons[i+1].className = 'fa-paper-plane active'
-//       console.log(emailIcons)
-//     }
-//   }
-// })
-
-// var sideHeader = document.getElementById('side-header')
-
-// sideHeader.addEventListener('mouseover', function(){
-//   sideHeader.classList.toggle('mouseover');
-// })
 
 //////////////////////
 // change theme
@@ -190,4 +100,22 @@ const afterLoadContent = document.getElementById("after-load")
 function showPage() {
   loader.style.display = "none";
   afterLoadContent.style.display = "block";
+}
+
+
+// classes section
+let selectYears = document.getElementById("selectYears")
+let years = document.querySelectorAll("option")
+let allYears = document.querySelectorAll(".year")
+selectYears.onchange = (e) => {
+  e.preventDefault();
+
+  // remove class "active"
+  const exYear = document.querySelector(".year.active")
+  exYear.classList.remove("active")
+
+  // add class "active"
+  const selectedYear = allYears[selectYears.selectedIndex]
+  selectedYear.classList.add("active")
+  console.log(selectedYear);
 }

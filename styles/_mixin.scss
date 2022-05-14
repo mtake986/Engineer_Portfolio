@@ -1,11 +1,14 @@
 @mixin hoverAction1(){
-  box-shadow: 0px 0px 10px 0px var(--hoverBoxShadowColor);
+  box-shadow: 0px 0px 4px 0px var(--hoverBoxShadowColor);
 }
 @mixin front-back-end-ttl(){
   text-align: center;
   font-size: $fzL;
   font-family: $fontAccent;
   margin-bottom: 15px;
+  @include tablet{
+    font-size: $fzM;
+  }
 
 }
 // ///////////
@@ -14,7 +17,7 @@
 skills-each-icon-style{
   .skill-wrapper{
     padding: 10px;
-    box-shadow: 1px 1px 3px 0px var(--hoverBoxShadowColor);
+    box-shadow: 1px 1px 2px 0px var(--hoverBoxShadowColor);
     border-radius: 5px;
     // width: 40px;
     // height: 50px;
@@ -73,6 +76,9 @@ skills-five-rate-left-right-col{
     // }
     p{
       font-size: $fzSS;
+      @include tablet{
+        font-size: $fzS;
+      }
     }
     .icons-wrapper{
       border-left: 1px solid var(--textPrimaryColor);
@@ -113,12 +119,15 @@ skills-five-rate-left-right-col{
 
 works-inside-ttl{
   p{
-    font-size: $fzSS;
+    font-size: $fzM;
     font-weight: bold;
     margin-bottom: 5px;
     // @include tablet{
     //   font-size: $fzM;
     // }
+    @include tablet {
+      font-size: $fzSS;
+    }
   }
 }
 // ///////////
@@ -164,7 +173,7 @@ contact-left-right-col-link{
     display: block;
     width: 100%;
     line-height: 100px;
-    border-radius: 30px;
+    border-radius: 10px;
     color: var(--linkColor);
     font-size: $fzSS;
     &:hover{
@@ -185,7 +194,7 @@ contact-left-right-col-link{
     font-size: $fzM;
     margin-top: 10px;
     color: var(--linkColor);
-    @include tablet{
+    @include lg-pc{
       font-size: $fzSS;
     }
   } 

@@ -1,305 +1,85 @@
 
 section.classes{
   // height: 100vh;
+  .sec-ttl-years {
+    display: flex;
+    justify-content: space-between;
+    select {
+      margin: 15px 0 50px;
+      padding: 5px 15px;
+      font-size: $fzSS;
+      outline: none;
+      border: var(--accentPrimaryColor) 1px solid;
+      cursor: pointer;
+      background: white;
+      @include tablet {
+        margin: 10px 0 30px;
+        padding: 3px 10px;
+        font-size: 1rem;
+      }
+    }
+  }
   .section-body-wrapper{
     padding: 0;
     background: none;
     height: 100%;
-    .pc-tab-table-wrapper{
-      @include mobile{
+    .all-years-classes-wrapper {
+      div.year{
         display: none;
-      }
-      .tab-ttls{
-        // margin-bottom: 20px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        .tab-wrapper{
-          &.active > .tab-ttl{
-            background: var(--accentPrimaryColor);
-            color: var(--textSecondaryColor);
-            cursor: default;
-            pointer-events: none;
-          }
-          & > .tab-ttl{
-            // line-height: 45px;
-            padding: 10px 20px;
-            display: inline-block;
-            width: 70px;
-            text-align: center;
-            // padding: 10px 20px;
-            border-radius: 10px 10px 0 0;
-            background: var(--bgTab);
-            color: var(--textPrimaryColor);
-            border: 1px solid var(--accentPrimaryColor);
-            font-weight: 700;
-            cursor: pointer;
-            transition: .3s;
-            font-size: $fzS;
-            &:hover{
-              background: var(--bgTabHover);
-              // Check this out to make a hover action cool
-              // https://www.youtube.com/watch?v=WOSaNbpHNqU
-            }
-            &.tab-fr-sp{
-              width: 100px;
-            }
-          }
+        &.active{
+          display: block;
         }
-      }
-      .table-wrapper{
-        .pc-class-wrapper{
-          background: var(--bgSecondaryColor);
-          border-radius: 0 50px 50px 50px;
-          // padding: 50px;
-          position: relative;
-          height: 1275px;
-          @include pc{
-            height: 1275px;
+        background: var(--bgSecondaryColor);
+        border-radius: 10px;
+        padding: 50px;
+        @include tablet{
+          padding: 30px;
+        }
+        @include mobile{
+          padding: 20px;
+        }
+        .semester {
+          &:not(:first-of-type) {
+            margin-top: 50px;
           }
-          @include tablet{
-            height: 1100px;
-            border-radius: 0 20px 20px 20px;
-          }
-          &.bgHeightPc-fr-sp{
-            height: 1250px;
-            @include pc{
-              height: 1250px;
-            }
-            @include tablet{
-              height: 1100px;
-            }
-            // @include mobile {
-            //   height: 950px;
-            // }
-          }
-          &.bgHeightPc-jr{
-            height: 1000px;
-            @include pc{
-              height: 1000px;
-            }
-            @include tablet{
-              height: 900px;
+          h4 {
+            font-size: $fzMM;
+            margin-bottom: 10px;
+            font-weight: bold;
+            @include tablet {
+              font-size: $fzM;
+            margin-bottom: 5px;
             }
           }
-          &.bgHeightPc-sr{
-            height: 150px;
-          }
-          
-          .year{
-            // background: var(--bgSecondaryColor);
-            position: absolute;
-            // top: 30px;
-            // left: 30px;
-            padding: 50px;
-            width: 100%;
-            transform: scale(0);
-            opacity: 0;
-            visibility: hidden;
-            // display: none;
-            transition: .3s;
-            @include tablet{
-              padding: 30px;
-            }
-            &.active{
-              transform: scale(1);
-              opacity: 1;
-              visibility: visible;
-              // display: block;
-            }
-            .fr, .sp, .jr, .sr{
-              // position: absolute;
-              // top: 0;
-              // left: 0;
+          .all-classes-wrapper {
+            div.one-class-wrapper{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              text-align: center;
+              padding: 5px 10px;
+              &:not(:first-of-type) {
+                border-top: 1px dashed var(--accentPrimaryColor);
+              }
+              &.table-header{
+                // font-weight: bold;
+                color: var(--accentPrimaryColor);
+              }
+              div.course-ttl {
+                text-align: left;
+              }
               
-              // transform: scale(0);
-              // opacity: 0;
-              div.semester-table-wrapper{
-                margin-bottom: 50px;
-                span{
-                  margin-left: -5px;
-                }
-                h4{
-                  margin-bottom: 20px;
-                  font-size: $fzMM;
-                  @include tablet{
-                    margin-bottom: 10px;
-                  }
-                }
-                table{
-                  text-align: center;
-                  border-collapse: collapse;
-                  border: 1px solid var(--accentPrimaryColor);
-                  width: 100%;
-                  margin-bottom: 15px;
-                  font-size: $fzS;
-                  @include tablet{
-                    font-size: $fzExss;
-                  }
-                  tr{
-                    width: 100%;
-                    th, td{
-                      padding: 5px;
-                      border-left: 1px dashed var(--accentSecondaryColor);
-                    }
-                    th{
-                      background: var(--bgTh);
-                      color: var(--accentSecondaryColor);
-                    }
-                    td{
-                      border-bottom: 1px dashed var(--accentSecondaryColor);
-                      border-right: 1px dashed var(--accentSecondaryColor);
-                    }
-                    th.pc-class-id, td.pc-class-id{
-                      @include tablet{
-                        display: none;
-                      }
-                    }
-                  }
+              .crd-grd {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                text-align: right;
+                div {
+                  min-width: 35px;
                 }
               }
             }
-          }
-        }
-      }
-    }
-    .mobile-tab-table-wrapper{
-      @include more-than-mobile{
-        display: none;
-      }
-      .mobile-tab-ttls{
-        // margin-bottom: 20px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        .mobile-tab-wrapper{
-          &.active > .tab-ttl{
-            background: var(--accentPrimaryColor);
-            color: var(--textSecondaryColor);
-            cursor: default;
-            pointer-events: none;
-            &:hover{
-              background: var(--accentPrimaryColor);
-            }
-          }
-          & > .tab-ttl{
-            // line-height: 45px;
-            padding: 10px;
-            display: inline-block;
-            width: 60px;
-            text-align: center;
-            // padding: 10px 20px;
-            border-radius: 10px 10px 0 0;
-            background: var(--bgTab);
-            color: var(--textPrimaryColor);
-            border: 1px solid var(--accentPrimaryColor);
-            font-weight: 700;
-            cursor: pointer;
-            transition: .3s;
-            font-size: $fzS;
-            &:hover{
-              background: var(--bgTabHover);
-              // Check this out to make a hover action cool
-              // https://www.youtube.com/watch?v=WOSaNbpHNqU
-            }
-            &.mobile-tab-fr-sp{
-              width: 100px;
-            }
-          }
-        }
-      }
-      .mobile-table-wrapper{
-        .mobile-class-wrapper{
-          background: var(--bgSecondaryColor);
-          // todo: height change 
-          height: 900px;
-          border-radius: 0 20px 20px 20px;
-          position: relative;
-          &.bgheightmobile-fr-sp{
-            height: 900px;
-          }
-          &.bgheightmobile-jr{
-            height: 1100px;
-          }
-          &.bgheightmobile-sr{
-            height: 60px;
-          }
-          .mobile-class-year{
-            // background: var(--bgSecondaryColor);
-            position: absolute;
-            // top: 30px;
-            // left: 30px;
-            width: 100%;
-            transform: scale(0);
-            opacity: 0;
-            visibility: hidden;
-            // display: none;
-            transition: .3s;
-            &.active{
-              transform: scale(1);
-              opacity: 1;
-              visibility: visible;
-              padding: 20px;
-              // display: block;
-            }
-            .mobile-fr-sp, .mobile-jr, .mobile-sr{
-              .semester-table-wrapper{
-                font-size: $fzExsss;
-                margin-bottom: 30px;
-                span.semester-sm-ttl{
-                  margin-left: -5px;
-                }
-                h4{
-                  margin-bottom: 5px;
-                  font-size: $fzM;
-                }
-                table{
-                  font-size: $fzExsss;
-                  text-align: center;
-                  border-collapse: collapse;
-                  border: 1px solid var(--accentPrimaryColor);
-                  width: 100%;
-                  margin-bottom: 15px;
-                  tr{
-                    width: 100%;
-                    th, td{
-                      padding: 5px;
-                      border-left: 1px dashed var(--accentSecondaryColor);
-                    }
-                    th{
-                      background: var(--bgTh);
-                      color: var(--accentSecondaryColor);
-                    }
-                    td{
-                      border-bottom: 1px dashed var(--accentSecondaryColor);
-                      border-right: 1px dashed var(--accentSecondaryColor);
-                    }
-                  }
-                }
-                .all-class-wrapper{
-                  border: 1px solid var(--accentPrimaryColor);
-                  border-top: none;
-                  .one-class-wrapper{
-                    // border: 1px solid var(--accentPrimaryColor);
-                    div.mobile-class-ttl{
-                      padding: 5px 10px;
-                      background: var(--bgTh);
-                      border-top: 1px solid var(--accentPrimaryColor);
-                      border-bottom: 1px dashed var(--accentPrimaryColor);
-                      color: #333;
-                    }
-                    div.class-info{
-                      display: flex;
-                      span{
-                        display: block;
-                        padding: 5px 10px 5px 10px;
-                        border-right: 1px dashed var(--accentPrimaryColor);
-                      }
-                    }
-                  }
-                }
-              }
-            }
+
           }
         }
       }
