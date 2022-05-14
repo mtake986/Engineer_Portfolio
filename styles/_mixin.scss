@@ -119,12 +119,15 @@ skills-five-rate-left-right-col{
 
 works-inside-ttl{
   p{
-    font-size: $fzSS;
+    font-size: $fzM;
     font-weight: bold;
     margin-bottom: 5px;
     // @include tablet{
     //   font-size: $fzM;
     // }
+    @include tablet {
+      font-size: $fzSS;
+    }
   }
 }
 // ///////////

@@ -141,9 +141,15 @@ skills-five-rate-left-right-col div.skills-wrapper .icons-wrapper div.five, main
 }
 
 works-inside-ttl p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  works-inside-ttl p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.features-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.made-of-wrapper p, main section.works .section-body-wrapper .each-work .works-grid-wrapper div.source-site-wrapper p {
+    font-size: 1.2rem;
+  }
 }
 
 contact-left-right-col-link:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#emailAddress:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .left-col a#calendly:hover i.after, main section.contact .section-body-wrapper .email-calendly-wrapper .right-col a#calendly:hover i.after {
@@ -630,7 +636,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 
@@ -983,6 +989,12 @@ main section {
   padding: 100px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  main section {
+    padding: 50px 0px;
+  }
+}
+
 main section div.section-border {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,6 +1048,12 @@ main section .section-body-wrapper {
   }
 }
 
+@media screen and (max-width: 425px) {
+  main section .section-body-wrapper {
+    padding: 20px;
+  }
+}
+
 main section.about .section-body-wrapper .long-msg {
   font-size: 1.5rem;
   line-height: 2;
@@ -1068,13 +1086,21 @@ main section.classes .sec-ttl-years {
 }
 
 main section.classes .sec-ttl-years select {
-  margin: 15px 0 45px;
+  margin: 15px 0 50px;
   padding: 5px 15px;
   font-size: 1.2rem;
   outline: none;
   border: var(--accentPrimaryColor) 1px solid;
   cursor: pointer;
   background: white;
+}
+
+@media screen and (max-width: 768px) {
+  main section.classes .sec-ttl-years select {
+    margin: 10px 0 30px;
+    padding: 3px 10px;
+    font-size: 1rem;
+  }
 }
 
 main section.classes .section-body-wrapper {
@@ -1085,13 +1111,25 @@ main section.classes .section-body-wrapper {
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year {
   display: none;
-  padding: 50px;
   background: var(--bgSecondaryColor);
   border-radius: 10px;
+  padding: 50px;
 }
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year.active {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  main section.classes .section-body-wrapper .all-years-classes-wrapper div.year {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main section.classes .section-body-wrapper .all-years-classes-wrapper div.year {
+    padding: 20px;
+  }
 }
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester:not(:first-of-type) {
@@ -1102,6 +1140,13 @@ main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .
   font-size: 1.8rem;
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
 }
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper {
@@ -1126,11 +1171,15 @@ main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .
   color: var(--accentPrimaryColor);
 }
 
+main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper div.course-ttl {
+  text-align: left;
+}
+
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper .crd-grd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1138,7 +1187,7 @@ main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .
 }
 
 main section.classes .section-body-wrapper .all-years-classes-wrapper div.year .semester .all-classes-wrapper div.one-class-wrapper .crd-grd div {
-  min-width: 50px;
+  min-width: 35px;
 }
 
 main section.skills .section-body-wrapper .front-back-end-wrapper {
@@ -1276,8 +1325,23 @@ main section.works .section-body-wrapper .each-work {
   padding: 50px;
   -webkit-box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
           box-shadow: 0px 0px 2px 0px var(--hoverBoxShadowColor);
-  margin-bottom: 50px;
   border-radius: 10px;
+}
+
+main section.works .section-body-wrapper .each-work:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main section.works .section-body-wrapper .each-work:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main section.works .section-body-wrapper .each-work:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {

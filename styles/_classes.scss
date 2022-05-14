@@ -5,13 +5,18 @@ section.classes{
     display: flex;
     justify-content: space-between;
     select {
-      margin: 15px 0 45px;
+      margin: 15px 0 50px;
       padding: 5px 15px;
       font-size: $fzSS;
       outline: none;
       border: var(--accentPrimaryColor) 1px solid;
       cursor: pointer;
       background: white;
+      @include tablet {
+        margin: 10px 0 30px;
+        padding: 3px 10px;
+        font-size: 1rem;
+      }
     }
   }
   .section-body-wrapper{
@@ -24,9 +29,15 @@ section.classes{
         &.active{
           display: block;
         }
-        padding: 50px;
         background: var(--bgSecondaryColor);
         border-radius: 10px;
+        padding: 50px;
+        @include tablet{
+          padding: 30px;
+        }
+        @include mobile{
+          padding: 20px;
+        }
         .semester {
           &:not(:first-of-type) {
             margin-top: 50px;
@@ -35,6 +46,10 @@ section.classes{
             font-size: $fzMM;
             margin-bottom: 10px;
             font-weight: bold;
+            @include tablet {
+              font-size: $fzM;
+            margin-bottom: 5px;
+            }
           }
           .all-classes-wrapper {
             div.one-class-wrapper{
@@ -50,13 +65,17 @@ section.classes{
                 // font-weight: bold;
                 color: var(--accentPrimaryColor);
               }
+              div.course-ttl {
+                text-align: left;
+              }
+              
               .crd-grd {
                 display: flex;
-                gap: 10px;
+                gap: 5px;
                 align-items: center;
                 text-align: right;
                 div {
-                  min-width: 50px;
+                  min-width: 35px;
                 }
               }
             }
